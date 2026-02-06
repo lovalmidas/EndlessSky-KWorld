@@ -756,6 +756,8 @@ government KW.Pirates
 	"bribe" .05
 	"fine" 0
 	"default attitude" -.01
+	"attitude toward"
+		"Uninhabited" 0
 
 government KW.PirateSimulium
 	"display name" "Pirates (Simulium)"
@@ -765,6 +767,8 @@ government KW.PirateSimulium
 	"bribe" .05
 	"fine" 0
 	"default attitude" -.01
+	"attitude toward"
+		"Uninhabited" 0
 
 government KW.PirateScarred
 	"display name" "Pirates (Scarred Man)"
@@ -774,6 +778,8 @@ government KW.PirateScarred
 	"bribe" .05
 	"fine" 0
 	"default attitude" -.01
+	"attitude toward"
+		"Uninhabited" 0
 
 government KW.Fleet0
 	"display name" "Imperial Guards"
