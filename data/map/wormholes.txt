@@ -6,3 +6,104 @@ wormhole "Sanctuary Wormhole"
 	link KW.MWC.000.Sgr-A* "KW.SZ.002.The Door"
 	link "KW.SZ.002.The Door" KW.MWC.000.Sgr-A*
 
+
+
+wormhole "KW.WH.S.***.*.Sirius Cluster"
+	"display name" "Sirius Cluster"
+	color "KW.Color: Faction.None"
+	link KW.S.000.Sol "KW.S.***.Sirius Cluster"
+	link "KW.S.001.Alpha Centauri" "KW.S.***.Sirius Cluster"
+	link "KW.S.002.Bernard's Star" "KW.S.***.Sirius Cluster"
+	link "KW.S.003.Sirius" "KW.S.***.Sirius Cluster"
+	link "KW.S.004.Epsilon Eridani" "KW.S.***.Sirius Cluster"
+	link "KW.S.005.Procyon" "KW.S.***.Sirius Cluster"
+	link "KW.S.006.Epsilon Indi" "KW.S.***.Sirius Cluster"
+	link "KW.S.007.Tau Ceti" "KW.S.***.Sirius Cluster"
+	link "KW.S.008.Luyten's Star" "KW.S.***.Sirius Cluster"
+	link "KW.S.009.Kapteyn's Star" "KW.S.***.Sirius Cluster"
+	link "KW.S.000.van Maanen's Star" "KW.S.***.Sirius Cluster"
+	link "KW.S.011.Omicron Eridani" "KW.S.***.Sirius Cluster"
+	link "KW.S.012.Altair" "KW.S.***.Sirius Cluster"
+	link "KW.S.013.Sigma Draconis" "KW.S.***.Sirius Cluster"
+	link "KW.S.014.Eta Cassiopeiae" "KW.S.***.Sirius Cluster"
+	link "KW.S.015.Delta Pavonis" "KW.S.***.Sirius Cluster"
+
+wormhole "KW.WH.S.000.*.Sol"
+	"display name" "Sol"
+	color "KW.Color: Faction.Sol"
+	link "KW.S.***.Sirius Cluster" KW.S.000.Sol
+
+wormhole "KW.WH.S.001.*.Alpha Centauri"
+	"display name" "Alpha Centauri"
+	color "KW.Color: Faction.None"
+	link "KW.S.***.Sirius Cluster" "KW.S.001.Alpha Centauri"
+
+wormhole "KW.WH.S.002.*.Bernard's Star"
+	"display name" "Bernard's Star"
+	color "KW.Color: Faction.None"
+	link "KW.S.***.Sirius Cluster" "KW.S.002.Bernard's Star"
+
+wormhole "KW.WH.S.003.*.Sirius"
+	"display name" "Sirius"
+	color "KW.Color: Faction.None"
+	link "KW.S.***.Sirius Cluster" "KW.S.003.Sirius"
+	
+wormhole "KW.WH.S.004.*.Epsilon Eridani"
+	"display name" "Epsilon Eridani"
+	color "KW.Color: Faction.None"
+	link "KW.S.***.Sirius Cluster" "KW.S.004.Epsilon Eridani"
+	
+wormhole "KW.WH.S.005.*.Procyon"
+	"display name" "Procyon"
+	color "KW.Color: Faction.None"
+	link "KW.S.***.Sirius Cluster" "KW.S.005.Procyon"
+	
+wormhole "KW.WH.S.006.*.Epsilon Indi"
+	"display name" "Epsilon Indi"
+	color "KW.Color: Faction.None"
+	link "KW.S.***.Sirius Cluster" "KW.S.006.Epsilon Indi"
+	
+wormhole "KW.WH.S.007.*.Tau Ceti"
+	"display name" "Tau Ceti"
+	color "KW.Color: Faction.None"
+	link "KW.S.***.Sirius Cluster" "KW.S.007.Tau Ceti"
+	
+wormhole "KW.WH.S.008.*.Luyten's Star"
+	"display name" "Luyten's Star"
+	color "KW.Color: Faction.None"
+	link "KW.S.***.Sirius Cluster" "KW.S.008.Luyten's Star"
+
+wormhole "KW.WH.S.009.*.Kapteyn's Star"
+	"display name" "Kapteyn's Star"
+	color "KW.Color: Faction.None"
+	link "KW.S.***.Sirius Cluster" "KW.S.009.Kapteyn's Star"
+
+wormhole "KW.WH.S.010.*.van Maanen's Star"
+	"display name" "van Maanen's Star"
+	color "KW.Color: Faction.None"
+	link "KW.S.***.Sirius Cluster" "KW.S.010.van Maanen's Star"
+
+wormhole "KW.WH.S.011.*.Omicron Eridani"
+	"display name" "Omicron Eridani"
+	color "KW.Color: Faction.None"
+	link "KW.S.***.Sirius Cluster" "KW.S.011.Omicron Eridani"
+
+wormhole "KW.WH.S.012.*.Altair"
+	"display name" "Altair"
+	color "KW.Color: Faction.None"
+	link "KW.S.***.Sirius Cluster" "KW.S.012.Altair"
+
+wormhole "KW.WH.S.013.*.Sigma Draconis"
+	"display name" "Sigma Draconis"
+	color "KW.Color: Faction.None"
+	link "KW.S.***.Sirius Cluster" "KW.S.013.Sigma Draconis"
+
+wormhole "KW.WH.S.014.*.Eta Cassiopeiae"
+	"display name" "Eta Cassiopeiae"
+	color "KW.Color: Faction.None"
+	link "KW.S.***.Sirius Cluster" "KW.S.014.Eta Cassiopeiae"
+
+wormhole "KW.WH.S.015.*.Delta Pavonis"
+	"display name" "Delta Pavonis"
+	color "KW.Color: Faction.None"
+	link "KW.S.***.Sirius Cluster" "KW.S.015.Delta Pavonis"

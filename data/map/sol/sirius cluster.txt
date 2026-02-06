@@ -1,0 +1,599 @@
+system "KW.S.***.Sirius Cluster"
+	"display name" "Sirius Cluster"
+	pos 10277.671 -8617.144
+	government Uninhabited
+	haze _menu/haze-none
+	fleet "KW.Sol Merchants Small" 4000
+	fleet "KW.Sol Merchants Small" 6000
+	fleet "KW.Sol Merchants Large" 5000
+	fleet "KW.Sol Patrol" 5000
+	fleet "KW.Sol Pirates" 7500
+	object KW.S.000.*.Sol
+		sprite star/g3
+		object KW.S.000.~.Sol
+		object
+			sprite ui/target
+	object
+		sprite star/m5
+		distance 4218
+		offset -313.9
+	object "KW.S.001.*.Alpha Centauri"
+		sprite star/g3
+		distance 4285.406
+		offset -315.8
+		object "KW.S.001.~.Alpha Centauri"
+		object
+			sprite ui/target
+	object
+		sprite star/k0
+		distance 4362.399
+		offset -314.9
+	object "KW.S.002.*.Bernard's Star"
+		sprite star/m5
+		distance 5761
+		offset -31
+		object "KW.S.002.~.Bernard's Star"
+		object
+			sprite ui/target
+	object
+		sprite star/m8
+			scale 0.56
+		distance 4350
+		offset -244.1
+	object
+		sprite star/m3
+			scale 0.42
+		distance 3459
+		offset -185.1
+	object KW.S.003.*.Sirius
+		sprite star/a0
+		distance 8496
+		offset -227.2
+		object KW.S.003.~.Sirius
+		object
+			sprite ui/target
+	object
+		sprite star/a-dwarf
+		distance 8460.301
+		offset -226.8
+	object
+		sprite star/m5
+			scale 0.25
+		distance 2156
+		offset -175.5
+	object
+		sprite star/m5
+			scale 0.25
+		distance 2177.505
+		offset -175.1
+	object
+		sprite star/m4
+		distance 9534
+		offset -11.3
+	object
+		sprite star/m8
+		distance 9884
+		offset 110
+	object "KW.S.004.*.Epsilon Eridani"
+		sprite star/k3
+			scale 0.67
+		distance 7012
+		offset -195.9
+		object "KW.S.004.~.Epsilon Eridani"
+		object
+			sprite ui/target
+	object
+		sprite star/m3
+			scale 0.41
+		distance 4364
+		offset -5.1
+	object
+		sprite star/m4
+			scale 0.51
+		distance 5511
+		offset -270.2
+	object
+		sprite star/m5
+			scale 0.54
+		distance 6035
+		offset -47.1
+	object
+		sprite star/m5
+			scale 0.35
+		distance 6018.834
+		offset -47.3
+	object
+		sprite star/m8
+			scale 0.5
+		distance 6010.531
+		offset -46.95
+	object KW.S.005.*.Procyon
+		sprite star/f5
+			scale 0.97
+		distance 11118
+		offset -213.7
+		object "KW.S.005.~.Procyon"
+		object
+			sprite ui/target
+	object
+		sprite star/a-dwarf
+			scale 0.8
+		distance 11141.921
+		offset -213.9
+	object
+		sprite star/k5
+		distance 11352
+		offset -82.3
+	object
+		sprite star/k8
+			scale 0.75
+		distance 11415.04
+		offset -82.45
+	object
+		sprite star/m4
+			scale 0.91
+		distance 10549.06
+		offset -89.3
+	object
+		sprite star/m5
+			scale 0.92
+		distance 10591.015
+		offset -89.15
+	object
+		sprite star/m3
+			scale 0.95
+		distance 11011.321
+		offset -116.7
+	object
+		sprite star/m5
+			scale 0.8
+		distance 11045.977
+		offset -116.88
+	object
+		sprite star/m5
+			scale 0.84
+		distance 9988
+		offset -197
+	object "KW.S.006.*.Epsilon Indi"
+		sprite star/k5
+			scale 0.67
+		distance 7925.914
+		offset -336.2
+		object "KW.S.006.~.Epsilon Indi"
+		object
+			sprite ui/target
+	object
+		sprite planet/browndwarf-t
+			scale 0.067
+		distance 7885
+		offset -336.1
+	object
+		sprite planet/browndwarf-t
+			scale 0.067
+		distance 7882
+		offset -336.35
+	object "KW.S.007.*.Tau Ceti"
+		sprite star/g8
+			scale 0.29
+		distance 3400
+		offset -173.1
+		object "KW.S.007.~.Tau Ceti"
+		object
+			sprite ui/target
+	object
+		sprite star/m5
+			scale 0.6
+		distance 7275
+		offset -251.9
+	object
+		sprite star/m5
+			scale 0.19
+		distance 2354
+		offset -149.7
+	object "KW.S.008.*.Luyten's Star"
+		sprite star/m3
+			scale 0.98
+		distance 12186
+		offset -212.3
+		object "KW.S.008.~.Luyten's Star"
+		object
+			sprite ui/target
+	object
+		sprite star/m5
+			scale 0.8
+		distance 10055
+		offset -160.3
+	object "KW.S.009.*.Kapteyn's Star"
+		sprite star/m0
+			scale 0.81
+		distance 10339
+		offset -250.5
+		object "KW.S.009.~.Kapteyn's Star"
+		object
+			sprite ui/target
+	object
+		sprite star/m8
+			scale 0.92
+		distance 11775
+		offset -331.5
+	object
+		sprite planet/browndwarf-t
+			scale 0.06
+		distance 11772
+		offset -331.2
+	object
+		sprite star/m0
+			scale 0.72
+		distance 9211
+		offset -3.9
+	object
+		sprite star/m3
+		distance 13070
+		offset -104.7
+	object
+		sprite star/m5
+		distance 13104.46
+		offset -104.3
+	object
+		sprite star/m8
+			scale 0.96
+		distance 12588
+		offset -278.7
+	object
+		sprite star/m5
+			scale 0.99
+		distance 13370.573
+		offset -212.6
+	object
+		sprite star/m8
+			scale 0.99
+		distance 13351
+		offset -212.9
+	object
+		sprite star/m3
+			scale 0.92
+		distance 12737
+		offset -3.4
+	object
+		sprite star/m5
+			scale 0.32
+		distance 4488.341
+		offset -288.8
+	object
+		sprite star/m8
+			scale 0.22
+		distance 4481
+		offset -288.6
+	object
+		sprite star/m4
+			scale 0.24
+		distance 3464
+		offset -343.6
+	object "KW.S.010.*.van Maanen's Star"
+		sprite star/g-dwarf
+			scale 0.54
+		distance 7721
+		offset -121.9
+		object "KW.S.010.~.van Maanen's Star"
+		object
+			sprite ui/target
+	object
+		sprite star/m8
+			scale 0.69
+		distance 10029
+		offset -147.7
+	object
+		sprite star/m5
+		distance 14591
+		offset -288.3
+	object
+		sprite star/m5
+			scale 0.75
+		distance 11089
+		offset -261
+	object
+		sprite star/m4
+			scale 0.85
+		distance 12526
+		offset -98.6
+	object
+		sprite star/m3
+			scale 0.99
+		distance 14696
+		offset -343
+	object
+		sprite star/k-dwarf
+		distance 15052
+		offset -296
+	object
+		sprite star/m5
+			scale 0.38
+		distance 5817
+		offset -92.5	
+	object
+		sprite star/m5
+			scale 0.51
+		distance 7763
+		offset -52
+	object
+		sprite star/m5
+			scale 0.99
+		distance 15221
+		offset -78.9
+	object
+		sprite star/m5
+			scale 0.52
+		distance 15215
+		offset -78.6
+	object
+		sprite star/m8
+			scale 0.26
+		distance 15227
+		offset -79.05
+	object
+		sprite star/m3
+			scale 0.45
+		distance 7130
+		offset -168.5
+	object
+		sprite star/m5
+			scale 0.34
+		distance 7142
+		offset -170
+	object
+		sprite star/k8
+			scale 0.61
+		distance 9739
+		offset -165.9
+	object
+		sprite planet/browndwarf-l
+			scale 0.052
+		distance 8312
+		offset -260.6
+	object
+		sprite star/m5
+			scale 0.58
+		distance 9268
+		offset -216.5
+	object
+		sprite star/m0
+			scale 0.69
+		distance 11103
+		offset -349.2
+	object
+		sprite star/m8
+			scale 0.60
+		distance 9653
+		offset -236.7
+	object
+		sprite star/m4
+			scale 0.99
+		distance 16341
+		offset -346
+	object "KW.S.011.*.Omicron Eridani"
+		sprite star/k0
+			scale 0.79
+		distance 12964
+		offset -200.8
+		object "KW.S.011.~.Omicron Eridani"
+		object
+			sprite ui/target
+	object
+		sprite star/a-dwarf
+			scale 0.79
+		distance 12957
+		offset -201.1
+	object
+		sprite star/m5
+			scale 0.49
+		distance 12985
+		offset -200.65
+	object
+		sprite star/m5
+			scale 0.97
+		distance 16041
+		offset -100.6
+	object
+		sprite star/k0
+			scale 0.98
+		distance 16268
+		offset -29.9
+	object
+		sprite star/k5
+			scale 0.78
+		distance 16288
+		offset -30
+	object KW.S.012.*.Altair
+		sprite star/a8
+			scale 0.99
+		distance 16568
+		offset -47.8
+		object "KW.S.012.~.Altair"
+		object
+			sprite ui/target
+	object
+		sprite star/m5
+			scale 0.80
+		distance 13706
+		offset -207.5
+	object
+		sprite star/m5
+			scale 0.60
+		distance 13746
+		offset -207.6
+	object
+		sprite star/m4
+			scale 0.24
+		distance 4127
+		offset -84
+	object
+		sprite star/m8
+			scale 0.18
+		distance 4155
+		offset -83.7
+	object
+		sprite star/m4
+			scale 0.98
+		distance 17239
+		offset -204.6
+
+planet KW.S.000.*.Sol
+	spaceport ``
+	wormhole "KW.WH.S.000.*.Sol"
+	government Uninhabited
+	
+planet KW.S.000.~.Sol
+	spaceport ``
+	wormhole "KW.WH.S.***.*.Sirius Cluster"
+	government Uninhabited
+
+planet "KW.S.001.*.Alpha Centauri"
+	spaceport ``
+	wormhole "KW.WH.S.001.*.Alpha Centauri"
+	government Uninhabited
+
+planet "KW.S.001.~.Alpha Centauri"
+	spaceport ``
+	wormhole "KW.WH.S.***.*.Sirius Cluster"
+	government Uninhabited
+
+planet "KW.S.002.*.Bernard's Star"
+	spaceport ``
+	wormhole "KW.WH.S.002.*.Bernard's Star"
+	government Uninhabited
+
+planet "KW.S.002.~.Bernard's Star"
+	spaceport ``
+	wormhole "KW.WH.S.***.*.Sirius Cluster"
+	government Uninhabited
+
+planet KW.S.003.*.Sirius
+	spaceport ``
+	wormhole "KW.WH.S.003.*.Sirius"
+	government Uninhabited
+
+planet KW.S.003.~.Sirius
+	spaceport ``
+	wormhole "KW.WH.S.***.*.Sirius Cluster"
+	government Uninhabited
+
+planet "KW.S.004.*.Epsilon Eridani"
+	spaceport ``
+	wormhole "KW.WH.S.004.*.Epsilon Eridani"
+	government Uninhabited
+
+planet "KW.S.004.~.Epsilon Eridani"
+	spaceport ``
+	wormhole "KW.WH.S.***.*.Sirius Cluster"
+	government Uninhabited
+
+planet KW.S.005.*.Procyon
+	spaceport ``
+	wormhole "KW.WH.S.005.*.Procyon"
+	government Uninhabited
+
+planet KW.S.005.~.Procyon
+	spaceport ``
+	wormhole "KW.WH.S.***.*.Sirius Cluster"
+	government Uninhabited
+
+planet "KW.S.006.*.Epsilon Indi"
+	spaceport ``
+	wormhole "KW.WH.S.006.*.Epsilon Indi"
+	government Uninhabited
+
+planet "KW.S.006.~.Epsilon Indi"
+	spaceport ``
+	wormhole "KW.WH.S.***.*.Sirius Cluster"
+	government Uninhabited
+
+planet "KW.S.007.*.Tau Ceti"
+	spaceport ``
+	wormhole "KW.WH.S.007.*.Tau Ceti"
+	government Uninhabited
+
+planet "KW.S.007.~.Tau Ceti"
+	spaceport ``
+	wormhole "KW.WH.S.***.*.Sirius Cluster"
+	government Uninhabited
+
+planet "KW.S.008.*.Luyten's Star"
+	spaceport ``
+	wormhole "KW.WH.S.008.*.Luyten's Star"
+	government Uninhabited
+
+planet "KW.S.008.~.Luyten's Star"
+	spaceport ``
+	wormhole "KW.WH.S.***.*.Sirius Cluster"
+	government Uninhabited
+
+planet "KW.S.009.*.Kapteyn's Star"
+	spaceport ``
+	wormhole "KW.WH.S.009.*.Kapteyn's Star"
+	government Uninhabited
+
+planet "KW.S.009.~.Kapteyn's Star"
+	spaceport ``
+	wormhole "KW.WH.S.***.*.Sirius Cluster"
+	government Uninhabited
+
+planet "KW.S.010.*.van Maanen's Star"
+	spaceport ``
+	wormhole "KW.WH.S.010.*.van Maanen's Star"
+	government Uninhabited
+
+planet "KW.S.010.~.van Maanen's Star"
+	spaceport ``
+	wormhole "KW.WH.S.***.*.Sirius Cluster"
+	government Uninhabited
+
+planet "KW.S.011.*.Omicron Eridani"
+	spaceport ``
+	wormhole "KW.WH.S.011.*.Omicron Eridani"
+	government Uninhabited
+	
+planet "KW.S.011.~.Omicron Eridani"
+	spaceport ``
+	wormhole "KW.WH.S.***.*.Sirius Cluster"
+	government Uninhabited
+
+planet KW.S.012.*.Altair
+	spaceport ``
+	wormhole "KW.WH.S.012.*.Altair"
+	government Uninhabited
+
+planet KW.S.012.~.Altair
+	spaceport ``
+	wormhole "KW.WH.S.***.*.Sirius Cluster"
+	government Uninhabited
+
+planet "KW.S.013.*.Sigma Draconis"
+	spaceport ``
+	wormhole "KW.WH.S.013.*.Sigma Draconis"
+	government Uninhabited
+
+planet "KW.S.013.~.Sigma Draconis"
+	spaceport ``
+	wormhole "KW.WH.S.***.*.Sirius Cluster"
+	government Uninhabited
+
+planet "KW.S.014.*.Eta Cassiopeiae"
+	spaceport ``
+	wormhole "KW.WH.S.014.*.Eta Cassiopeiae"
+	government Uninhabited
+
+planet "KW.S.014.~.Eta Cassiopeiae"
+	spaceport ``
+	wormhole "KW.WH.S.***.*.Sirius Cluster"
+	government Uninhabited
+
+planet "KW.S.015.*.Delta Pavonis"
+	spaceport ``
+	wormhole "KW.WH.S.015.*.Delta Pavonis"
+	government Uninhabited
+
+planet "KW.S.015.~.Delta Pavonis"
+	spaceport ``
+	wormhole "KW.WH.S.***.*.Sirius Cluster"
+	government Uninhabited
+

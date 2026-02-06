@@ -4,13 +4,13 @@ system KW.S.000.Sol
 	government KW.Sol
 	attributes iron-source
 	arrival 1080
-	habitable 1050
+	habitable 2100
 	belt 1529
 	haze _menu/haze-67
-	link "KW.S.001.Alpha Centauri"
-	link KW.S.013.Vega
-	link KW.S.014.Denebola
-	link KW.S.015.Capella
+	#link "KW.S.001.Alpha Centauri"
+	#link KW.S.013.Vega
+	#link KW.S.014.Denebola
+	#link KW.S.015.Capella
 	minables iron 45 4
 	trade Clothing 320
 	trade Electronics 824
@@ -22,81 +22,98 @@ system KW.S.000.Sol
 	trade Medical 795
 	trade Metal 274
 	trade Plastic 502
-	object
-		sprite star/k0
-		period 10
-	object
-		sprite planet/mercury
-		distance 289.647
-		period 60
-	object
-		sprite planet/venus
-		distance 533.534
-		period 150
-	object
-		sprite planet/earth
-		distance 965.669
-		period 365.25
-		object KW.S.000.0A.Yekaterinburg
-			sprite planet/_poi
-				scale 0.5
-			distance 61.9
-			period 365.25
-			offset -10
-		object KW.S.000.0B.Alps
-			sprite planet/_poi
-				scale 0.5
-			distance 75.9
-			period 365.25
-			offset 60
-		object KW.S.000.0C.Kyoto
-			sprite planet/_poi
-				scale 0.5
-			distance 74
-			period 365.25
-			offset -80
-		object "KW.S.000.0D.Riau Island"
-			sprite planet/_poi
-				scale 0.5
-			distance 71.4
-			period 365.25
-			offset -145
-		object KW.S.000.1.Moon
-			sprite planet/luna
-			distance 201.24
-			period 27.3
-	object
-		sprite planet/mars
-		distance 1471.43
-		period 687
-	object
-		sprite planet/jupiter
-		distance 3339
-		period 2348.4
-		object KW.S.000.2.Io
-			sprite planet/io
-			distance 238.221
-			period 20.6
-	object
-		sprite planet/saturn
-		distance 5562
-		period 5048.87
-	object
-		sprite planet/uranus
-		distance 10373
-		period 12858.9
-	object
-		sprite planet/neptune
-		distance 15730
-		period 24012.7
 	fleet "KW.Sol Merchants Small" 1750
 	fleet "KW.Sol Merchants Large" 2500
 	fleet "KW.Sol Patrol" 2500
 	fleet "KW.Sol Patrol Machine" 3500
 	fleet "KW.Sol Miner" 1600
 	fleet "KW.Sol Miner Machine" 6000
-	#fleet "KW.Sol Pirates" 1000 #4000
-
+	fleet "KW.Sol Pirates" 8000
+	fleet "KW.Sol Pirates" 10000
+	fleet "KW.Sol Pirates" 15000
+	object
+		sprite star/k0
+		period 10
+	object
+		sprite planet/mercury_1
+			scale 0.1
+		distance 725.503
+		period 60
+	object
+		sprite planet/venus_1
+			scale 0.3
+		distance 1328.066
+		period 150
+	object
+		sprite planet/earthlike_1
+			scale 0.4
+		distance 2084.345
+		period 365.25
+		object KW.S.000.0A.Yekaterinburg
+			sprite planet/_poi
+				scale 0.5
+			distance 202.693
+			period 365.25
+			offset -10
+		object KW.S.000.0B.Alps
+			sprite planet/_poi
+				scale 0.5
+			distance 193.406
+			period 365.25
+			offset 60
+		object KW.S.000.0C.Kyoto
+			sprite planet/_poi
+				scale 0.5
+			distance 199.999
+			period 365.25
+			offset -80
+		object "KW.S.000.0D.Riau Island"
+			sprite planet/_poi
+				scale 0.5
+			distance 196.379
+			period 365.25
+			offset -145
+		object KW.S.000.1.Moon
+			sprite planet/luna_1
+				scale 0.05
+			distance 394.732
+			period 27.3
+	object
+		sprite planet/mars_1
+			scale 0.3
+		distance 3073.515
+		period 687
+	object
+		sprite planet/jupiter_1
+			scale 4
+		distance 10313.441
+		period 2348.4
+		object KW.S.000.2.Io
+			sprite planet/io_1
+				scale 0.15
+			distance 2643.878
+			period 20.6
+	object
+		sprite planet/saturn_1
+			scale 2.5
+		distance 15927.382
+		period 5048.87
+	object
+		sprite planet/uranus_1
+			scale 1.2
+		distance 19663.717
+		period 12858.9
+	object
+		sprite planet/neptune_1
+			scale 0.8
+		distance 25437.63
+		period 24012.7
+	object KW.S.000.~.Sol
+		sprite planet/_exit
+			scale 0.5
+		distance 30000
+		period 24012.7
+		object KW.S.000.*.Sol
 
 system "KW.S.001.Alpha Centauri"
 	"display name" "Alpha Centauri"
@@ -105,9 +122,13 @@ system "KW.S.001.Alpha Centauri"
 	arrival 1200
 	habitable 1200
 	haze _menu/haze-33
-	link KW.S.000.Sol
-	link KW.S.014.Denebola
-	link KW.S.021.Algieba
+	#link KW.S.000.Sol
+	#link KW.S.014.Denebola
+	#link KW.S.021.Algieba
+	fleet "KW.Sol Patrol" 3500
+	fleet "KW.Sol Patrol Machine" 2500
+	fleet "KW.Sol Merchants Small" 1300
+	fleet "KW.Sol Merchants Large" 1800
 	object
 		sprite star/g3
 		distance 40.129
@@ -141,10 +162,12 @@ system "KW.S.001.Alpha Centauri"
 		sprite planet/gas15-b
 		distance 5258
 		period 833.859
-	fleet "KW.Sol Patrol" 3500
-	fleet "KW.Sol Patrol Machine" 2500
-	fleet "KW.Sol Merchants Small" 1300
-	fleet "KW.Sol Merchants Large" 1800
+	object "KW.S.001.~.Alpha Centauri"
+		sprite planet/_exit
+			scale 0.5
+		distance 6000
+		period 833.859
+		object "KW.S.001.*.Alpha Centauri"
 
 system KW.S.002.Rigel
 	"display name" Rigel
@@ -153,8 +176,8 @@ system KW.S.002.Rigel
 	arrival 5000
 	habitable 20000
 	haze _menu/haze-67
-	link KW.S.022.Adhara
-	link KW.S.025.Arneb
+	#link KW.S.022.Adhara
+	#link KW.S.025.Arneb
 	trade Clothing 345
 	trade Electronics 758
 	trade Food 356
@@ -211,9 +234,9 @@ system KW.S.003.Arcturus
 	habitable 490
 	belt 200
 	haze _menu/haze-33
-	link KW.S.008.Deneb
-	link KW.S.013.Vega
-	link KW.S.020.Vindemiatrix
+	#link KW.S.008.Deneb
+	#link KW.S.013.Vega
+	#link KW.S.020.Vindemiatrix
 	minables iron 8 3
 	minables silicon 13 2.5
 	object
@@ -253,8 +276,8 @@ system KW.S.004.Achernar
 	arrival 2500
 	habitable 9000
 	haze _menu/haze-33
-	link KW.S.007.Acrux
-	link KW.S.014.Denebola
+	#link KW.S.007.Acrux
+	#link KW.S.014.Denebola
 	object
 		sprite star/b3
 		distance 56.399
@@ -334,8 +357,8 @@ system KW.S.006.Spica
 	arrival 5000
 	habitable 11000
 	haze _menu/haze-33
-	link KW.S.020.Vindemiatrix
-	link KW.S.023.Shaula
+	#link KW.S.020.Vindemiatrix
+	#link KW.S.023.Shaula
 	object
 		sprite star/b0
 		distance 192.007
@@ -365,9 +388,9 @@ system KW.S.007.Acrux
 	arrival 5000
 	habitable 13000
 	haze _menu/haze-33
-	link KW.S.004.Achernar
-	link KW.S.009.Agena
-	link KW.S.020.Vindemiatrix
+	#link KW.S.004.Achernar
+	#link KW.S.009.Agena
+	#link KW.S.020.Vindemiatrix
 	object
 		sprite star/b0
 		distance 49.258
@@ -414,9 +437,9 @@ system KW.S.008.Deneb
 	arrival 3400
 	habitable 3400
 	haze _menu/haze-67
-	link KW.B.017.Mora
-	link KW.S.003.Arcturus
-	link KW.S.011.Veil
+	#link KW.B.017.Mora
+	#link KW.S.003.Arcturus
+	#link KW.S.011.Veil
 	trade Clothing 391
 	trade Food 342
 	trade Metal 436
@@ -452,7 +475,7 @@ system KW.S.009.Agena
 	arrival 5000
 	habitable 9000
 	haze _menu/haze-33
-	link KW.S.007.Acrux
+	#link KW.S.007.Acrux
 	object
 		sprite star/b0
 		distance 69.477
@@ -487,7 +510,7 @@ system KW.S.010.Pelican
 	arrival 5000
 	habitable 100000
 	haze _menu/haze-brown
-	link KW.S.011.Veil
+	#link KW.S.011.Veil
 	trade Clothing 435
 	trade Electronics 683
 	trade Equipment 496
@@ -522,8 +545,8 @@ system KW.S.011.Veil
 	arrival 5000
 	habitable 22300
 	haze _menu/haze-brown
-	link KW.S.008.Deneb
-	link KW.S.010.Pelican
+	#link KW.S.008.Deneb
+	#link KW.S.010.Pelican
 	object
 		sprite star/nova
 		period 600
@@ -558,7 +581,7 @@ system KW.S.012.Alnilam
 	arrival 5000
 	habitable 17025
 	haze _menu/haze-33
-	link KW.S.025.Arneb
+	#link KW.S.025.Arneb
 	object
 		sprite star/b-supergiant
 		period 100
@@ -614,8 +637,8 @@ system KW.S.013.Vega
 	arrival 3650
 	habitable 3650
 	haze _menu/haze-33
-	link KW.S.000.Sol
-	link KW.S.003.Arcturus
+	#link KW.S.000.Sol
+	#link KW.S.003.Arcturus
 	object
 		sprite star/a0
 	object
@@ -660,10 +683,10 @@ system KW.S.014.Denebola
 	habitable 3400
 	belt 400
 	haze _menu/haze-67
-	link KW.S.000.Sol
-	link "KW.S.001.Alpha Centauri"
-	link KW.S.004.Achernar
-	link KW.S.022.Adhara
+	#link KW.S.000.Sol
+	#link "KW.S.001.Alpha Centauri"
+	#link KW.S.004.Achernar
+	#link KW.S.022.Adhara
 	minables lead 40 3
 	object
 		sprite star/a3
@@ -705,8 +728,8 @@ system KW.S.015.Capella
 	arrival 700
 	habitable 700
 	haze _menu/haze-67
-	link KW.S.000.Sol
-	link KW.S.019.Alkaid
+	#link KW.S.000.Sol
+	#link KW.S.019.Alkaid
 	object
 		sprite star/g3
 		distance 42.7
@@ -747,7 +770,7 @@ system KW.S.016.Regulus
 	arrival 5000
 	habitable 6000
 	haze _menu/haze-67
-	link KW.S.021.Algieba
+	#link KW.S.021.Algieba
 	object
 		sprite star/b8
 		distance 109.159
@@ -802,7 +825,7 @@ system KW.S.017.Alioth
 	habitable 3650
 	belt 4200
 	haze _menu/haze-133
-	link KW.S.018.Phecda
+	#link KW.S.018.Phecda
 	minables lead 56 2.5
 	minables silver 21 3.8
 	trade Clothing 179
@@ -851,8 +874,8 @@ system KW.S.018.Phecda
 	arrival 4000
 	habitable 4000
 	haze _menu/haze-133
-	link KW.S.017.Alioth
-	link KW.S.021.Algieba
+	#link KW.S.017.Alioth
+	#link KW.S.021.Algieba
 	minables silicon 34 4
 	object
 		sprite star/a0
@@ -888,7 +911,7 @@ system KW.S.019.Alkaid
 	arrival 5000
 	habitable 6300
 	haze _menu/haze-67
-	link KW.S.015.Capella
+	#link KW.S.015.Capella
 	minables lead 45 4
 	object
 		sprite star/b3
@@ -917,9 +940,9 @@ system KW.S.020.Vindemiatrix
 	arrival 550
 	habitable 550
 	haze _menu/haze-33
-	link KW.S.003.Arcturus
-	link KW.S.006.Spica
-	link KW.S.007.Acrux
+	#link KW.S.003.Arcturus
+	#link KW.S.006.Spica
+	#link KW.S.007.Acrux
 	object
 		sprite star/g8
 		period 100
@@ -969,10 +992,10 @@ system KW.S.021.Algieba
 	habitable 1100
 	belt 800
 	haze _menu/haze-133
-	link "KW.S.001.Alpha Centauri"
-	link KW.S.016.Regulus
-	link KW.S.018.Phecda
-	link "KW.S.024.Crab Nebula"
+	#link "KW.S.001.Alpha Centauri"
+	#link KW.S.016.Regulus
+	#link KW.S.018.Phecda
+	#link "KW.S.024.Crab Nebula"
 	minables aluminum 34 3.5
 	minables iron 112 2
 	object
@@ -1020,9 +1043,9 @@ system KW.S.022.Adhara
 	arrival 5000
 	habitable 15000
 	haze _menu/haze-67
-	link KW.S.002.Rigel
-	link KW.S.014.Denebola
-	link "KW.S.024.Crab Nebula"
+	#link KW.S.002.Rigel
+	#link KW.S.014.Denebola
+	#link "KW.S.024.Crab Nebula"
 	object
 		sprite star/b-giant
 		distance 71.548
@@ -1063,7 +1086,7 @@ system KW.S.023.Shaula
 	arrival 5000
 	habitable 14000
 	haze _menu/haze-33
-	link KW.S.006.Spica
+	#link KW.S.006.Spica
 	object
 		sprite star/b0
 		distance 97.46
@@ -1085,8 +1108,8 @@ system "KW.S.024.Crab Nebula"
 	arrival 5000
 	habitable 25000
 	haze _menu/haze-brown
-	link KW.S.021.Algieba
-	link KW.S.022.Adhara
+	#link KW.S.021.Algieba
+	#link KW.S.022.Adhara
 	object
 		sprite star/protostar-yellow
 		period 250
@@ -1110,8 +1133,8 @@ system KW.S.025.Arneb
 	arrival 2560
 	habitable 2560
 	haze _menu/haze-67
-	link KW.S.002.Rigel
-	link KW.S.012.Alnilam
+	#link KW.S.002.Rigel
+	#link KW.S.012.Alnilam
 	trade Clothing 353
 	trade Electronics 766
 	trade Equipment 450
@@ -1164,9 +1187,9 @@ system KW.S.026.Ceraus
 	arrival 5000
 	habitable 5600
 	haze _menu/haze-67
-	link KW.P.004.'ephe'oti
-	link KW.S.028.Anthro
-	link KW.S.029.Ceris
+	#link KW.P.004.'ephe'oti
+	#link KW.S.028.Anthro
+	#link KW.S.029.Ceris
 	trade Clothing 410
 	trade Electronics 790
 	trade Equipment 655
@@ -1225,7 +1248,7 @@ system KW.S.027.Civi
 	arrival 950
 	habitable 950
 	haze _menu/haze-67
-	link KW.S.028.Anthro
+	#link KW.S.028.Anthro
 	object
 		sprite star/k5-old
 		period 100
@@ -1274,9 +1297,9 @@ system KW.S.028.Anthro
 	arrival 3228
 	habitable 3228.099
 	haze _menu/haze-67
-	link KW.P.004.'ephe'oti
-	link KW.S.026.Ceraus
-	link KW.S.027.Civi
+	#link KW.P.004.'ephe'oti
+	#link KW.S.026.Ceraus
+	#link KW.S.027.Civi
 	minables tungsten 26 2
 	minables silicon 100 4
 	object
@@ -1332,8 +1355,8 @@ system KW.S.029.Ceris
 	arrival 5000
 	habitable 6775.369
 	haze _menu/haze-133
-	link KW.B.027.Plei
-	link KW.S.026.Ceraus
+	#link KW.B.027.Plei
+	#link KW.S.026.Ceraus
 	object
 		sprite star/k-giant
 		distance 449
@@ -1387,5 +1410,4 @@ system KW.S.029.Ceris
 		sprite planet/browndwarf-y-rogue
 		distance 15641.296
 		period 2551.907
-
 
