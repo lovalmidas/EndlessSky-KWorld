@@ -252,7 +252,7 @@ outfit "KW.Encyclos Director"
 	description `WIP`
 	description `The Director is an extension of the Engine and can only be built with the corresponding engine outfitted on your ship.`
 
-	outfit "KW.Tricyclos Director"
+outfit "KW.Tricyclos Director"
 	"display name" "Tricyclos Director"
 	category "Engines"
 	series "Engines"
@@ -272,9 +272,8 @@ outfit "KW.Encyclos Director"
 	description `WIP`
 	description `The Director is an extension of the Engine and can only be built with the corresponding engine outfitted on your ship.`
 
-	outfit "KW.Turbos Director"
-	"display name" "	outfit "KW.Turbos Director"
- Director"
+outfit "KW.Turbos Director"
+	"display name" "KW.Turbos Director"
 	category "Engines"
 	series "Engines"
 	index 10211000
