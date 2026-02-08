@@ -1,0 +1,171 @@
+system KW.S.000.Sol
+	"display name" Sol
+	pos 10257.393 -8596.208
+	government KW.Sol
+	attributes iron-source
+	arrival 1080
+	habitable 2100
+	belt 1529
+	haze _menu/haze-67
+	minables iron 45 4
+	trade Clothing 320
+	trade Electronics 824
+	trade Equipment 402
+	trade Food 318
+	trade "Heavy Metals" 837
+	trade Industrial 821
+	trade "Luxury Goods" 1514
+	trade Medical 795
+	trade Metal 274
+	trade Plastic 502
+	fleet "KW.Sol Merchants Small" 1750
+	fleet "KW.Sol Merchants Large" 2500
+	fleet "KW.Sol Patrol" 2500
+	fleet "KW.Sol Patrol Machine" 3500
+	fleet "KW.Sol Miner" 1600
+	fleet "KW.Sol Miner Machine" 6000
+	fleet "KW.Sol Pirates" 8000
+	fleet "KW.Sol Pirates" 10000
+	fleet "KW.Sol Pirates" 15000
+	object
+		sprite star/k0
+		period 10
+	object
+		sprite planet/mercury_1
+			scale 0.1
+		distance 725.503
+		period 60
+	object
+		sprite planet/venus_1
+			scale 0.25
+		distance 1328.066
+		period 150
+	object
+		sprite planet/earthlike_1
+			scale 0.4
+		distance 2084.345
+		period 365.25
+		object KW.S.000.0A.Yekaterinburg
+			sprite planet/_poi_city_5
+				scale 0.5
+			distance 203.87
+			period 365.25
+			offset -10
+		object KW.S.000.0B.Alps
+			sprite planet/_poi_city_3
+				scale 0.5
+			distance 201.493
+			period 365.25
+			offset 60
+		object KW.S.000.0C.Kyoto
+			sprite planet/_poi_city_1
+				scale 0.5
+			distance 208.659
+			period 365.25
+			offset -80
+		object "KW.S.000.0D.Riau Island"
+			sprite planet/_poi_city_1
+				scale 0.5
+			distance 195.447
+			period 365.25
+			offset -145
+		object KW.S.000.1.Moon
+			sprite planet/luna_1
+				scale 0.05
+			distance 283.54
+			period 27.3
+	object
+		sprite planet/mars_1
+			scale 0.3
+		distance 2670.622
+		period 687
+	object
+		sprite planet/jupiter_1
+			scale 1.5
+		distance 7883.684
+		period 2348.4
+		object 
+			sprite planet/io_1
+				scale 0.15
+			distance 1673.385
+			period 20.6
+			object KW.S.000.2.Io
+				sprite planet/_poi_mining
+					scale 0.5
+				distance 50
+				period 1673.385
+				offset 60
+	object
+		sprite planet/saturn_1
+		distance 11357.677
+		period 5048.87
+	object
+		sprite planet/uranus_1
+			scale 0.8
+		distance 14980.885
+		period 12858.9
+	object
+		sprite planet/neptune_1
+			scale 0.5
+		distance 17156.068
+		period 24012.7
+	object KW.S.000.~.Sol
+		sprite planet/_exit
+			scale 0.5
+		distance 18000
+		period 24012.7
+		object KW.S.000.*.Sol
+
+system "KW.S.001.Alpha Centauri"
+	"display name" "Alpha Centauri"
+	pos 10272.384 -8604.848
+	government Uninhabited
+	arrival 1200
+	habitable 2400
+	haze _menu/haze-33
+	fleet "KW.Sol Patrol" 3500
+	fleet "KW.Sol Patrol Machine" 2500
+	fleet "KW.Sol Merchants Small" 1300
+	fleet "KW.Sol Merchants Large" 1800
+	object
+		sprite star/g3
+		distance 40.129
+		period 141
+	object
+		sprite star/k0
+		distance 46.784
+		period 141
+		offset 180
+	object KW.S.001.0.Advent
+		sprite planet/ocean_2
+			scale 0.3
+		distance 2164.448
+		period 66.584
+	object
+		sprite planet/desert_13
+			scale 0.45
+		distance 3702.463
+		period 182.849
+	object
+		sprite planet/rock_2
+			scale 0.35
+		distance 5414.171
+		period 610.888
+		object
+			sprite planet/rock_15
+				scale 0.1
+			distance 298.559
+			period 312.411
+	object
+		sprite planet/gas_22
+			scale 1.2
+		distance 10551.798
+		period 833.859
+	object "KW.S.001.~.Alpha Centauri"
+		sprite planet/_exit
+			scale 0.5
+		distance 12500
+		period 833.859
+		object "KW.S.001.*.Alpha Centauri"
+
+

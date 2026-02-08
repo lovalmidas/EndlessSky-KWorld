@@ -1,0 +1,9 @@
+system "KW.S.013.Sigma Draconis"
+	pos 10296.014 -8489.07
+	government Uninhabited
+	arrival 1200
+	habitable 2300
+	haze _menu/haze-33
+	fleet "KW.Sol Patrol" 6000
+	fleet "KW.Sol Patrol Machine" 4000
+

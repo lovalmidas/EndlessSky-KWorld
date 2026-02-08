@@ -1,0 +1,38 @@
+system "KW.S.002.Bernard's Star"
+	pos 10247.014 -8610.959
+	government Uninhabited
+	arrival 1200
+	habitable 2300
+	haze _menu/haze-33
+	fleet "KW.Sol Patrol" 6000
+	fleet "KW.Sol Patrol Machine" 4000
+	object
+		sprite star/m5
+	object
+		sprite planet/desert_21
+			scale 0.15
+		distance 1509.882
+		period 1389.728
+	object
+		sprite planet/neptune_2
+			scale 0.8
+		distance 7800.847
+		period 2539.615
+	object
+		sprite planet/io_2
+			scale 0.2
+		distance 8933.73
+		period 3733.813
+	object
+		sprite planet/_exit
+			scale 0.5
+		distance 10000
+		period 3733.81
+		object
+			sprite planet/ganymede
+			distance 547
+			period 0
+		object
+			sprite planet/titan_1
+			distance 659
+			period 0
