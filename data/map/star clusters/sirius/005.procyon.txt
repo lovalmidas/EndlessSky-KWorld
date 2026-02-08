@@ -1,9 +1,58 @@
 system KW.S.005.Procyon
+	"display name" Procyon
 	pos 10290.681 -8556.626
-	government Uninhabited
+	government KW.Sol
 	arrival 1200
-	habitable 2300
+	habitable 4930
 	haze _menu/haze-33
 	fleet "KW.Sol Patrol" 6000
 	fleet "KW.Sol Patrol Machine" 4000
-
+	object
+		sprite star/f5
+		distance 12
+		period 115
+	object
+		sprite star/a-dwarf
+		distance 100
+		period 115
+		offset 180
+	object
+		sprite planet/rock_2
+			scale 0.15
+		distance 455
+		period 55.2
+	object
+		sprite planet/desert_4
+			scale 0.18
+		distance 760
+		period 119.4
+	object
+		sprite planet/dust_9
+			scale 0.4
+		distance 2500
+		period 712
+	object
+		sprite planet/gas_6
+			scale 0.4
+		distance 7600
+		period 3775
+		object
+			sprite planet/rock_21
+				scale 0.15
+			distance 516
+			period 14.7
+			object
+				sprite mapicon/_poi_lab
+				distance 77
+				period 14.7
+				offset 50
+	object
+		sprite planet/gas_15
+			scale 0.9
+		distance 9200
+		period 5027
+	object KW.S.005.~.Procyon
+		sprite mapicon/_exit
+		distance 10000
+		period 5027
+		object KW.S.005.*.Procyon

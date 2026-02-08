@@ -178,7 +178,7 @@ system "KW.S.***.Sirius Cluster"
 	object
 		sprite planet/browndwarf-t
 			scale 0.067
-		distance 7882
+		distance 7902
 		offset -336.35
 	object "KW.S.007.*.Tau Ceti"
 		sprite star/g8
