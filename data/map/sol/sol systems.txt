@@ -81,7 +81,7 @@ system KW.S.003.Arcturus
 		distance 1116.463
 		period 604.625
 		object
-			sprite planet/oberon-b
+			sprite planet/oberon_2
 			distance 243
 			period 233.294
 	object
@@ -154,7 +154,7 @@ system KW.S.005.Canopus
 		distance 3175.149
 		period 2001.529
 		object KW.S.005.0.Marigold
-			sprite planet/forest_25
+			sprite planet/forest_15
 			distance 568
 			period 70.465
 		object
@@ -194,7 +194,7 @@ system KW.S.006.Spica
 		distance 4876
 		period 1403.417
 		object
-			sprite planet/tethys
+			sprite planet/tethys_1
 			distance 291
 			period 305.727
 
@@ -219,7 +219,7 @@ system KW.S.007.Acrux
 		distance 5983.203
 		period 675.597
 		object
-			sprite planet/miranda-b
+			sprite planet/miranda_2
 			distance 292
 			period 236.04
 		object
@@ -298,7 +298,7 @@ system KW.S.009.Agena
 		distance 315.554
 		period 30.754
 	object
-		sprite planet/vulpa
+		sprite planet/lava_16_v1
 		distance 3784.155
 		period 271.176
 		object
@@ -361,7 +361,7 @@ system KW.S.011.Veil
 			distance 1783.673
 			period 120.653
 		object
-			sprite planet/miranda-b
+			sprite planet/miranda_2
 			distance 6278.38
 			period 445.568
 	object
@@ -455,7 +455,7 @@ system KW.S.013.Vega
 			distance 190
 			period 98.999
 		object
-			sprite planet/miranda-b
+			sprite planet/miranda_2
 			distance 332
 			period 286.167
 	object
@@ -583,7 +583,7 @@ system KW.S.016.Regulus
 			distance 374
 			period 445.453
 		object
-			sprite planet/oberon
+			sprite planet/oberon_1
 			distance 470
 			period 627.54
 	object
@@ -985,7 +985,7 @@ system KW.S.026.Ceraus
 		distance 7724.674
 		period 3628.994
 		object
-			sprite planet/miranda
+			sprite planet/miranda_1
 			distance 292
 			period 236.04
 		object
@@ -1015,7 +1015,7 @@ system KW.S.027.Civi
 			distance 184
 			period 94.347
 	object KW.S.027.0.Ian
-		sprite planet/forest_21
+		sprite planet/forest_11
 		distance 1000
 		period 410.391
 	object
@@ -1031,7 +1031,7 @@ system KW.S.027.Civi
 			distance 375.5
 			period 190.429
 		object
-			sprite planet/tethys-b
+			sprite planet/tethys_2
 			distance 515.5
 			period 720.837
 	object
@@ -1082,7 +1082,7 @@ system KW.S.028.Anthro
 			distance 265
 			period 163.068
 	object
-		sprite planet/jupiter-b
+		sprite planet/jupiter_2
 		distance 3671
 		period 1565.897
 	object

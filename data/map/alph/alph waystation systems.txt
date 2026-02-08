@@ -32,7 +32,7 @@ system KW.A.W1.Enermata
 			distance 359.019
 			period 239.078
 	object
-		sprite planet/vulpa
+		sprite planet/lava_16_v1
 		distance 4043
 		period 768.101
 		object

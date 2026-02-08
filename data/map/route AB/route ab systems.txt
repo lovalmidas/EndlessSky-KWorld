@@ -35,7 +35,7 @@ system KW.AB.001.Nemek
 		distance 1057
 		period 501.928
 	object
-		sprite planet/tethys-b
+		sprite planet/tethys_2
 		distance 1829.995
 		period 771.673
 
@@ -74,7 +74,7 @@ system KW.AB.002.Varm
 			distance 307
 			period 203.333
 		object
-			sprite planet/miranda
+			sprite planet/miranda_1
 			distance 445
 			period 444.07
 	object
@@ -167,7 +167,7 @@ system KW.AB.004.Murk
 		sprite star/b-supergiant
 		period 100
 	object
-		sprite planet/rock_41
+		sprite planet/rock_31
 		distance 1345
 		period 151.217
 	object
@@ -269,7 +269,7 @@ system KW.AB.006.Eji
 		distance 4884
 		period 3313.456
 		object
-			sprite planet/oberon
+			sprite planet/oberon_1
 			distance 283
 			period 293.207
 		object
@@ -359,7 +359,7 @@ system KW.AB.009.2kP
 		distance 4423.72
 		period 4070.718
 		object
-			sprite planet/oberon-b
+			sprite planet/oberon_2
 			distance 211
 			period 188.764
 		object
@@ -393,7 +393,7 @@ system "KW.AB.010.Exit F"
 		distance 2583
 		period 448.301
 	object
-		sprite planet/vulpa
+		sprite planet/lava_16_v1
 		distance 5512
 		period 1397.484
 		object
@@ -429,11 +429,11 @@ system "KW.AB.011.Interstellar Plains"
 		sprite star/f-supergiant
 		period 100
 	object
-		sprite planet/miranda-b
+		sprite planet/miranda_2
 		distance 601
 		period 64.303
 	object
-		sprite planet/ganymede-b
+		sprite planet/ganymede_2
 		distance 976
 		period 133.075
 	object
@@ -524,7 +524,7 @@ system "KW.AB.013.Exit N"
 		distance 1558
 		period 163.988
 		object
-			sprite planet/oberon
+			sprite planet/oberon_1
 			distance 147
 			period 109.767
 	object
@@ -573,7 +573,7 @@ system "KW.AB.014.Al Core"
 			distance 386
 			period 198.472
 		object
-			sprite planet/miranda-b
+			sprite planet/miranda_2
 			distance 539
 			period 591.964
 	object
@@ -589,7 +589,7 @@ system "KW.AB.014.Al Core"
 		distance 3741
 		period 914.841
 		object
-			sprite planet/miranda
+			sprite planet/miranda_1
 			distance 296
 			period 240.907
 		object
@@ -597,7 +597,7 @@ system "KW.AB.014.Al Core"
 			distance 408
 			period 256.312
 		object
-			sprite planet/tethys
+			sprite planet/tethys_1
 			distance 513
 			period 715.6
 	object
@@ -605,7 +605,7 @@ system "KW.AB.014.Al Core"
 		distance 7287
 		period 2487.065
 		object
-			sprite planet/tethys-b
+			sprite planet/tethys_2
 			distance 461
 			period 609.601
 

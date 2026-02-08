@@ -116,7 +116,7 @@ system "KW.MWC.005.Thread of Life"
 		sprite star/o-supergiant
 		period 10
 	object
-		sprite planet/vesvi
+		sprite planet/lava_11
 		distance 16033
 		period 4440.012
 		object

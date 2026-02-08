@@ -25,7 +25,7 @@ system "KW.01.v01.Scarred Man"
 			distance 279
 			period 176.16
 		object
-			sprite planet/oberon
+			sprite planet/oberon_1
 			distance 415
 			period 520.675
 	object
@@ -88,7 +88,7 @@ system KW.01.v02.Creaper
 			distance 493
 			period 517.824
 	object
-		sprite planet/jupiter-b
+		sprite planet/jupiter_2
 		distance 6702
 		period 3103.713
 		object
@@ -265,7 +265,7 @@ system "KW.01.v07.Untrusted Trust"
 		distance 748
 		period 109.304
 	object
-		sprite planet/neptune-b
+		sprite planet/neptune_2
 		distance 1564
 		period 330.475
 	object
@@ -284,7 +284,7 @@ system KW.01.v08.Brainboot
 		sprite star/k3
 		period 10
 	object
-		sprite planet/ganymede-b
+		sprite planet/ganymede_2
 		distance 301
 		period 98.47
 	object

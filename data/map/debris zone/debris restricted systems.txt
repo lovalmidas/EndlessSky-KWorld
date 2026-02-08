@@ -63,7 +63,7 @@ system "KW.nA.R02.Restricted Space"
 			distance 384
 			period 284.444
 	object
-		sprite "planet/yniu ena"
+		sprite "planet/gas_11"
 		distance 6537
 		period 7990.587
 
@@ -91,7 +91,7 @@ system "KW.nA.R03.Restricted Space"
 		distance 1539.5
 		period 241.618
 		object
-			sprite planet/oberon-b
+			sprite planet/oberon_2
 			distance 162.5
 			period 127.578
 	object
@@ -111,7 +111,7 @@ system "KW.nA.R03.Restricted Space"
 			distance 315
 			period 211.333
 		object
-			sprite planet/tethys-b
+			sprite planet/tethys_2
 			distance 457
 			period 601.684
 
@@ -192,7 +192,7 @@ system "KW.nA.R06.Restricted Space"
 		distance 1365.132
 		period 207.801
 	object
-		sprite planet/tethys
+		sprite planet/tethys_1
 		distance 10052
 		period 6672.557
 
@@ -215,7 +215,7 @@ system "KW.nA.R07.Restricted Space"
 			distance 279
 			period 121.962
 		object
-			sprite planet/miranda-b
+			sprite planet/miranda_2
 			distance 444
 			period 442.574
 	object
@@ -287,7 +287,7 @@ system "KW.nA.R09.Restricted Space"
 			distance 229
 			period 107.778
 		object
-			sprite planet/tethys
+			sprite planet/tethys_1
 			distance 384
 			period 463.438
 	object
@@ -303,7 +303,7 @@ system "KW.nA.R09.Restricted Space"
 			distance 323
 			period 274.61
 		object
-			sprite planet/oberon-b
+			sprite planet/oberon_2
 			distance 436
 			period 560.692
 
@@ -341,11 +341,11 @@ system "KW.nA.R11.Restricted Space"
 		sprite star/o5
 		period 10
 	object
-		sprite planet/jupiter-b
+		sprite planet/jupiter_2
 		distance 2274
 		period 433.756
 		object
-			sprite planet/miranda
+			sprite planet/miranda_1
 			distance 282
 			period 224.019
 	object
@@ -423,7 +423,7 @@ system "KW.nA.R13.Restricted Space"
 		period 124.933
 		offset 180
 	object
-		sprite planet/forest_25
+		sprite planet/forest_15
 		distance 2600
 		period 1100.461
 
@@ -443,11 +443,11 @@ system "KW.nA.R99.No Return"
 		distance 352
 		period 140.204
 		object
-			sprite planet/tethys-b
+			sprite planet/tethys_2
 			distance 162
 			period 126.989
 	object
-		sprite planet/ganymede
+		sprite planet/ganymede_1
 		distance 905.756
 		period 431.698
 

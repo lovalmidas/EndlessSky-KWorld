@@ -47,7 +47,7 @@ system KW.SZ.000.Sanctuary
 		period 89
 		offset -10
 	object KW.SZ.000.0.Sanctum
-		sprite planet/forest_25
+		sprite planet/forest_15
 		distance 2269.329
 		period 79
 	object
@@ -142,7 +142,7 @@ system KW.SZ.003.Arch
 		distance 8037
 		period 4528.699
 		object
-			sprite planet/miranda-b
+			sprite planet/miranda_2
 			distance 194
 			period 127.825
 
@@ -230,7 +230,7 @@ system KW.SZ.005.Passage
 		distance 13232
 		period 12980.365
 		object
-			sprite planet/miranda-b
+			sprite planet/miranda_2
 			distance 301
 			period 247.037
 
@@ -275,7 +275,7 @@ system KW.SZ.006.Directory
 		distance 3507
 		period 3098.593
 	object
-		sprite planet/vulpa
+		sprite planet/lava_16_v1
 		distance 4063
 		period 3863.947
 		object
@@ -303,7 +303,7 @@ system KW.SZ.007.Corridor
 		distance 9.286
 		period 46.726
 	object
-		sprite planet/jupiter-b
+		sprite planet/jupiter_2
 		distance 6287
 		period 5634.82
 		object
@@ -378,7 +378,7 @@ system KW.SZ.009.Crossroads
 		distance 1566
 		period 533.36
 	object
-		sprite planet/uranus-b
+		sprite planet/uranus_2
 		distance 2500
 		period 1075.829
 		object
@@ -386,11 +386,11 @@ system KW.SZ.009.Crossroads
 			distance 221
 			period 155.418
 	object
-		sprite planet/jupiter-b
+		sprite planet/jupiter_2
 		distance 3683
 		period 1923.693
 		object
-			sprite planet/tethys-b
+			sprite planet/tethys_2
 			distance 281
 			period 290.104
 		object
@@ -466,7 +466,7 @@ system KW.SZ.011.Highway
 		distance 3739
 		period 983.298
 	object
-		sprite planet/forest_25
+		sprite planet/forest_15
 		distance 4791
 		period 1426.235
 
@@ -511,7 +511,7 @@ system KW.SZ.020.Tunnel
 		distance 3750
 		period 1568.491
 		object
-			sprite planet/miranda
+			sprite planet/miranda_1
 			distance 327
 			period 279.726
 		object
@@ -632,7 +632,7 @@ system KW.SZ.024.Jump
 		distance 35.259
 		period 57.837
 	object
-		sprite planet/rock_41
+		sprite planet/rock_31
 		distance 337
 		period 42.162
 	object KW.SZ.024.0.Citadel

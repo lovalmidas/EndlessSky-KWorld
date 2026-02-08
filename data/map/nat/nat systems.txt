@@ -45,11 +45,11 @@ system KW.N.000.Nat
 		distance 1587
 		period 373.267
 	object
-		sprite planet/neptune-b
+		sprite planet/neptune_2
 		distance 2141
 		period 584.896
 	object KW.N.000.0.Naturasi
-		sprite planet/forest_25
+		sprite planet/forest_15
 		distance 4667.344
 		period 2198.594
 		object
@@ -132,7 +132,7 @@ system KW.N.002.Facultat
 		sprite star/o-supergiant
 		period 100
 	object
-		sprite planet/neptune-b
+		sprite planet/neptune_2
 		distance 2524.518
 		period 277.415
 		object
@@ -156,7 +156,7 @@ system KW.N.002.Facultat
 			distance 238
 			period 173.691
 	object
-		sprite planet/uranus-b
+		sprite planet/uranus_2
 		distance 13408
 		period 3395.533
 
@@ -216,7 +216,7 @@ system KW.N.004.Endo
 		period 62.08
 		offset 180
 	object
-		sprite planet/oberon-b
+		sprite planet/oberon_2
 		distance 318
 		period 27.744
 	object
@@ -228,7 +228,7 @@ system KW.N.004.Endo
 			distance 185
 			period 78.259
 	object
-		sprite planet/vulpa
+		sprite planet/lava_16_v1
 		distance 2359
 		period 560.554
 		object
@@ -277,7 +277,7 @@ system KW.N.005.Meso
 			distance 563
 			period 415.471
 	object
-		sprite planet/vulpa
+		sprite planet/lava_16_v1
 		distance 4398
 		period 11666.56
 	object
@@ -289,7 +289,7 @@ system KW.N.005.Meso
 			distance 332.5
 			period 286.813
 		object
-			sprite planet/miranda
+			sprite planet/miranda_1
 			distance 481.5
 			period 499.812
 	object
@@ -331,7 +331,7 @@ system "KW.N.006.Cope Pod"
 		distance 2139.292
 		period 825.28
 	object
-		sprite planet/vulpa
+		sprite planet/lava_16_v1
 		distance 2762.625
 		period 1211.097
 	object
@@ -373,7 +373,7 @@ system KW.N.007.Rickettsi
 			distance 156
 			period 120
 	object KW.N.007.0.Devor
-		sprite planet/forest_19
+		sprite planet/forest_9
 		distance 1355.919
 		period 305.212
 		object
@@ -476,7 +476,7 @@ system KW.N.009.Lice
 		distance 6564
 		period 3008.346
 		object
-			sprite planet/tethys-b
+			sprite planet/tethys_2
 			distance 294
 			period 310.467
 		object KW.N.009.0.Contat
@@ -582,7 +582,7 @@ system KW.N.011.Mite
 		distance 3620.604
 		period 2783.675
 		object
-			sprite planet/oberon-b
+			sprite planet/oberon_2
 			distance 262
 			period 261.184
 		object
@@ -590,7 +590,7 @@ system KW.N.011.Mite
 			distance 376
 			period 275.602
 	object KW.N.011.0.Itchat
-		sprite planet/forest_25
+		sprite planet/forest_15
 		distance 975.11
 		period 389.07
 		object
@@ -626,7 +626,7 @@ system KW.N.012.Filariasi
 			distance 195
 			period 71.264
 	object
-		sprite planet/vulpa
+		sprite planet/lava_16_v1
 		distance 2326
 		period 819.245
 	object
@@ -634,7 +634,7 @@ system KW.N.012.Filariasi
 		distance 4937
 		period 2533.343
 		object
-			sprite planet/oberon-b
+			sprite planet/oberon_2
 			distance 262
 			period 261.184
 
@@ -709,7 +709,7 @@ system "KW.N.014.Simulium's Den"
 		distance 831.762
 		period 87.33
 	object
-		sprite planet/uranus-b
+		sprite planet/uranus_2
 		distance 1492.074
 		period 499.023
 		object
@@ -749,7 +749,7 @@ system KW.N.015.Plasmodi
 		distance 347
 		period 71.436
 	object
-		sprite planet/ice_19
+		sprite planet/ice_9
 		distance 865
 		period 281.157
 	object

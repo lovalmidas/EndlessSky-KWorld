@@ -18,7 +18,7 @@ system KW.01.a01.Endpoint
 		distance 40.004
 		period 44.274
 	object
-		sprite planet/ice_21
+		sprite planet/ice_11
 		distance 362
 		period 32.162
 	object
@@ -71,7 +71,7 @@ system KW.01.a02.Firewall
 		distance 5476
 		period 7640.977
 		object
-			sprite "planet/yniu ena"
+			sprite "planet/gas_11"
 			distance 379
 			period 278.907
 	object
@@ -91,7 +91,7 @@ system KW.01.a03.Reconstruction
 		sprite star/g8
 		period 10
 	object
-		sprite planet/forest_19
+		sprite planet/forest_9
 		distance 414.5
 		period 143.935
 		object

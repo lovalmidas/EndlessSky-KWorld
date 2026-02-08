@@ -132,7 +132,7 @@ system KW.F.002.Kraihivhk
 		distance 2813
 		period 2255.618
 		object
-			sprite planet/miranda
+			sprite planet/miranda_1
 			distance 390
 			period 364.342
 		object
@@ -144,7 +144,7 @@ system KW.F.002.Kraihivhk
 			distance 666
 			period 449.81
 	object
-		sprite planet/uranus-b
+		sprite planet/uranus_2
 		distance 4595
 		period 4709.114
 
@@ -195,7 +195,7 @@ system KW.F.003.Fykikhihk
 			distance 594
 			period 547.243
 	object
-		sprite planet/neptune-b
+		sprite planet/neptune_2
 		distance 19416
 		period 57436.168
 
@@ -227,7 +227,7 @@ system KW.F.004.Kyki
 		period 59.249
 		offset 180
 	object
-		sprite planet/ice_25
+		sprite planet/ice_15
 		distance 386
 		period 261.08
 	object
@@ -276,7 +276,7 @@ system KW.F.005.Vihyk
 		distance 1967
 		period 327.543
 		object
-			sprite planet/tethys
+			sprite planet/tethys_1
 			distance 265
 			period 265.683
 	object
@@ -288,7 +288,7 @@ system KW.F.005.Vihyk
 			distance 304
 			period 138.716
 		object
-			sprite planet/miranda
+			sprite planet/miranda_1
 			distance 447
 			period 447.068
 	object
@@ -401,7 +401,7 @@ system KW.F.008.Fydikykek
 		distance 2236
 		period 1161.876
 		object
-			sprite planet/miranda-b
+			sprite planet/miranda_2
 			distance 284
 			period 226.407
 	object
@@ -425,7 +425,7 @@ system KW.F.009.Fydichycyk
 		sprite star/b-dwarf
 		period 10
 	object
-		sprite planet/ganymede-b
+		sprite planet/ganymede_2
 		distance 214
 		period 37.334
 	object
@@ -512,11 +512,11 @@ system KW.F.011.Vihikinyk
 		distance 2592
 		period 4173.04
 		object
-			sprite planet/miranda
+			sprite planet/miranda_1
 			distance 233.912
 			period 1197.217
 		object
-			sprite planet/oberon
+			sprite planet/oberon_1
 			distance 333.732
 			period 1849.098
 	object
@@ -573,7 +573,7 @@ system KW.F.012.Nihinyk
 			distance 245
 			period 100.361
 	object
-		sprite planet/oberon-b
+		sprite planet/oberon_2
 		distance 3506
 		period 5475.376
 
@@ -710,11 +710,11 @@ system KW.F.016.Fynk
 		sprite star/k-dwarf
 		period 10
 	object
-		sprite planet/miranda
+		sprite planet/miranda_1
 		distance 211
 		period 122.598
 	object
-		sprite planet/jupiter-b
+		sprite planet/jupiter_2
 		distance 617
 		period 613.038
 	object

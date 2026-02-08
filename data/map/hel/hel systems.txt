@@ -40,7 +40,7 @@ system KW.H.000.Hel
 			distance 253
 			period 247.842
 		object
-			sprite planet/miranda
+			sprite planet/miranda_1
 			distance 359
 			period 321.776
 	object
@@ -89,7 +89,7 @@ system KW.H.001.Limbo
 			distance 171.798
 			period 171.59
 	object
-		sprite planet/jupiter-b
+		sprite planet/jupiter_2
 		distance 3835.938
 		period 2656.722
 		object
@@ -113,7 +113,7 @@ system KW.H.001.Limbo
 			distance 381
 			period 281.118
 	object
-		sprite planet/oberon
+		sprite planet/oberon_1
 		distance 6239
 		period 7884.832
 
@@ -250,7 +250,7 @@ system KW.H.004.Lustra
 		distance 37.308
 		period 48.721
 	object
-		sprite planet/titan-b
+		sprite planet/titan_2
 		distance 335
 		period 24.511
 	object
@@ -266,7 +266,7 @@ system KW.H.004.Lustra
 			distance 340
 			period 164.073
 	object
-		sprite planet/ice_23
+		sprite planet/ice_13
 		distance 1675
 		period 274.045
 	object
@@ -368,7 +368,7 @@ system KW.H.006.Hoora
 		distance 6558
 		period 3755.278
 		object
-			sprite planet/miranda
+			sprite planet/miranda_1
 			distance 236
 			period 171.506
 
@@ -403,7 +403,7 @@ system KW.H.007.Greda
 		distance 2196
 		period 582.135
 	object
-		sprite planet/miranda-b
+		sprite planet/miranda_2
 		distance 2952
 		period 907.297
 	object
@@ -452,7 +452,7 @@ system KW.H.008.Anra
 			distance 209
 			period 142.933
 		object
-			sprite planet/tethys
+			sprite planet/tethys_1
 			distance 340
 			period 386.111
 	object
@@ -559,7 +559,7 @@ system KW.H.010.Scorch
 			distance 238
 			period 173.691
 		object
-			sprite planet/tethys-b
+			sprite planet/tethys_2
 			distance 365
 			period 429.471
 	object
@@ -604,7 +604,7 @@ system KW.H.011.Drya
 		distance 2552.95
 		period 1042.339
 	object
-		sprite planet/tethys-b
+		sprite planet/tethys_2
 		distance 9980
 		period 11018.441
 	object
@@ -759,7 +759,7 @@ system KW.H.014.Vex
 			distance 269
 			period 137.217
 		object
-			sprite planet/oberon
+			sprite planet/oberon_1
 			distance 370
 			period 438.326
 		object
@@ -809,15 +809,15 @@ system KW.H.015.Hex
 			distance 273
 			period 118.049
 	object
-		sprite planet/jupiter-b
+		sprite planet/jupiter_2
 		distance 3871
 		period 1287.362
 		object
-			sprite planet/oberon
+			sprite planet/oberon_1
 			distance 253
 			period 247.842
 		object
-			sprite planet/tethys
+			sprite planet/tethys_1
 			distance 379
 			period 454.416
 		object
@@ -887,7 +887,7 @@ system "KW.H.017.Hot Coals"
 		distance 3238.118
 		period 515.388
 		object
-			sprite planet/miranda
+			sprite planet/miranda_1
 			distance 221
 			period 155.418
 
@@ -990,7 +990,7 @@ system KW.H.020.Discorda
 		distance 851
 		period 296.059
 	object
-		sprite planet/oberon-b
+		sprite planet/oberon_2
 		distance 2047
 		period 1104.487
 
@@ -1010,7 +1010,7 @@ system KW.H.021.Diseda
 		distance 484
 		period 47.92
 		object
-			sprite planet/oberon-b
+			sprite planet/oberon_2
 			distance 160
 			period 124.645
 	object
@@ -1056,7 +1056,7 @@ system KW.H.022.Enfeba
 		distance 664
 		period 58.2
 		object
-			sprite planet/tethys
+			sprite planet/tethys_1
 			distance 159
 			period 123.478
 	object
@@ -1093,7 +1093,7 @@ system KW.H.023.Ara
 		sprite star/k0
 		period 10
 	object
-		sprite planet/forest_23
+		sprite planet/forest_13
 		distance 301.5
 		period 94.6
 	object
@@ -1105,7 +1105,7 @@ system KW.H.023.Ara
 			distance 237
 			period 172.597
 	object
-		sprite planet/uranus-b
+		sprite planet/uranus_2
 		distance 2960
 		period 2910.044
 		object
@@ -1117,7 +1117,7 @@ system KW.H.023.Ara
 			distance 374
 			period 342.152
 	object
-		sprite planet/miranda
+		sprite planet/miranda_1
 		distance 3592
 		period 3890.151
 	object

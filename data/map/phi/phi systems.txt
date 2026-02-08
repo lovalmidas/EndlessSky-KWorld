@@ -44,11 +44,11 @@ system KW.P.000.Phi
 			distance 297
 			period 242.129
 	object KW.P.000.0.Phi'ephi
-		sprite planet/forest_25
+		sprite planet/forest_15
 		distance 3207
 		period 1293.121
 		object
-			sprite planet/miranda-b
+			sprite planet/miranda_2
 			distance 225
 			period 159.656
 		object
@@ -56,7 +56,7 @@ system KW.P.000.Phi
 			distance 345
 			period 242.231
 	object
-		sprite planet/neptune-b
+		sprite planet/neptune_2
 		distance 5212
 		period 2679.152
 
@@ -87,7 +87,7 @@ system KW.P.001.'efet
 		distance 368
 		period 127.566
 		object KW.P.001.0.'ifi'as
-			sprite planet/oberon-b
+			sprite planet/oberon_2
 			distance 131
 			period 92.342
 	object
@@ -132,7 +132,7 @@ system KW.P.002.'ephi
 		distance 493.261
 		period 225.975
 	object
-		sprite planet/jupiter-b
+		sprite planet/jupiter_2
 		distance 2335
 		period 3568.045
 		object
@@ -178,7 +178,7 @@ system KW.P.003.'ipho
 		distance 904
 		period 347.296
 	object
-		sprite planet/jupiter-b
+		sprite planet/jupiter_2
 		distance 2261
 		period 1373.719
 		object
@@ -278,7 +278,7 @@ system KW.P.005.'ife'us
 		distance 2521
 		period 8558.255
 		object
-			sprite planet/miranda-b
+			sprite planet/miranda_2
 			distance 278
 			period 219.27
 		object
@@ -319,7 +319,7 @@ system KW.P.006.'ife'is
 			distance 303
 			period 164.037
 	object KW.P.006.'esfi'us
-		sprite planet/forest_25
+		sprite planet/forest_15
 		distance 8396.838
 		period 602.719
 		object
@@ -405,7 +405,7 @@ system KW.P.008.'efe'ipho
 			distance 273
 			period 140.289
 	object
-		sprite planet/treser
+		sprite planet/rock_2
 		distance 9820
 		period 12434.095
 
@@ -436,7 +436,7 @@ system KW.P.009.'ofephi
 			distance 248
 			period 147.631
 		object
-			sprite planet/tethys-b
+			sprite planet/tethys_2
 			distance 399
 			period 490.856
 	object
@@ -483,7 +483,7 @@ system KW.P.010.'ofe'iphi
 		distance 5564
 		period 2847.035
 		object
-			sprite planet/tethys-b
+			sprite planet/tethys_2
 			distance 195
 			period 167.705
 
@@ -556,7 +556,7 @@ system KW.P.012.'efe'us
 		distance 1251
 		period 937.69
 	object
-		sprite planet/treser
+		sprite planet/rock_2
 		distance 2600.025
 		period 2032.119
 	object
@@ -898,7 +898,7 @@ system KW.P.020.Darius
 			distance 277
 			period 174.269
 		object
-			sprite planet/oberon
+			sprite planet/oberon_1
 			distance 377
 			period 450.823
 	object
@@ -975,7 +975,7 @@ system KW.P.022.Polis
 		distance 1921
 		period 258.112
 		object
-			sprite planet/miranda-b
+			sprite planet/miranda_2
 			distance 244
 			period 180.3
 	object
@@ -991,7 +991,7 @@ system KW.P.022.Polis
 		distance 3817
 		period 722.936
 		object
-			sprite planet/tethys-b
+			sprite planet/tethys_2
 			distance 276
 			period 282.396
 		object
@@ -1054,7 +1054,7 @@ system KW.P.023.'ipho'is
 		distance 7428.5
 		period 5061.645
 		object
-			sprite planet/tethys
+			sprite planet/tethys_1
 			distance 326.5
 			period 363.345
 
@@ -1113,7 +1113,7 @@ system KW.P.025.'ephe'is
 		distance 301
 		period 98.47
 	object KW.P.025.0.'e'ifus
-		sprite planet/ice_21
+		sprite planet/ice_11
 		distance 1270
 		period 853.413
 	object

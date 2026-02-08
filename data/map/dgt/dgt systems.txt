@@ -53,11 +53,11 @@ system KW.01.001.*-0
 		distance 630.471
 		period 378.501
 	object
-		sprite planet/uranus-b
+		sprite planet/uranus_2
 		distance 1422
 		period 1068.307
 		object
-			sprite planet/miranda-b
+			sprite planet/miranda_2
 			distance 221
 			period 155.418
 	object
@@ -128,7 +128,7 @@ system "KW.01.006.01-5 (Dgt II)"
 		distance 1223.303
 		period 470.168
 	object
-		sprite planet/miranda-b
+		sprite planet/miranda_2
 		distance 690
 		period 199.171
 	object

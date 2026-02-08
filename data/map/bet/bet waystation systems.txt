@@ -44,7 +44,7 @@ system "KW.B.W1.Waypoint B-1"
 		distance 5146
 		period 415
 		object
-			sprite planet/oberon
+			sprite planet/oberon_1
 			distance 256
 			period 252.263
 
@@ -76,7 +76,7 @@ system "KW.B.W2.Waypoint B-2"
 		distance 750.789
 		period 52
 	object
-		sprite planet/uranus-b
+		sprite planet/uranus_2
 		distance 1119.786
 		period 130
 		object "KW.B.W2.Waystation B-2"
@@ -162,7 +162,7 @@ system "KW.B.W3.Waypoint B-3"
 		distance 6365
 		period 1906.6
 		object
-			sprite planet/oberon-b
+			sprite planet/oberon_2
 			distance 307
 			period 331.285
 
@@ -198,7 +198,7 @@ system "KW.B.W4.Waypoint B-4"
 		distance 305
 		period 103.351
 	object
-		sprite planet/neptune-b
+		sprite planet/neptune_2
 		distance 900
 		period 523.877
 		object "KW.B.W4.Waystation B-4"

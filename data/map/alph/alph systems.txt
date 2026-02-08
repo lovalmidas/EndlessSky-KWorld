@@ -57,7 +57,7 @@ system KW.A.000.Alph
 		distance 3675.955
 		period 446.469
 	object
-		sprite planet/vulpa
+		sprite planet/lava_16_v1
 		distance 5564.484
 		period 661.235
 		object
@@ -117,7 +117,7 @@ system "KW.A.001.Alph II"
 		distance 4189.351
 		period 1109.17
 		object
-			sprite planet/tethys-b
+			sprite planet/tethys_2
 			distance 294
 			period 310.467
 
@@ -137,7 +137,7 @@ system "KW.A.002.Alph III"
 		distance 346.983
 		period 177.715
 	object
-		sprite planet/ice_23
+		sprite planet/ice_13
 		distance 998
 		period 655.624
 	object
@@ -286,7 +286,7 @@ system KW.A.005.Veti
 		distance 72.839
 		period 62.052
 	object KW.A.005.0.Heartwood
-		sprite planet/forest_21
+		sprite planet/forest_11
 		distance 515.889
 		period 86.547
 	object
@@ -294,7 +294,7 @@ system KW.A.005.Veti
 		distance 778.704
 		period 266.025
 	object KW.A.005.1.Pith
-		sprite planet/forest_25
+		sprite planet/forest_15
 		distance 1201
 		period 569.546
 		object
@@ -306,7 +306,7 @@ system KW.A.005.Veti
 		distance 2978
 		period 2223.829
 		object
-			sprite planet/miranda-b
+			sprite planet/miranda_2
 			distance 248
 			period 184.752
 		object
@@ -363,7 +363,7 @@ system KW.A.006.Amrachi
 		distance 3829
 		period 4927.052
 		object
-			sprite planet/oberon
+			sprite planet/oberon_1
 			distance 275
 			period 280.862
 
@@ -385,7 +385,7 @@ system KW.A.007.Ruhi
 		distance 1603.261
 		period 254.492
 		object
-			sprite planet/miranda-b
+			sprite planet/miranda_2
 			distance 234
 			period 169.331
 	object
@@ -489,7 +489,7 @@ system KW.A.009.Veniti
 		distance 5270
 		period 2239.555
 		object KW.A.009.0.Crown
-			sprite planet/tethys
+			sprite planet/tethys_1
 			distance 255
 			period 250.787
 	object "KW.WH.Alph Wormhole A"
@@ -532,7 +532,7 @@ system KW.A.010.Motif
 			distance 222
 			period 125.035
 		object
-			sprite planet/oberon
+			sprite planet/oberon_1
 			distance 330
 			period 369.203
 
@@ -636,7 +636,7 @@ system KW.A.013.Hofti
 			distance 153
 			period 71.538
 	object
-		sprite planet/jupiter-b
+		sprite planet/jupiter_2
 		distance 2970
 		period 865.168
 	object
@@ -678,7 +678,7 @@ system "KW.A.014.Ruchi Nar"
 			distance 455
 			period 459.123
 	object
-		sprite planet/uranus-b
+		sprite planet/uranus_2
 		distance 4588.394
 		period 2675.002
 		object
@@ -736,7 +736,7 @@ system "KW.A.015.Ruchi Tar"
 			distance 275
 			period 119.348
 		object
-			sprite planet/tethys
+			sprite planet/tethys_1
 			distance 408
 			period 507.557
 
@@ -767,11 +767,11 @@ system "KW.A.016.Ruchi Vot"
 		distance 900.867
 		period 92.337
 	object
-		sprite planet/ice_19
+		sprite planet/ice_9
 		distance 1512.232
 		period 200.822
 	object
-		sprite planet/neptune-b
+		sprite planet/neptune_2
 		distance 2617.361
 		period 457.276
 		object
@@ -834,7 +834,7 @@ system "KW.A.017.Ruchi Avathi"
 			distance 282.146
 			period 190.809
 	object
-		sprite planet/jupiter-b
+		sprite planet/jupiter_2
 		distance 3110.843
 		period 1680.528
 		object
@@ -882,7 +882,7 @@ system "KW.A.018.Traif Nar"
 		period 149.991
 		offset 180
 	object
-		sprite planet/ganymede
+		sprite planet/ganymede_1
 		distance 661
 		period 51.89
 	object
@@ -915,7 +915,7 @@ system "KW.A.019.Traif Tar"
 		distance 343
 		period 71.87
 	object
-		sprite planet/oberon-b
+		sprite planet/oberon_2
 		distance 945
 		period 328.664
 	object
@@ -988,7 +988,7 @@ system "KW.A.020.Traif Vot"
 		distance 5437.028
 		period 1495.386
 		object
-			sprite planet/tethys
+			sprite planet/tethys_1
 			distance 218
 			period 198.234
 
@@ -1010,7 +1010,7 @@ system "KW.A.021.Traif Avathi"
 		distance 88.084
 		period 57.968
 	object
-		sprite planet/neptune-b
+		sprite planet/neptune_2
 		distance 1252
 		period 193.008
 		object
@@ -1022,7 +1022,7 @@ system "KW.A.021.Traif Avathi"
 		distance 4747
 		period 1424.944
 		object
-			sprite planet/tethys
+			sprite planet/tethys_1
 			distance 219
 			period 199.6
 	object
@@ -1093,7 +1093,7 @@ system "KW.A.023.Menif Vot"
 		distance 1626.095
 		period 240.946
 		object
-			sprite planet/miranda-b
+			sprite planet/miranda_2
 			distance 189
 			period 122.915
 	object
@@ -1168,7 +1168,7 @@ system "KW.A.025.Menif Avathi"
 			distance 316
 			period 265.731
 		object
-			sprite planet/oberon-b
+			sprite planet/oberon_2
 			distance 459
 			period 605.638
 	object
@@ -1192,7 +1192,7 @@ system "KW.A.026.Rosi Tar"
 		distance 266
 		period 84.176
 	object
-		sprite planet/ice_21
+		sprite planet/ice_11
 		distance 1360
 		period 973.137
 	object
@@ -1220,11 +1220,11 @@ system "KW.A.026.Rosi Tar"
 		distance 10850
 		period 21928.561
 		object
-			sprite planet/tethys-b
+			sprite planet/tethys_2
 			distance 243
 			period 233.294
 		object
-			sprite planet/oberon
+			sprite planet/oberon_1
 			distance 388
 			period 470.698
 
@@ -1344,7 +1344,7 @@ system "KW.A.030.Extent Tar"
 		sprite star/g0-old
 		period 10
 	object
-		sprite planet/ice_25
+		sprite planet/ice_15
 		distance 337
 		period 53.245
 	object
@@ -1400,7 +1400,7 @@ system KW.A.031.Norai
 		distance 304
 		period 37.48
 	object
-		sprite planet/jupiter-b
+		sprite planet/jupiter_2
 		distance 2244
 		period 751.656
 	object
@@ -1621,7 +1621,7 @@ system KW.A.036.Dorathi
 		distance 4373
 		period 11567.226
 	object
-		sprite "planet/yniu ena"
+		sprite "planet/gas_11"
 		distance 6213
 		period 19588.989
 	object
@@ -1658,7 +1658,7 @@ system KW.A.037.Vector
 		distance 855
 		period 298.149
 		object
-			sprite planet/tethys-b
+			sprite planet/tethys_2
 			distance 252
 			period 246.374
 	object
@@ -1666,7 +1666,7 @@ system KW.A.037.Vector
 		distance 1475
 		period 675.572
 	object
-		sprite planet/neptune-b
+		sprite planet/neptune_2
 		distance 2063
 		period 1117.462
 
@@ -1704,7 +1704,7 @@ system KW.A.038.Wari
 		distance 2854
 		period 1751.834
 		object
-			sprite planet/oberon
+			sprite planet/oberon_1
 			distance 194
 			period 166.417
 		object
@@ -1743,7 +1743,7 @@ system KW.A.039.Dori
 		distance 2123
 		period 553.35
 		object
-			sprite planet/oberon-b
+			sprite planet/oberon_2
 			distance 300
 			period 320.019
 	object
@@ -1776,7 +1776,7 @@ system KW.A.040.Circi
 		distance 1633
 		period 414.774
 		object
-			sprite planet/oberon
+			sprite planet/oberon_1
 			distance 274
 			period 279.332
 		object
@@ -1784,7 +1784,7 @@ system KW.A.040.Circi
 			distance 377
 			period 450.823
 		object
-			sprite planet/oberon-b
+			sprite planet/oberon_2
 			distance 489
 			period 665.975
 	object
@@ -1796,7 +1796,7 @@ system KW.A.040.Circi
 		distance 4592
 		period 1955.849
 		object
-			sprite "planet/yniu ena"
+			sprite "planet/gas_11"
 			distance 211
 			period 115.858
 	object
@@ -1888,7 +1888,7 @@ system KW.A.042.Armori
 			distance 228
 			period 130.138
 		object
-			sprite planet/oberon-b
+			sprite planet/oberon_2
 			distance 337
 			period 381.012
 		object
@@ -1904,11 +1904,11 @@ system KW.A.042.Armori
 		distance 4479
 		period 1966.815
 	object
-		sprite planet/neptune-b
+		sprite planet/neptune_2
 		distance 5261
 		period 2503.77
 		object
-			sprite planet/miranda-b
+			sprite planet/miranda_2
 			distance 234
 			period 169.331
 
@@ -1945,7 +1945,7 @@ system KW.A.043.Pathi
 		distance 1642
 		period 232.421
 	object
-		sprite planet/forest_25
+		sprite planet/forest_15
 		distance 2690
 		period 487.354
 	object
@@ -1979,7 +1979,7 @@ system KW.A.044.Passi
 		distance 1212
 		period 308.144
 	object
-		sprite planet/jupiter-b
+		sprite planet/jupiter_2
 		distance 5212
 		period 2747.932
 		object
@@ -2066,7 +2066,7 @@ system KW.A.046.Korif
 		distance 1132
 		period 454.207
 	object
-		sprite planet/rock_41
+		sprite planet/rock_31
 		distance 1867
 		period 962.056
 	object

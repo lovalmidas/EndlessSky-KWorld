@@ -144,7 +144,7 @@ system KW.U.003.Qualagen
 		distance 1157
 		period 502.86
 	object
-		sprite planet/vulpa
+		sprite planet/lava_16_v1
 		distance 1672
 		period 873.577
 		object
