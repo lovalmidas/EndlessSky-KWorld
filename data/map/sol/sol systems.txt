@@ -1,7 +1,6 @@
-
 system KW.S.002.Rigel
 	"display name" Rigel
-	pos 10348.532 -8521.292
+	pos 10483.051 -8524.848
 	government KW.Sol
 	arrival 5000
 	habitable 20000
@@ -54,7 +53,7 @@ system KW.S.002.Rigel
 			period 59.776
 
 system KW.S.003.Arcturus
-	pos 10240.995 -8652.329
+	pos 10247.514 -8713.366
 	government Uninhabited
 	attributes iron-source silicon-source
 	arrival 490
@@ -121,7 +120,7 @@ system KW.S.004.Achernar
 		period 395.789
 
 system KW.S.005.Canopus
-	pos 10381.884 -8568.773
+	pos 10490.921 -8576.773
 	government KW.Machines
 	arrival 3000
 	habitable 3000
@@ -171,7 +170,7 @@ system KW.S.005.Canopus
 			period 102.933
 
 system KW.S.006.Spica
-	pos 10320.181 -8671.662
+	pos 10406.996 -8717.884
 	government Uninhabited
 	arrival 5000
 	habitable 11000
@@ -199,7 +198,7 @@ system KW.S.006.Spica
 			period 305.727
 
 system KW.S.007.Acrux
-	pos 10363.885 -8626.773
+	pos 10458.7 -8667.366
 	government Uninhabited
 	arrival 5000
 	habitable 13000
@@ -278,7 +277,7 @@ system KW.S.008.Deneb
 			period 171.446
 
 system KW.S.009.Agena
-	pos 10368.625 -8654.18
+	pos 10437.366 -8684.995
 	government Uninhabited
 	arrival 5000
 	habitable 9000
@@ -377,7 +376,7 @@ system KW.S.011.Veil
 		period 300
 
 system KW.S.012.Alnilam
-	pos 10332.403 -8446.773
+	pos 10472.847 -8482.625
 	government Uninhabited
 	arrival 5000
 	habitable 17025
@@ -431,7 +430,7 @@ system KW.S.012.Alnilam
 		period 6025.944
 
 system KW.S.013.Vega
-	pos 10225.81 -8619.144
+	pos 10233.217 -8700.033
 	government Uninhabited
 	arrival 3650
 	habitable 3650
@@ -472,7 +471,7 @@ system KW.S.013.Vega
 		period 808.625
 
 system KW.S.014.Denebola
-	pos 10325.366 -8558.329
+	pos 10489.218 -8560.403
 	government Uninhabited
 	attributes lead-source
 	arrival 3400
@@ -514,7 +513,7 @@ system KW.S.014.Denebola
 		offset 175
 
 system KW.S.015.Capella
-	pos 10195.958 -8563.588
+	pos 10154.18 -8563.884
 	government Uninhabited
 	arrival 700
 	habitable 700
@@ -553,7 +552,7 @@ system KW.S.015.Capella
 		period 2870.558
 
 system KW.S.016.Regulus
-	pos 10239.884 -8413.44
+	pos 10471.291 -8467.959
 	government Uninhabited
 	arrival 5000
 	habitable 6000
@@ -604,7 +603,7 @@ system KW.S.016.Regulus
 			period 398.485
 
 system KW.S.017.Alioth
-	pos 10181.884 -8550.847
+	pos 10156.699 -8547.588
 	government KW.Sol
 	attributes lead-source silver-source
 	arrival 3650
@@ -652,7 +651,7 @@ system KW.S.017.Alioth
 		period 3059.265
 
 system KW.S.018.Phecda
-	pos 10184.403 -8504.551
+	pos 10176.996 -8502.773
 	government Uninhabited
 	attributes silicon-source
 	arrival 4000
@@ -686,7 +685,7 @@ system KW.S.018.Phecda
 			period 118.337
 
 system KW.S.019.Alkaid
-	pos 10173.44 -8584.255
+	pos 10152.403 -8578.329
 	government Uninhabited
 	attributes lead-source
 	arrival 5000
@@ -714,7 +713,7 @@ system KW.S.019.Alkaid
 			period 124.191
 
 system KW.S.020.Vindemiatrix
-	pos 10305.292 -8645.588
+	pos 10423.514 -8703.069
 	government Uninhabited
 	arrival 550
 	habitable 550
@@ -760,7 +759,7 @@ system KW.S.020.Vindemiatrix
 			period 721.48
 
 system KW.S.021.Algieba
-	pos 10199.218 -8517.884
+	pos 10166.329 -8517.291
 	government Uninhabited
 	attributes aluminum-source iron-source
 	arrival 1100
@@ -808,7 +807,7 @@ system KW.S.021.Algieba
 		period 4690.662
 
 system KW.S.022.Adhara
-	pos 10314.773 -8544.847
+	pos 10482.477 -8540.403
 	government Uninhabited
 	arrival 5000
 	habitable 15000
@@ -848,7 +847,7 @@ system KW.S.022.Adhara
 		period 2718.438
 
 system KW.S.023.Shaula
-	pos 10349.144 -8713.44
+	pos 10391.514 -8730.329
 	government Uninhabited
 	arrival 5000
 	habitable 14000
@@ -868,7 +867,7 @@ system KW.S.023.Shaula
 		period 153.614
 
 system "KW.S.024.Crab Nebula"
-	pos 10309.44 -8512.551
+	pos 10310.033 -8514.329
 	government Uninhabited
 	arrival 5000
 	habitable 25000
@@ -890,7 +889,7 @@ system "KW.S.024.Crab Nebula"
 		period 4181.278
 
 system KW.S.025.Arneb
-	pos 10350.032 -8471.069
+	pos 10479.81 -8502.476
 	government KW.Sol
 	arrival 2560
 	habitable 2560
