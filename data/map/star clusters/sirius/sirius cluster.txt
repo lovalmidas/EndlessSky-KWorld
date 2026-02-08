@@ -1,6 +1,14 @@
+# Write main cluster definition here
+
+# Idea to demarcate between lines of politics/civilization and lines of physics/navigation:
+# If there is a seat of government in the area, their system should be center in the cluster. This applies only to capitals, not outposts
+#	Otherwise, center the cluster around significant points of interest. E.g. Sag A* for the GWC
+#	Otherwise, center the cluster around its brightest or most massive star
+# Name the cluster after one of the closest bright star (white / blue), as hyperlanes only exist between these large gravity wells
+
 system "KW.S.***.Sirius Cluster"
 	"display name" "Sirius Cluster"
-	pos 10277.671 -8617.144
+	pos 10276.19 -8575.663
 	government Uninhabited
 	haze _menu/haze-none
 	fleet "KW.Sol Merchants Small" 4000
@@ -112,7 +120,7 @@ system "KW.S.***.Sirius Cluster"
 			scale 0.97
 		distance 11118
 		offset -213.7
-		object "KW.S.005.~.Procyon"
+		object KW.S.005.~.Procyon
 		object
 			sprite ui/target
 	object
@@ -309,7 +317,7 @@ system "KW.S.***.Sirius Cluster"
 		sprite star/m5
 			scale 0.38
 		distance 5817
-		offset -92.5	
+		offset -92.5
 	object
 		sprite star/m5
 			scale 0.51
@@ -362,7 +370,7 @@ system "KW.S.***.Sirius Cluster"
 		offset -349.2
 	object
 		sprite star/m8
-			scale 0.60
+			scale 0.6
 		distance 9653
 		offset -236.7
 	object
@@ -408,17 +416,17 @@ system "KW.S.***.Sirius Cluster"
 			scale 0.99
 		distance 16568
 		offset -47.8
-		object "KW.S.012.~.Altair"
+		object KW.S.012.~.Altair
 		object
 			sprite ui/target
 	object
 		sprite star/m5
-			scale 0.80
+			scale 0.8
 		distance 13706
 		offset -207.5
 	object
 		sprite star/m5
-			scale 0.60
+			scale 0.6
 		distance 13746
 		offset -207.6
 	object
@@ -436,164 +444,3 @@ system "KW.S.***.Sirius Cluster"
 			scale 0.98
 		distance 17239
 		offset -204.6
-
-planet KW.S.000.*.Sol
-	spaceport ``
-	wormhole "KW.WH.S.000.*.Sol"
-	government Uninhabited
-	
-planet KW.S.000.~.Sol
-	spaceport ``
-	wormhole "KW.WH.S.***.*.Sirius Cluster"
-	government Uninhabited
-
-planet "KW.S.001.*.Alpha Centauri"
-	spaceport ``
-	wormhole "KW.WH.S.001.*.Alpha Centauri"
-	government Uninhabited
-
-planet "KW.S.001.~.Alpha Centauri"
-	spaceport ``
-	wormhole "KW.WH.S.***.*.Sirius Cluster"
-	government Uninhabited
-
-planet "KW.S.002.*.Bernard's Star"
-	spaceport ``
-	wormhole "KW.WH.S.002.*.Bernard's Star"
-	government Uninhabited
-
-planet "KW.S.002.~.Bernard's Star"
-	spaceport ``
-	wormhole "KW.WH.S.***.*.Sirius Cluster"
-	government Uninhabited
-
-planet KW.S.003.*.Sirius
-	spaceport ``
-	wormhole "KW.WH.S.003.*.Sirius"
-	government Uninhabited
-
-planet KW.S.003.~.Sirius
-	spaceport ``
-	wormhole "KW.WH.S.***.*.Sirius Cluster"
-	government Uninhabited
-
-planet "KW.S.004.*.Epsilon Eridani"
-	spaceport ``
-	wormhole "KW.WH.S.004.*.Epsilon Eridani"
-	government Uninhabited
-
-planet "KW.S.004.~.Epsilon Eridani"
-	spaceport ``
-	wormhole "KW.WH.S.***.*.Sirius Cluster"
-	government Uninhabited
-
-planet KW.S.005.*.Procyon
-	spaceport ``
-	wormhole "KW.WH.S.005.*.Procyon"
-	government Uninhabited
-
-planet KW.S.005.~.Procyon
-	spaceport ``
-	wormhole "KW.WH.S.***.*.Sirius Cluster"
-	government Uninhabited
-
-planet "KW.S.006.*.Epsilon Indi"
-	spaceport ``
-	wormhole "KW.WH.S.006.*.Epsilon Indi"
-	government Uninhabited
-
-planet "KW.S.006.~.Epsilon Indi"
-	spaceport ``
-	wormhole "KW.WH.S.***.*.Sirius Cluster"
-	government Uninhabited
-
-planet "KW.S.007.*.Tau Ceti"
-	spaceport ``
-	wormhole "KW.WH.S.007.*.Tau Ceti"
-	government Uninhabited
-
-planet "KW.S.007.~.Tau Ceti"
-	spaceport ``
-	wormhole "KW.WH.S.***.*.Sirius Cluster"
-	government Uninhabited
-
-planet "KW.S.008.*.Luyten's Star"
-	spaceport ``
-	wormhole "KW.WH.S.008.*.Luyten's Star"
-	government Uninhabited
-
-planet "KW.S.008.~.Luyten's Star"
-	spaceport ``
-	wormhole "KW.WH.S.***.*.Sirius Cluster"
-	government Uninhabited
-
-planet "KW.S.009.*.Kapteyn's Star"
-	spaceport ``
-	wormhole "KW.WH.S.009.*.Kapteyn's Star"
-	government Uninhabited
-
-planet "KW.S.009.~.Kapteyn's Star"
-	spaceport ``
-	wormhole "KW.WH.S.***.*.Sirius Cluster"
-	government Uninhabited
-
-planet "KW.S.010.*.van Maanen's Star"
-	spaceport ``
-	wormhole "KW.WH.S.010.*.van Maanen's Star"
-	government Uninhabited
-
-planet "KW.S.010.~.van Maanen's Star"
-	spaceport ``
-	wormhole "KW.WH.S.***.*.Sirius Cluster"
-	government Uninhabited
-
-planet "KW.S.011.*.Omicron Eridani"
-	spaceport ``
-	wormhole "KW.WH.S.011.*.Omicron Eridani"
-	government Uninhabited
-	
-planet "KW.S.011.~.Omicron Eridani"
-	spaceport ``
-	wormhole "KW.WH.S.***.*.Sirius Cluster"
-	government Uninhabited
-
-planet KW.S.012.*.Altair
-	spaceport ``
-	wormhole "KW.WH.S.012.*.Altair"
-	government Uninhabited
-
-planet KW.S.012.~.Altair
-	spaceport ``
-	wormhole "KW.WH.S.***.*.Sirius Cluster"
-	government Uninhabited
-
-planet "KW.S.013.*.Sigma Draconis"
-	spaceport ``
-	wormhole "KW.WH.S.013.*.Sigma Draconis"
-	government Uninhabited
-
-planet "KW.S.013.~.Sigma Draconis"
-	spaceport ``
-	wormhole "KW.WH.S.***.*.Sirius Cluster"
-	government Uninhabited
-
-planet "KW.S.014.*.Eta Cassiopeiae"
-	spaceport ``
-	wormhole "KW.WH.S.014.*.Eta Cassiopeiae"
-	government Uninhabited
-
-planet "KW.S.014.~.Eta Cassiopeiae"
-	spaceport ``
-	wormhole "KW.WH.S.***.*.Sirius Cluster"
-	government Uninhabited
-
-planet "KW.S.015.*.Delta Pavonis"
-	spaceport ``
-	wormhole "KW.WH.S.015.*.Delta Pavonis"
-	government Uninhabited
-
-planet "KW.S.015.~.Delta Pavonis"
-	spaceport ``
-	wormhole "KW.WH.S.***.*.Sirius Cluster"
-	government Uninhabited
-
