@@ -44,7 +44,7 @@ system "KW.S.001.Alpha Centauri"
 		distance 10551.798
 		period 833.859
 	object "KW.S.001.~.Alpha Centauri"
-		sprite planet/_exit
+		sprite mapicon/_exit
 			scale 0.5
 		distance 12500
 		period 833.859

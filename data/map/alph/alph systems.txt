@@ -30,19 +30,19 @@ system KW.A.000.Alph
 		distance 2833.425
 		period 230.125
 		object "KW.A.000.0A.Axis Mundi"
-			sprite planet/_poi_city_5
+			sprite mapicon/_poi_city_5
 				scale 0.5
 			distance 170
 			period 230.125
 			offset 60
 		object KW.A.000.0B.Yggdrasil
-			sprite planet/_poi_city_5
+			sprite mapicon/_poi_city_5
 				scale 0.5
 			distance 170
 			period 230.125
 			offset 180
 		object "KW.A.000.0C.Tetejetlen fa"
-			sprite planet/_poi_city_5
+			sprite mapicon/_poi_city_5
 				scale 0.5
 			distance 170
 			period 230.125
@@ -65,12 +65,12 @@ system KW.A.000.Alph
 			distance 300
 			period 196.419
 	object "KW.WH.Alph Wormhole A"
-		sprite planet/_local
+		sprite mapicon/_local
 			scale 4
 		distance 2280
 		offset -8
 	object "KW.WH.Alph Wormhole B"
-		sprite planet/_local
+		sprite mapicon/_local
 			scale 4
 		distance 2280
 		offset 132
@@ -161,7 +161,7 @@ system "KW.A.002.Alph III"
 		distance 4565
 		period 6413.872
 	object "KW.WH.Alph Wormhole B"
-		sprite planet/_local
+		sprite mapicon/_local
 			scale 4
 		distance 6026
 		offset -48
@@ -265,7 +265,7 @@ system KW.A.004.Drachi
 		distance 13856
 		period 4368.822
 	object "KW.WH.Alph Wormhole B"
-		sprite planet/_local
+		sprite mapicon/_local
 			scale 4
 		distance 2000
 		offset 145
@@ -322,12 +322,12 @@ system KW.A.005.Veti
 		distance 6239
 		period 6743.524
 	object "KW.WH.Alph Wormhole A"
-		sprite planet/_local
+		sprite mapicon/_local
 			scale 4
 		distance 1700
 		offset 172
 	object "KW.WH.Alph Wormhole B"
-		sprite planet/_local
+		sprite mapicon/_local
 			scale 4
 		distance 1700
 		offset -40
@@ -493,7 +493,7 @@ system KW.A.009.Veniti
 			distance 255
 			period 250.787
 	object "KW.WH.Alph Wormhole A"
-		sprite planet/_local
+		sprite mapicon/_local
 			scale 4
 		distance 1803.158
 		offset -35
@@ -605,7 +605,7 @@ system KW.A.012.Avathi
 		distance 5908
 		period 2160.878
 	object "KW.WH.Alph Wormhole B"
-		sprite planet/_local
+		sprite mapicon/_local
 			scale 4
 		distance 3659.816
 		offset -60
@@ -690,7 +690,7 @@ system "KW.A.014.Ruchi Nar"
 		distance 7094
 		period 5142.448
 	object "KW.WH.Alph Wormhole B"
-		sprite planet/_local
+		sprite mapicon/_local
 			scale 4
 		distance 1600
 		offset 120

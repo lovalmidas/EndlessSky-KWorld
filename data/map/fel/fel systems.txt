@@ -803,7 +803,7 @@ system KW.F.018.Vihidihyk
 			distance 284
 			period 226.407
 	object
-		sprite planet/_local
+		sprite mapicon/_local
 			scale 4
 		distance 4214.949
 		period 1364.528

@@ -49,7 +49,7 @@ system KW.U.000.Upsn
 		distance 9515
 		period 4763.213
 	object
-		sprite planet/_local
+		sprite mapicon/_local
 			scale 4
 		distance 2200
 		offset 140

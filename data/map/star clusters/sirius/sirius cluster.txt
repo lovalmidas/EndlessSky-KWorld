@@ -20,7 +20,7 @@ system "KW.S.***.Sirius Cluster"
 		sprite star/g3
 		object KW.S.000.~.Sol
 		object
-			sprite ui/target
+			sprite mapicon/_cluster_g
 	object
 		sprite star/m5
 		distance 4218
@@ -31,7 +31,7 @@ system "KW.S.***.Sirius Cluster"
 		offset -315.8
 		object "KW.S.001.~.Alpha Centauri"
 		object
-			sprite ui/target
+			sprite mapicon/_cluster_g
 	object
 		sprite star/k0
 		distance 4362.399
@@ -42,7 +42,7 @@ system "KW.S.***.Sirius Cluster"
 		offset -31
 		object "KW.S.002.~.Bernard's Star"
 		object
-			sprite ui/target
+			sprite mapicon/_cluster_m
 	object
 		sprite star/m8
 			scale 0.56
@@ -59,7 +59,7 @@ system "KW.S.***.Sirius Cluster"
 		offset -227.2
 		object KW.S.003.~.Sirius
 		object
-			sprite ui/target
+			sprite mapicon/_cluster_a
 	object
 		sprite star/a-dwarf
 		distance 8460.301
@@ -89,7 +89,7 @@ system "KW.S.***.Sirius Cluster"
 		offset -195.9
 		object "KW.S.004.~.Epsilon Eridani"
 		object
-			sprite ui/target
+			sprite mapicon/_cluster_k
 	object
 		sprite star/m3
 			scale 0.41
@@ -122,7 +122,7 @@ system "KW.S.***.Sirius Cluster"
 		offset -213.7
 		object KW.S.005.~.Procyon
 		object
-			sprite ui/target
+			sprite mapicon/_cluster_f
 	object
 		sprite star/a-dwarf
 			scale 0.8
@@ -169,7 +169,7 @@ system "KW.S.***.Sirius Cluster"
 		offset -336.2
 		object "KW.S.006.~.Epsilon Indi"
 		object
-			sprite ui/target
+			sprite mapicon/_cluster_k
 	object
 		sprite planet/browndwarf-t
 			scale 0.067
@@ -187,7 +187,7 @@ system "KW.S.***.Sirius Cluster"
 		offset -173.1
 		object "KW.S.007.~.Tau Ceti"
 		object
-			sprite ui/target
+			sprite mapicon/_cluster_g
 	object
 		sprite star/m5
 			scale 0.6
@@ -205,7 +205,7 @@ system "KW.S.***.Sirius Cluster"
 		offset -212.3
 		object "KW.S.008.~.Luyten's Star"
 		object
-			sprite ui/target
+			sprite mapicon/_cluster_m
 	object
 		sprite star/m5
 			scale 0.8
@@ -218,7 +218,7 @@ system "KW.S.***.Sirius Cluster"
 		offset -250.5
 		object "KW.S.009.~.Kapteyn's Star"
 		object
-			sprite ui/target
+			sprite mapicon/_cluster_m
 	object
 		sprite star/m8
 			scale 0.92
@@ -284,7 +284,7 @@ system "KW.S.***.Sirius Cluster"
 		offset -121.9
 		object "KW.S.010.~.van Maanen's Star"
 		object
-			sprite ui/target
+			sprite mapicon/_cluster_g
 	object
 		sprite star/m8
 			scale 0.69
@@ -385,7 +385,7 @@ system "KW.S.***.Sirius Cluster"
 		offset -200.8
 		object "KW.S.011.~.Omicron Eridani"
 		object
-			sprite ui/target
+			sprite mapicon/_cluster_k
 	object
 		sprite star/a-dwarf
 			scale 0.79
@@ -418,7 +418,7 @@ system "KW.S.***.Sirius Cluster"
 		offset -47.8
 		object KW.S.012.~.Altair
 		object
-			sprite ui/target
+			sprite mapicon/_cluster_a
 	object
 		sprite star/m5
 			scale 0.8
@@ -444,3 +444,4 @@ system "KW.S.***.Sirius Cluster"
 			scale 0.98
 		distance 17239
 		offset -204.6
+

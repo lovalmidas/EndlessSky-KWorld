@@ -23,7 +23,7 @@ system KW.A.W1.Enermata
 		distance 1687
 		period 207.031
 	object "KW.WH.Alph Wormhole A"
-		sprite planet/_local
+		sprite mapicon/_local
 			scale 4
 		distance 2420
 		offset 120
@@ -85,7 +85,7 @@ system KW.A.W2.Entri
 			distance 244
 			period 234.736
 	object "KW.WH.Alph Wormhole A"
-		sprite planet/_local
+		sprite mapicon/_local
 			scale 4
 		distance 1309.471
 		offset -60

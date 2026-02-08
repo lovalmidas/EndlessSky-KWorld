@@ -69,7 +69,7 @@ system KW.F.027.Wolf
 			distance 467
 			period 381.484
 	object
-		sprite planet/_local
+		sprite mapicon/_local
 			scale 4
 		distance 5720.983
 		period 1624.681

@@ -1,10 +1,42 @@
 system KW.S.003.Sirius
-	"display name" Sirius
-	pos 10259.866 -8551.589
+	pos 10265.496 -8586.552
 	government Uninhabited
 	arrival 1200
-	habitable 2300
+	habitable 7300
 	haze _menu/haze-33
 	fleet "KW.Sol Patrol" 6000
 	fleet "KW.Sol Patrol Machine" 4000
+	object
+		sprite star/a0
+		period 10
+	object
+		sprite planet/rock_13
+			scale 0.15
+		distance 2537.25
+		period 35.963
+	object
+		sprite planet/desert_9
+			scale 0.2
+		distance 3177.188
+		period 289.099
+	object
+		sprite planet/gas_32
+			scale 0.6
+		distance 11708.008
+		period 1563.179
+		object
+			sprite planet/dust_5
+				scale 0.05
+			distance 650.622
+			period 1416.862
+	object
+		sprite planet/gas_12
+			scale 0.4
+		distance 18931.162
+		period 10076.334
+	object
+		sprite mapicon/_exit
+			scale 0.5
+		distance 20000
+		period 10076.3
 

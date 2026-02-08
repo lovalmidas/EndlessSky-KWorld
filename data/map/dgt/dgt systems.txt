@@ -61,7 +61,7 @@ system KW.01.001.*-0
 			distance 221
 			period 155.418
 	object
-		sprite planet/_local
+		sprite mapicon/_local
 			scale 4
 		distance 2179.639
 		offset 30
@@ -140,7 +140,7 @@ system "KW.01.006.01-5 (Dgt II)"
 		distance 3938
 		period 2715.599
 	object
-		sprite planet/_local
+		sprite mapicon/_local
 			scale 4
 		distance 1723.906
 		period 786.543

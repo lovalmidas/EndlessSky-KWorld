@@ -24,15 +24,16 @@ system "KW.S.002.Bernard's Star"
 		distance 8933.73
 		period 3733.813
 	object
-		sprite planet/_exit
+		sprite mapicon/_exit
 			scale 0.5
 		distance 10000
 		period 3733.81
 		object
-			sprite planet/ganymede
+			sprite planet/ganymede_1
 			distance 547
 			period 0
 		object
 			sprite planet/titan_1
 			distance 659
 			period 0
+

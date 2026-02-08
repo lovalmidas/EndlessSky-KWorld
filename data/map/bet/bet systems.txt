@@ -46,36 +46,36 @@ system KW.B.000.Bet
 		distance 639.287
 		period 472
 		object KW.B.000.0A.Unes
-			sprite planet/_poi_city_5
+			sprite mapicon/_poi_city_5
 				scale 0.5
 			distance 140
 			period 472
 		object KW.B.000.0B.Dres
-			sprite planet/_poi_city_4
+			sprite mapicon/_poi_city_4
 				scale 0.5
 			distance 140
 			period 472
 			offset 60
 		object KW.B.000.0C.Trei
-			sprite planet/_poi_city_4
+			sprite mapicon/_poi_city_4
 				scale 0.5
 			distance 140
 			period 472
 			offset 120
 		object KW.B.000.0D.Quad
-			sprite planet/_poi_city_3
+			sprite mapicon/_poi_city_3
 				scale 0.5
 			distance 140
 			period 472
 			offset 180
 		object KW.B.000.0E.Quin
-			sprite planet/_poi_city_3
+			sprite mapicon/_poi_city_3
 				scale 0.5
 			distance 140
 			period 472
 			offset 240
 		object KW.B.000.0F.Sex
-			sprite planet/_poi_city_2
+			sprite mapicon/_poi_city_2
 				scale 0.5
 			distance 140
 			period 472
