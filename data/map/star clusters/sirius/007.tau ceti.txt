@@ -1,9 +1,51 @@
 system "KW.S.007.Tau Ceti"
+	"display name" "Tau Ceti"
 	pos 10261.347 -8577.367
-	government Uninhabited
+	government KW.Sol
 	arrival 1200
-	habitable 2300
+	habitable 1100
 	haze _menu/haze-33
 	fleet "KW.Sol Patrol" 6000
 	fleet "KW.Sol Patrol Machine" 4000
-
+	object
+		sprite star/g8
+	object
+		sprite planet/ocean_3
+			scale 0.35
+		distance 1200
+		period 501
+	object
+		sprite planet/cloud_2
+			scale 0.25
+		distance 1450
+		period 665
+		object
+			sprite planet/rock_8
+				scale 0.1
+			distance 128.5
+			period 64.5
+			object
+				sprite mapicon/_poi_lab
+				distance 51
+				period 64.5
+				offset -30
+	object
+		sprite planet/ice_3
+			scale 0.22
+		distance 2300
+		period 1330
+	object
+		sprite planet/ice_16
+			scale 0.4
+		distance 2850
+		period 1835
+	object
+		sprite planet/rock_33
+			scale 0.2
+		distance 5200
+		period 4522
+	object "KW.S.007.~.Tau Ceti"
+		sprite mapicon/_exit
+		distance 6000
+		period 4522
+		object "KW.S.007.*.Tau Ceti"

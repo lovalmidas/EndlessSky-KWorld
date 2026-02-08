@@ -1,9 +1,52 @@
 system "KW.S.011.Omicron Eridani"
+	"display name" "Omicron Eridani"
 	pos 10272.014 -8563.145
-	government Uninhabited
+	government KW.Sol
 	arrival 1200
-	habitable 2300
+	habitable 2480
 	haze _menu/haze-33
 	fleet "KW.Sol Patrol" 6000
 	fleet "KW.Sol Patrol Machine" 4000
+	object
+		sprite star/k0
+		distance 61
+		period 996.325
+	object
+		sprite star/a-dwarf
+		distance 193.358
+		period 996.325
+		offset 180
+	object
+		sprite planet/desert_8
+			scale 0.3
+		distance 2670
+		period 1108
+		object
+			sprite planet/_poi_farm
+			distance 154
+			period 1108
+	object
+		sprite planet/rock_30
+			scale 0.34
+		distance 3365
+		period 1568
+		object
+			sprite planet/_poi_none
+			distance 175
+			period 1568
+	object
+		sprite planet/gas_6
+			scale 0.6
+		distance 9510
+		period 7450
+	object
+		sprite planet/gas_19
+			scale 0.3
+		distance 11400
+		period 9777
+	object "KW.S.011.~.Omicron Eridani"
+		sprite mapicon/_exit
+		distance 12200
+		period 9777 
+		object "KW.S.011.*.Omicron Eridani"
 

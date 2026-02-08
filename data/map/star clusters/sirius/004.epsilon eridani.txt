@@ -1,9 +1,42 @@
 system "KW.S.004.Epsilon Eridani"
+	"display name" "Epsilon Eridani"
 	pos 10268.459 -8568.478
-	government Uninhabited
+	government KW.Sol
 	arrival 1200
-	habitable 2300
+	habitable 900
 	haze _menu/haze-33
 	fleet "KW.Sol Patrol" 6000
 	fleet "KW.Sol Patrol Machine" 4000
+	object
+		sprite star/k3
+	object
+		sprite planet/rock_19
+			scale 0.1
+		distance 1025
+		period 437.5
+	object
+		sprite planet/rock_7
+			scale 0.44
+		distance 2125
+		period 1306
+	object
+		sprite planet/dust_6
+			scale 0.2
+		distance 3022
+		period 2215
+		object
+			sprite mapicon/_poi_farm
+			distance 103.817
+			period 2215
+			offset 120
+	object
+		sprite planet/gas_15
+			scale 0.9
+		distance 6715
+		period 7336
+	object "KW.S.004.~.Epsilon Eridani"
+		sprite mapicon/_exit
+		distance 8000
+		period 7336
+		object "KW.S.004.*.Epsilon Eridani"
 

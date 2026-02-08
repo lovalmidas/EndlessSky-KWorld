@@ -4,7 +4,7 @@ system KW.S.000.Sol
 	government KW.Sol
 	attributes iron-source
 	arrival 1080
-	habitable 2100
+	habitable 1400
 	belt 1529
 	haze _menu/haze-67
 	minables iron 45 4
@@ -24,45 +24,43 @@ system KW.S.000.Sol
 	fleet "KW.Sol Patrol Machine" 3500
 	fleet "KW.Sol Miner" 1600
 	fleet "KW.Sol Miner Machine" 6000
-	fleet "KW.Sol Pirates" 8000
 	fleet "KW.Sol Pirates" 10000
-	fleet "KW.Sol Pirates" 15000
 	object
-		sprite star/k0
+		sprite star/g3
 		period 10
 	object
 		sprite planet/mercury_1
 			scale 0.1
-		distance 725.503
+		distance 315
 		period 60
 	object
 		sprite planet/venus_1
 			scale 0.25
-		distance 1328.066
+		distance 582
 		period 150
 	object
 		sprite planet/earthlike_1
 			scale 0.4
-		distance 2084.345
+		distance 975
 		period 365.25
 		object KW.S.000.0A.Yekaterinburg
 			sprite mapicon/_poi_city_5
-			distance 203.87
+			distance 205
 			period 365.25
 			offset -10
 		object KW.S.000.0B.Alps
 			sprite mapicon/_poi_city_3
-			distance 201.493
+			distance 205
 			period 365.25
 			offset 60
 		object KW.S.000.0C.Kyoto
 			sprite mapicon/_poi_city_1
-			distance 208.659
+			distance 205
 			period 365.25
 			offset -80
 		object "KW.S.000.0D.Riau Island"
 			sprite mapicon/_poi_city_1
-			distance 195.447
+			distance 205
 			period 365.25
 			offset -145
 		object KW.S.000.1.Moon
@@ -73,12 +71,12 @@ system KW.S.000.Sol
 	object
 		sprite planet/mars_1
 			scale 0.3
-		distance 2670.622
+		distance 1600
 		period 687
 	object
 		sprite planet/jupiter_1
 			scale 1.5
-		distance 7883.684
+		distance 3640
 		period 2348.4
 		object
 			sprite planet/io_1
@@ -92,17 +90,17 @@ system KW.S.000.Sol
 				offset 60
 	object
 		sprite planet/saturn_1
-		distance 11357.677
+		distance 6060
 		period 5048.87
 	object
 		sprite planet/uranus_1
 			scale 0.8
-		distance 14980.885
+		distance 11300
 		period 12858.9
 	object
 		sprite planet/neptune_1
 			scale 0.5
-		distance 17152.503
+		distance 17150
 		period 24012.7
 	object KW.S.000.~.Sol
 		sprite mapicon/_exit

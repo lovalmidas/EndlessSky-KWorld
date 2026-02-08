@@ -1,9 +1,42 @@
 system "KW.S.010.van Maanen's Star"
+	"display name" "van Maanen's Star"
 	pos 10239.422 -8582.404
-	government Uninhabited
+	government KW.Sol
 	arrival 1200
-	habitable 2300
+	habitable 300
 	haze _menu/haze-33
 	fleet "KW.Sol Patrol" 6000
 	fleet "KW.Sol Patrol Machine" 4000
+	object
+		sprite star/g-dwarf
+		offset 180
+	object
+		sprite planet/dust_2
+			scale 0.12
+		distance 750
+		period 474.3
+	object
+		sprite planet/gas_16
+			scale 0.8
+		distance 4660
+		period 7346
+	object
+		sprite planet/gas_23
+		distance 7642
+		period 15428
+		object
+			sprite planet/rock_5
+				scale 0.2
+			distance 1300
+			period 26
+			object
+				sprite mapicon/_poi_lab
+				distance 103
+				period 26
+				offset -75
+	object "KW.S.010.~.van Maanen's Star"
+		sprite mapicon/_exit
+		distance 9000
+		period 15428
+		object "KW.S.010.*.van Maanen's Star"
 

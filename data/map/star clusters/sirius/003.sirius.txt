@@ -1,4 +1,5 @@
 system KW.S.003.Sirius
+	"display name" Sirius
 	pos 10265.496 -8586.552
 	government Uninhabited
 	arrival 1200
@@ -12,31 +13,31 @@ system KW.S.003.Sirius
 	object
 		sprite planet/rock_13
 			scale 0.15
-		distance 2537.25
-		period 35.963
+		distance 2535
+		period 597.5
 	object
 		sprite planet/desert_9
 			scale 0.2
-		distance 3177.188
-		period 289.099
+		distance 3180
+		period 839.5
 	object
 		sprite planet/gas_32
 			scale 0.6
-		distance 11708.008
-		period 1563.179
+		distance 11700
+		period 9525
 		object
 			sprite planet/dust_5
 				scale 0.05
 			distance 650.622
-			period 1416.862
+			period 9525
 	object
 		sprite planet/gas_12
 			scale 0.4
-		distance 18931.162
-		period 10076.334
-	object
+		distance 19160
+		period 12420
+	object KW.S.003.~.Sirius
 		sprite mapicon/_exit
-			scale 0.5
 		distance 20000
-		period 10076.3
+		period 12420
+		object KW.S.003.*.Sirius
 

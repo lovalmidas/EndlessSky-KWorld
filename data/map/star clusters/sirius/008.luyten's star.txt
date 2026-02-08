@@ -1,9 +1,46 @@
 system "KW.S.008.Luyten's Star"
+	"display name" "Luyten's Star"
 	pos 10300.459 -8550.404
-	government Uninhabited
+	government KW.Sol
 	arrival 1200
-	habitable 2300
+	habitable 460
 	haze _menu/haze-33
 	fleet "KW.Sol Patrol" 6000
 	fleet "KW.Sol Patrol Machine" 4000
-
+	object
+		sprite star/m3
+	object
+		sprite star/rock_13
+			scale 0.05
+		distance 540
+		period 234
+	object
+		sprite planet/gas_33
+			scale 0.25
+		distance 2200
+		period 1925
+		object
+			sprite planet/dust_14
+				scale 0.15
+			distance 288
+			period 21.8
+			object
+				sprite mapicon/_poi_lab
+				distance 77
+				period 21.8
+				offset -45
+	object
+		sprite planet/ice_6
+			scale 0.18
+		distance 3450
+		period 3379
+	object
+		sprite planet/rock_1
+			scale 0.1
+		distance 11200
+		period 22105
+	object "KW.S.008.~.Luyten's Star"
+		sprite mapicon/_exit
+		distance 12000
+		period 22105
+		object "KW.S.008.*.Luyten's Star"

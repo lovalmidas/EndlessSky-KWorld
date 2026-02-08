@@ -1,9 +1,31 @@
 system "KW.S.009.Kapteyn's Star"
+	"display name" "Kapteyn's Star"
 	pos 10293.644 -8573.515
 	government Uninhabited
 	arrival 1200
-	habitable 2300
+	habitable 270
 	haze _menu/haze-33
 	fleet "KW.Sol Patrol" 6000
 	fleet "KW.Sol Patrol Machine" 4000
-
+	object
+		sprite star/m5
+	object
+		sprite planet/gas_11
+			scale 0.22
+		distance 3600
+		period 5258
+	object
+		sprite planet/ice_16
+			scale 0.21
+		distance 5500
+		period 9929
+	object
+		sprite planet/gas_19
+			scale 0.4
+		distance 7500
+		period 15811
+	object "KW.S.009.~.Kapteyn's Star"
+		sprite mapicon/_exit
+		distance 8000
+		period 15811
+		object "KW.S.009.*.Kapteyn's Star"

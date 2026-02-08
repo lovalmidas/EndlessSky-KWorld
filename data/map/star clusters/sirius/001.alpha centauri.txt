@@ -3,7 +3,7 @@ system "KW.S.001.Alpha Centauri"
 	pos 10272.384 -8604.848
 	government Uninhabited
 	arrival 1200
-	habitable 2400
+	habitable 2380
 	haze _menu/haze-33
 	fleet "KW.Sol Patrol" 3500
 	fleet "KW.Sol Patrol Machine" 2500
@@ -18,36 +18,39 @@ system "KW.S.001.Alpha Centauri"
 		distance 46.784
 		period 141
 		offset 180
-	object KW.S.001.0.Advent
+	object
 		sprite planet/ocean_2
-			scale 0.3
-		distance 2164.448
-		period 66.584
+			scale 0.15
+		distance 2160.526
+		period 823
+		object KW.S.001.0.Advent
+			sprite mapicon/_poi_city_1
+			distance 77
+			period 823
+			offset 40
 	object
 		sprite planet/desert_13
 			scale 0.45
-		distance 3702.463
-		period 182.849
+		distance 3700
+		period 1846
 	object
 		sprite planet/rock_2
 			scale 0.35
-		distance 5414.171
-		period 610.888
+		distance 5410
+		period 3262
 		object
 			sprite planet/rock_15
 				scale 0.1
 			distance 298.559
-			period 312.411
+			period 38.9
 	object
 		sprite planet/gas_22
 			scale 1.2
-		distance 10551.798
-		period 833.859
+		distance 10800
+		period 9202
 	object "KW.S.001.~.Alpha Centauri"
 		sprite mapicon/_exit
-			scale 0.5
 		distance 12500
-		period 833.859
+		period 9202
 		object "KW.S.001.*.Alpha Centauri"
-
 

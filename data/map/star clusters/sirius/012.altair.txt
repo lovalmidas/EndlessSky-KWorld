@@ -1,9 +1,48 @@
 system KW.S.012.Altair
+	"display name" Altair
 	pos 10225.496 -8625.959
 	government Uninhabited
 	arrival 1200
-	habitable 2300
+	habitable 6000
 	haze _menu/haze-33
 	fleet "KW.Sol Patrol" 6000
 	fleet "KW.Sol Patrol Machine" 4000
+	object
+		sprite star/a8
+		period 10
+	object
+		sprite planet/rock_28
+			scale 0.11
+		distance 2295
+		period 567.8
+	object
+		sprite planet/rock_26
+			scale 0.24
+		distance 2760
+		period 748.8
+		object
+			sprite planet/_poi_none
+			distance 123
+			period 748.8
+			offset -65
+	object
+		sprite planet/gas_22
+			scale 0.9
+		distance 8213
+		period 3844
+		object
+			sprite planet/rock_13
+				scale 0.2
+			distance 1210
+			period 27.4
+	object
+		sprite planet/ice_10
+			scale 0.6
+		distance 13270
+		period 7894
+	object KW.S.012.~.Altair
+		sprite mapicon/_exit
+		distance 14000
+		period 7894 
+		object KW.S.012.*.Altair
 
