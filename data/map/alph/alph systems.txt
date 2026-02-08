@@ -253,7 +253,7 @@ system KW.A.004.Drachi
 			distance 557
 			period 496.916
 	object
-		sprite planet/browndwarf-l-rogue
+		sprite planet/browndwarf-l
 		distance 7104
 		period 1603.844
 		object KW.A.004.0.Stolon
@@ -294,7 +294,7 @@ system KW.A.005.Veti
 		distance 778.704
 		period 266.025
 	object KW.A.005.1.Pith
-		sprite planet/forest_15
+		sprite planet/forest_5
 		distance 1201
 		period 569.546
 		object
@@ -516,7 +516,7 @@ system KW.A.010.Motif
 		distance 41.495
 		period 46.772
 	object
-		sprite planet/browndwarf-l-rogue
+		sprite planet/browndwarf-l
 		distance 626
 		period 62.384
 	object
@@ -601,7 +601,7 @@ system KW.A.012.Avathi
 		distance 5077
 		period 1721.394
 	object
-		sprite planet/browndwarf-t-rogue
+		sprite planet/browndwarf-t
 		distance 5908
 		period 2160.878
 	object "KW.WH.Alph Wormhole B"
@@ -787,7 +787,7 @@ system "KW.A.016.Ruchi Vot"
 		distance 4389
 		period 992.959
 	object
-		sprite planet/browndwarf-l-rogue
+		sprite planet/browndwarf-l
 		distance 6750
 		period 1893.82
 		object
@@ -980,7 +980,7 @@ system "KW.A.020.Traif Vot"
 			distance 467
 			period 264.115
 	object
-		sprite planet/browndwarf-t-rogue
+		sprite planet/browndwarf-t
 		distance 4037.385
 		period 1019.651
 	object
@@ -1566,7 +1566,7 @@ system KW.A.035.Donoif
 		distance 583
 		period 54.209
 	object
-		sprite planet/browndwarf-t-rogue
+		sprite planet/browndwarf-t
 		distance 1219
 		period 163.898
 		object
@@ -1945,7 +1945,7 @@ system KW.A.043.Pathi
 		distance 1642
 		period 232.421
 	object
-		sprite planet/forest_15
+		sprite planet/forest_5
 		distance 2690
 		period 487.354
 	object

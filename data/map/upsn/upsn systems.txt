@@ -73,7 +73,7 @@ system KW.U.001.Supragen
 		period 1062.094
 		offset 180
 	object
-		sprite planet/browndwarf-l-rogue
+		sprite planet/browndwarf-l
 		distance 2766
 		period 772.742
 		object
@@ -206,7 +206,7 @@ system KW.U.004.Molagen
 			distance 541
 			period 391.358
 	object
-		sprite planet/browndwarf-t-rogue
+		sprite planet/browndwarf-t
 		distance 4202.297
 		period 1707.092
 	object

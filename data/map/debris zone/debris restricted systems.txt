@@ -22,7 +22,7 @@ system "KW.nA.R01.Restricted Space"
 		distance 291
 		period 42.334
 	object
-		sprite planet/browndwarf-l-rogue
+		sprite planet/browndwarf-l
 		distance 777
 		period 184.706
 	object
@@ -127,7 +127,7 @@ system "KW.nA.R04.Restricted Space"
 		sprite star/o0
 		period 10
 	object
-		sprite planet/browndwarf-y-rogue
+		sprite planet/browndwarf-y
 		distance 2057
 		period 318.592
 	object
@@ -253,7 +253,7 @@ system "KW.nA.R08.Restricted Space"
 			distance 293
 			period 189.584
 	object
-		sprite planet/browndwarf-y-rogue
+		sprite planet/browndwarf-y
 		distance 3472
 		period 1085.326
 		object
@@ -324,7 +324,7 @@ system "KW.nA.R10.Restricted Space"
 		distance 369
 		period 35.721
 	object
-		sprite planet/browndwarf-t-rogue
+		sprite planet/browndwarf-t
 		distance 4317
 		period 1429.43
 
@@ -423,7 +423,7 @@ system "KW.nA.R13.Restricted Space"
 		period 124.933
 		offset 180
 	object
-		sprite planet/forest_15
+		sprite planet/forest_5
 		distance 2600
 		period 1100.461
 

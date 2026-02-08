@@ -49,7 +49,7 @@ system KW.N.000.Nat
 		distance 2141
 		period 584.896
 	object KW.N.000.0.Naturasi
-		sprite planet/forest_15
+		sprite planet/forest_5
 		distance 4667.344
 		period 2198.594
 		object
@@ -590,7 +590,7 @@ system KW.N.011.Mite
 			distance 376
 			period 275.602
 	object KW.N.011.0.Itchat
-		sprite planet/forest_15
+		sprite planet/forest_5
 		distance 975.11
 		period 389.07
 		object
@@ -630,7 +630,7 @@ system KW.N.012.Filariasi
 		distance 2326
 		period 819.245
 	object
-		sprite planet/browndwarf-y-rogue
+		sprite planet/browndwarf-y
 		distance 4937
 		period 2533.343
 		object

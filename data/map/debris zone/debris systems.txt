@@ -10,16 +10,16 @@ system KW.nA.000.Debris
 		sprite star/nova
 		period 200
 	object
-		sprite planet/debris_2
+		sprite planet/dust_2
 		distance 1762.207
 		period 213.854
 	object
-		sprite planet/debris_2
+		sprite planet/dust_2
 		distance 1670.773
 		period 216
 		offset 120
 	object
-		sprite planet/debris_2
+		sprite planet/dust_2
 		distance 1574.213
 		period 246
 		offset -120
@@ -47,7 +47,7 @@ system KW.nA.001.Loss
 		sprite star/a-supergiant
 		period 100
 	object
-		sprite planet/debris_2
+		sprite planet/dust_2
 		distance 547.869
 		period 156.197
 
@@ -61,7 +61,7 @@ system KW.nA.002.Erasure
 		sprite star/f5-old
 		period 10
 	object KW.nA.002.0.Whisper
-		sprite planet/dust_19
+		sprite planet/dust_9
 		distance 425
 		period 59.841
 	object

@@ -36,7 +36,7 @@ system KW.P.000.Phi
 		distance 789
 		period 157.8
 	object
-		sprite planet/browndwarf-y-rogue
+		sprite planet/browndwarf-y
 		distance 1518
 		period 421.113
 		object KW.P.000.2.'et'us
@@ -44,7 +44,7 @@ system KW.P.000.Phi
 			distance 297
 			period 242.129
 	object KW.P.000.0.Phi'ephi
-		sprite planet/forest_15
+		sprite planet/forest_5
 		distance 3207
 		period 1293.121
 		object
@@ -319,7 +319,7 @@ system KW.P.006.'ife'is
 			distance 303
 			period 164.037
 	object KW.P.006.'esfi'us
-		sprite planet/forest_15
+		sprite planet/forest_5
 		distance 8396.838
 		period 602.719
 		object
@@ -372,7 +372,7 @@ system KW.P.007.'ife'esi
 			distance 308
 			period 141.463
 	object
-		sprite planet/browndwarf-y-rogue
+		sprite planet/browndwarf-y
 		distance 9550
 		period 32129.071
 
@@ -706,7 +706,7 @@ system KW.P.015.'ere'us
 			distance 280
 			period 122.618
 	object
-		sprite planet/browndwarf-t-rogue
+		sprite planet/browndwarf-t
 		distance 2014
 		period 313.296
 	object
@@ -722,7 +722,7 @@ system KW.P.015.'ere'us
 			distance 378
 			period 192.334
 	object
-		sprite planet/browndwarf-y-rogue
+		sprite planet/browndwarf-y
 		distance 3881
 		period 838.071
 	object
@@ -792,7 +792,7 @@ system KW.P.017.'ephe'esi
 		distance 312.196
 		period 60.554
 	object
-		sprite planet/browndwarf-t-rogue
+		sprite planet/browndwarf-t
 		distance 4485.904
 		period 2788.379
 	object
@@ -1079,11 +1079,11 @@ system KW.P.024.'ofo'feis
 		period 52.059
 		offset 180
 	object
-		sprite planet/browndwarf-l-rogue
+		sprite planet/browndwarf-l
 		distance 2332
 		period 546.248
 	object
-		sprite planet/browndwarf-t-rogue
+		sprite planet/browndwarf-t
 		distance 3336
 		period 934.622
 

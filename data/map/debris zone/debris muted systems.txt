@@ -184,11 +184,11 @@ system KW.nA.m08.---
 		sprite star/b-giant
 		period 10
 	object
-		sprite planet/browndwarf-l-rogue
+		sprite planet/browndwarf-l
 		distance 2905
 		period 587.87
 	object
-		sprite planet/browndwarf-y-rogue
+		sprite planet/browndwarf-y
 		distance 12072
 		period 4980.018
 		object
@@ -235,7 +235,7 @@ system KW.nA.m10.---
 		distance 708
 		period 615.268
 	object
-		sprite planet/browndwarf-l-rogue
+		sprite planet/browndwarf-l
 		distance 2316
 		period 3640.174
 		object
@@ -677,7 +677,7 @@ system KW.nA.m98.Blackgate
 			distance 409
 			period 216.472
 	object
-		sprite planet/debris_2
+		sprite planet/dust_2
 		distance 1901.032
 		period 18983.268
 

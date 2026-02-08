@@ -437,7 +437,7 @@ system "KW.AB.011.Interstellar Plains"
 		distance 976
 		period 133.075
 	object
-		sprite planet/browndwarf-l-rogue
+		sprite planet/browndwarf-l
 		distance 4488.565
 		period 1312.447
 		object
@@ -494,7 +494,7 @@ system KW.AB.012.Wah
 		distance 1326.148
 		period 169.918
 	object
-		sprite planet/browndwarf-l-rogue
+		sprite planet/browndwarf-l
 		distance 3459.166
 		period 285.928
 
@@ -660,7 +660,7 @@ system KW.AB.016.Qulek
 			distance 176
 			period 72.619
 	object
-		sprite planet/browndwarf-y-rogue
+		sprite planet/browndwarf-y
 		distance 1619.414
 		period 397.232
 	object

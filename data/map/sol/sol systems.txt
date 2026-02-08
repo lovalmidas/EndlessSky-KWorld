@@ -153,7 +153,7 @@ system KW.S.005.Canopus
 		distance 3175.149
 		period 2001.529
 		object KW.S.005.0.Marigold
-			sprite planet/forest_15
+			sprite planet/forest_5
 			distance 568
 			period 70.465
 		object
@@ -364,7 +364,7 @@ system KW.S.011.Veil
 			distance 6278.38
 			period 445.568
 	object
-		sprite planet/browndwarf-l-rogue
+		sprite planet/browndwarf-l
 		distance 12768
 		period 3864.487
 		object
@@ -466,7 +466,7 @@ system KW.S.013.Vega
 			distance 482
 			period 400.01
 	object
-		sprite planet/debris_2
+		sprite planet/dust_2
 		distance 2373.154
 		period 808.625
 
@@ -489,24 +489,24 @@ system KW.S.014.Denebola
 		sprite star/a3
 		period 100
 	object
-		sprite planet/debris_1
+		sprite planet/dust_1
 			scale 2
 		distance 1145.592
 		period 121
 	object
-		sprite planet/debris_1
+		sprite planet/dust_1
 			scale 2
 		distance 1122.242
 		period 121
 		offset -115
 	object
-		sprite planet/debris_1
+		sprite planet/dust_1
 			scale 2
 		distance 1203.754
 		period 121
 		offset 40
 	object
-		sprite planet/debris_1
+		sprite planet/dust_1
 			scale 2
 		distance 1350.372
 		period 121
@@ -862,7 +862,7 @@ system KW.S.023.Shaula
 		period 233.324
 		offset 180
 	object
-		sprite planet/dust_19
+		sprite planet/dust_9
 		distance 4436.064
 		period 153.614
 
@@ -931,7 +931,7 @@ system KW.S.025.Arneb
 			distance 197
 			period 104.52
 		object
-			sprite planet/dust_19
+			sprite planet/dust_9
 			distance 394
 			period 89.241
 		object
@@ -1153,7 +1153,7 @@ system KW.S.029.Ceris
 			distance 303
 			period 164.037
 	object
-		sprite planet/browndwarf-y-rogue
+		sprite planet/browndwarf-y
 		distance 15641.296
 		period 2551.907
 

@@ -47,7 +47,7 @@ system KW.SZ.000.Sanctuary
 		period 89
 		offset -10
 	object KW.SZ.000.0.Sanctum
-		sprite planet/forest_15
+		sprite planet/forest_5
 		distance 2269.329
 		period 79
 	object
@@ -218,11 +218,11 @@ system KW.SZ.005.Passage
 			distance 244
 			period 180.3
 	object
-		sprite planet/debris_2
+		sprite planet/dust_2
 		distance 4651
 		period 2705.006
 	object
-		sprite planet/browndwarf-y-rogue
+		sprite planet/browndwarf-y
 		distance 9772
 		period 8238.039
 	object
@@ -403,7 +403,7 @@ system KW.SZ.009.Crossroads
 			distance 586
 			period 536.225
 	object
-		sprite planet/debris_1
+		sprite planet/dust_1
 		distance 14636
 		period 15239.36
 		object
@@ -466,7 +466,7 @@ system KW.SZ.011.Highway
 		distance 3739
 		period 983.298
 	object
-		sprite planet/forest_15
+		sprite planet/forest_5
 		distance 4791
 		period 1426.235
 

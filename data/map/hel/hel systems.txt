@@ -270,7 +270,7 @@ system KW.H.004.Lustra
 		distance 1675
 		period 274.045
 	object
-		sprite planet/browndwarf-l-rogue
+		sprite planet/browndwarf-l
 		distance 2392
 		period 467.672
 
@@ -527,7 +527,7 @@ system KW.H.010.Scorch
 		period 139.833
 		offset 180
 	object
-		sprite planet/browndwarf-l-rogue
+		sprite planet/browndwarf-l
 		distance 750
 		period 109.789
 	object
@@ -703,7 +703,7 @@ system KW.H.013.Aria
 			distance 246
 			period 100.976
 	object
-		sprite planet/browndwarf-l-rogue
+		sprite planet/browndwarf-l
 		distance 3434
 		period 2611.552
 
@@ -767,7 +767,7 @@ system KW.H.014.Vex
 			distance 526
 			period 742.973
 	object
-		sprite planet/debris_1
+		sprite planet/dust_1
 		distance 16233
 		period 13693.414
 		object

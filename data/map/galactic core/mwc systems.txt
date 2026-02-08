@@ -61,7 +61,7 @@ system KW.MWC.002.Sgr-C
 			distance 4625.856
 			period 761.994
 	object
-		sprite planet/debris_2
+		sprite planet/dust_2
 		distance 4313
 		period 1218.207
 	object
@@ -141,7 +141,7 @@ system "KW.MWC.006.Thread of Will"
 		period 1091.306
 		offset 180
 	object
-		sprite planet/browndwarf-t-rogue
+		sprite planet/browndwarf-t
 		distance 7372
 		period 3248.365
 
@@ -167,7 +167,7 @@ system "KW.MWC.008.Burning Hearts"
 		distance 47.378
 		period 63.826
 	object
-		sprite planet/browndwarf-l-rogue
+		sprite planet/browndwarf-l
 		distance 935.053
 		period 188.177
 	object

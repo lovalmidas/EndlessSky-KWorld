@@ -42,7 +42,7 @@ system KW.B.000.Bet
 		distance 420.769
 		period 299
 	object
-		sprite planet/forest_15
+		sprite planet/forest_5
 		distance 639.287
 		period 472
 		object KW.B.000.0A.Unes
@@ -437,7 +437,7 @@ system KW.B.008.Maci
 		distance 4781
 		period 11380.759
 		object
-			sprite planet/browndwarf-l-rogue
+			sprite planet/browndwarf-l
 			distance 454
 			period 26.714
 	object
@@ -697,7 +697,7 @@ system KW.B.014.Amici
 		distance 2443
 		period 1489.72
 		object KW.B.014.0.Amicable
-			sprite planet/forest_15
+			sprite planet/forest_5
 			distance 490
 			period 56.461
 		object
@@ -937,7 +937,7 @@ system KW.B.019.Coda
 		distance 5515.989
 		period 739.437
 	object
-		sprite planet/browndwarf-t-rogue
+		sprite planet/browndwarf-t
 		distance 2798.38
 		period 983.431
 	object

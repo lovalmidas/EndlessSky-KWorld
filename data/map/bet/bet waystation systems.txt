@@ -145,7 +145,7 @@ system "KW.B.W3.Waypoint B-3"
 			distance 198.854
 			period 50.658
 	object
-		sprite planet/browndwarf-l-rogue
+		sprite planet/browndwarf-l
 		distance 3772
 		period 869.8
 		object
