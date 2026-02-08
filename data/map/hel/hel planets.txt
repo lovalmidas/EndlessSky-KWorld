@@ -23,7 +23,7 @@ planet KW.H.005.0.Skivy
 
 planet KW.H.014.0.Consterna
 	"display name" Consterna
-	landscape land/desert4
+	landscape land/desert_9
 	description WIP
 	government Uninhabited
 

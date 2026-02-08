@@ -24,51 +24,51 @@ system KW.R.000.Rho
 		distance 47.873
 		period 70.818
 	object
-		sprite planet/ice5
+		sprite planet/ice_11
 		distance 409
 		period 101.198
 	object
-		sprite planet/forest5
+		sprite planet/forest_11
 		distance 1020.266
 		period 398.709
 	object
-		sprite planet/gas2
+		sprite planet/gas_5
 		distance 1714
 		period 868.166
 		object
-			sprite planet/rock14
+			sprite planet/rock_29
 			distance 310
 			period 142.843
 	object
-		sprite planet/gas7
+		sprite planet/gas_15
 		distance 2579
 		period 1602.372
 		object
-			sprite planet/desert4-b
+			sprite planet/desert_10
 			distance 275
 			period 215.73
 	object
-		sprite planet/gas11
+		sprite planet/gas_23
 		distance 4841
 		period 4120.871
 		object
-			sprite planet/rock0-b
+			sprite planet/rock_2
 			distance 465
 			period 379.036
 		object
-			sprite planet/dust3-b
+			sprite planet/dust_8
 			distance 607
 			period 565.306
 		object
-			sprite planet/io-b
+			sprite planet/io_2
 			distance 755
 			period 784.19
 	object
-		sprite planet/saturn
+		sprite planet/saturn_1
 		distance 10750
 		period 13636.381
 		object
-			sprite planet/lava0-b
+			sprite planet/lava_2
 			distance 275
 			period 119.348
 	object "KW.WH.Alph Wormhole A"

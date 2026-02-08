@@ -18,7 +18,7 @@ system "KW.nA.R01.Restricted Space"
 		distance 48.032
 		period 51.88
 	object
-		sprite planet/lava1-b
+		sprite planet/lava_4
 		distance 291
 		period 42.334
 	object
@@ -26,11 +26,11 @@ system "KW.nA.R01.Restricted Space"
 		distance 777
 		period 184.706
 	object
-		sprite planet/callisto
+		sprite planet/callisto_1
 		distance 1536
 		period 513.376
 	object
-		sprite planet/gas15
+		sprite planet/gas_29
 		distance 2772
 		period 1244.625
 
@@ -47,19 +47,19 @@ system "KW.nA.R02.Restricted Space"
 		sprite star/g3
 		period 10
 	object
-		sprite planet/lava1
+		sprite planet/lava_2
 		distance 358
 		period 102.408
 	object
-		sprite planet/gas9-b
+		sprite planet/gas_20
 		distance 2114
 		period 1469.496
 		object
-			sprite planet/rock17
+			sprite planet/rock_33
 			distance 248
 			period 240.531
 		object
-			sprite planet/ice8-b
+			sprite planet/ice_18
 			distance 384
 			period 284.444
 	object
@@ -79,15 +79,15 @@ system "KW.nA.R03.Restricted Space"
 		sprite star/o5
 		period 10
 	object
-		sprite planet/rock9-b
+		sprite planet/rock_20
 		distance 392
 		period 31.045
 	object
-		sprite planet/lava2
+		sprite planet/lava_5
 		distance 834
 		period 96.341
 	object
-		sprite planet/desert12
+		sprite planet/desert_5
 		distance 1539.5
 		period 241.618
 		object
@@ -95,19 +95,19 @@ system "KW.nA.R03.Restricted Space"
 			distance 162.5
 			period 127.578
 	object
-		sprite planet/gas1-b
+		sprite planet/gas_4
 		distance 2965
 		period 645.799
 		object
-			sprite planet/lava0
+			sprite planet/lava_1
 			distance 758
 			period 546.162
 	object
-		sprite planet/gas12
+		sprite planet/gas_25
 		distance 6892
 		period 2288.642
 		object
-			sprite planet/rock3
+			sprite planet/rock_7
 			distance 315
 			period 211.333
 		object
@@ -131,11 +131,11 @@ system "KW.nA.R04.Restricted Space"
 		distance 2057
 		period 318.592
 	object
-		sprite planet/gas15
+		sprite planet/gas_29
 		distance 4538
 		period 1043.95
 		object
-			sprite planet/dust0
+			sprite planet/dust_1
 			distance 228
 			period 212.03
 
@@ -151,23 +151,23 @@ system "KW.nA.R05.Restricted Space"
 		sprite star/m8
 		period 10
 	object
-		sprite planet/gas10-hot
+		sprite planet/gas_22
 		distance 1703
 		period 2419.441
 		object
-			sprite planet/ice0
+			sprite planet/ice_1
 			distance 198
 			period 105.317
 	object
-		sprite planet/callisto-b
+		sprite planet/callisto_2
 		distance 2386
 		period 4012.35
 	object
-		sprite planet/ice7
+		sprite planet/ice_15
 		distance 5044
 		period 12332.631
 	object
-		sprite planet/gas2-hot
+		sprite planet/gas_6
 		distance 11822
 		period 44251.657
 
@@ -184,11 +184,11 @@ system "KW.nA.R06.Restricted Space"
 		sprite star/a0
 		period 10
 	object
-		sprite planet/dust2-b
+		sprite planet/dust_6
 		distance 375
 		period 48.08
 	object
-		sprite planet/lava3-b
+		sprite planet/lava_8
 		distance 1365.132
 		period 207.801
 	object
@@ -207,11 +207,11 @@ system "KW.nA.R07.Restricted Space"
 		sprite star/m3
 		period 10
 	object
-		sprite planet/gas0-b
+		sprite planet/gas_2
 		distance 1845
 		period 2090.213
 		object
-			sprite planet/dust5-b
+			sprite planet/dust_12
 			distance 279
 			period 121.962
 		object
@@ -219,11 +219,11 @@ system "KW.nA.R07.Restricted Space"
 			distance 444
 			period 442.574
 	object
-		sprite planet/gas11-b
+		sprite planet/gas_24
 		distance 3362
 		period 5141.533
 		object
-			sprite planet/dust3-b
+			sprite planet/dust_8
 			distance 291
 			period 187.646
 
@@ -245,11 +245,11 @@ system "KW.nA.R08.Restricted Space"
 		distance 94.829
 		period 73.948
 	object
-		sprite planet/gas13
+		sprite planet/gas_27
 		distance 2600.106
 		period 606.285
 		object
-			sprite planet/dust3
+			sprite planet/dust_7
 			distance 293
 			period 189.584
 	object
@@ -257,7 +257,7 @@ system "KW.nA.R08.Restricted Space"
 		distance 3472
 		period 1085.326
 		object
-			sprite planet/callisto-b
+			sprite planet/callisto_2
 			distance 284
 			period 125.255
 
@@ -279,11 +279,11 @@ system "KW.nA.R09.Restricted Space"
 		distance 46.7
 		period 52.925
 	object
-		sprite planet/gas6-hot
+		sprite planet/gas_14
 		distance 3077
 		period 1482.034
 		object
-			sprite planet/dust1-b
+			sprite planet/dust_4
 			distance 229
 			period 107.778
 		object
@@ -291,15 +291,15 @@ system "KW.nA.R09.Restricted Space"
 			distance 384
 			period 463.438
 	object
-		sprite planet/gas4-b
+		sprite planet/gas_10
 		distance 3962
 		period 2165.403
 	object
-		sprite planet/gas3
+		sprite planet/gas_7
 		distance 9301
 		period 7788.638
 		object
-			sprite planet/europa
+			sprite planet/europa_1
 			distance 323
 			period 274.61
 		object
@@ -320,7 +320,7 @@ system "KW.nA.R10.Restricted Space"
 		sprite star/b3
 		period 10
 	object
-		sprite planet/lava5-b
+		sprite planet/lava_12
 		distance 369
 		period 35.721
 	object
@@ -349,7 +349,7 @@ system "KW.nA.R11.Restricted Space"
 			distance 282
 			period 224.019
 	object
-		sprite planet/gas12-b
+		sprite planet/gas_26
 		distance 4134
 		period 1063.202
 
@@ -373,35 +373,35 @@ system "KW.nA.R12.Restricted Space"
 		distance 23.407
 		period 77.938
 	object
-		sprite planet/cloud1-b
+		sprite planet/cloud_4
 		distance 530
 		period 157.558
 		object
-			sprite planet/europa
+			sprite planet/europa_1
 			distance 205
 			period 138.849
 	object
-		sprite planet/forest2-b
+		sprite planet/forest_6
 		distance 1126
 		period 487.905
 	object
-		sprite planet/gas7
+		sprite planet/gas_15
 		distance 1786
 		period 974.652
 	object
-		sprite planet/gas16
+		sprite planet/gas_31
 		distance 2459
 		period 1574.582
 		object
-			sprite planet/dust0
+			sprite planet/dust_1
 			distance 226
 			period 209.246
 	object
-		sprite planet/lava0-b
+		sprite planet/lava_2
 		distance 3195
 		period 2332.028
 	object
-		sprite planet/gas9-b
+		sprite planet/gas_20
 		distance 7937
 		period 9130.868
 
@@ -423,7 +423,7 @@ system "KW.nA.R13.Restricted Space"
 		period 124.933
 		offset 180
 	object
-		sprite planet/forest12
+		sprite planet/forest_25
 		distance 2600
 		period 1100.461
 
@@ -439,7 +439,7 @@ system "KW.nA.R99.No Return"
 		sprite star/f-dwarf
 		period 10
 	object
-		sprite planet/rock12-b
+		sprite planet/rock_26
 		distance 352
 		period 140.204
 		object

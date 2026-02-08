@@ -17,11 +17,11 @@ system "KW.01.v01.Scarred Man"
 		distance 286.332
 		period 161.176
 	object
-		sprite planet/gas7
+		sprite planet/gas_15
 		distance 919
 		period 146.945
 		object
-			sprite planet/rock3-b
+			sprite planet/rock_8
 			distance 279
 			period 176.16
 		object
@@ -29,27 +29,27 @@ system "KW.01.v01.Scarred Man"
 			distance 415
 			period 520.675
 	object
-		sprite planet/gas2-hot
+		sprite planet/gas_6
 		distance 2533
 		period 672.41
 		object
-			sprite planet/rhea
+			sprite planet/gas_11
 			distance 225
 			period 104.967
 		object
-			sprite planet/rock20
+			sprite planet/rock_39
 			distance 390
 			period 291.137
 	object
-		sprite planet/rock4
+		sprite planet/rock_9
 		distance 5603.847
 		period 3762.102
 	object
-		sprite planet/gas16-b
+		sprite planet/gas_34
 		distance 12256
 		period 7156.564
 		object
-			sprite "planet/asteroid base"
+			sprite "planet/rock_1"
 			distance 239
 			period 96.697
 
@@ -64,27 +64,27 @@ system KW.01.v02.Creaper
 		sprite star/b8
 		period 10
 	object
-		sprite planet/forest0-b
+		sprite planet/forest_2
 		distance 346
 		period 36.407
 	object
-		sprite planet/ocean7
+		sprite planet/ocean_15
 		distance 804
 		period 128.961
 	object
-		sprite planet/neptune
+		sprite planet/neptune_1
 		distance 2554
 		period 730.14
 		object
-			sprite planet/rock14-b
+			sprite planet/rock_30
 			distance 267
 			period 114.179
 		object
-			sprite planet/ice8
+			sprite planet/ice_17
 			distance 379
 			period 278.907
 		object
-			sprite planet/desert4-b
+			sprite planet/desert_10
 			distance 493
 			period 517.824
 	object
@@ -92,15 +92,15 @@ system KW.01.v02.Creaper
 		distance 6702
 		period 3103.713
 		object
-			sprite planet/lava0-b
+			sprite planet/lava_2
 			distance 299
 			period 135.308
 	object
-		sprite planet/gas0-b
+		sprite planet/gas_2
 		distance 8965
 		period 4801.76
 		object
-			sprite planet/io-b
+			sprite planet/io_2
 			distance 311
 			period 207.32
 
@@ -121,7 +121,7 @@ system KW.01.v03.Davi-PDP
 		period 50.56
 		offset 180
 	object
-		sprite planet/lava6
+		sprite planet/lava_13
 		distance 756
 		period 117.35
 	object
@@ -129,11 +129,11 @@ system KW.01.v03.Davi-PDP
 		distance 1191
 		period 232.042
 	object
-		sprite planet/gas8
+		sprite planet/gas_17
 		distance 2462
 		period 689.654
 	object
-		sprite planet/gas4-b
+		sprite planet/gas_10
 		distance 8629
 		period 4525.221
 
@@ -149,15 +149,15 @@ system KW.01.v04.Harlie
 		sprite star/m5
 		period 10
 	object
-		sprite planet/gas17-b
+		sprite planet/gas_36
 		distance 1430
 		period 1710.031
 	object
-		sprite planet/jupiter
+		sprite planet/jupiter_1
 		distance 4087
 		period 8262.414
 		object
-			sprite planet/dust1
+			sprite planet/dust_2
 			distance 290
 			period 153.594
 
@@ -172,19 +172,19 @@ system KW.01.v05.Wabbit
 		sprite star/k0-old
 		period 10
 	object
-		sprite planet/rock11
+		sprite planet/rock_23
 		distance 368
 		period 90.203
 	object
-		sprite planet/gas3-hot
+		sprite planet/gas_8
 		distance 1006
 		period 407.703
 	object
-		sprite planet/gas0-b
+		sprite planet/gas_2
 		distance 3104
 		period 2209.681
 		object
-			sprite planet/rock20
+			sprite planet/rock_39
 			distance 288
 			period 184.752
 
@@ -207,35 +207,35 @@ system "KW.01.v06.Pervading Animal"
 		distance 33.175
 		period 63.037
 	object
-		sprite planet/ice1
+		sprite planet/ice_2
 		distance 524
 		period 47.973
 		object
-			sprite planet/dust1-b
+			sprite planet/dust_4
 			distance 208
 			period 93.298
 	object
-		sprite planet/gas13-b
+		sprite planet/gas_28
 		distance 1249
 		period 176.541
 		object
-			sprite planet/rock0
+			sprite planet/rock_1
 			distance 282
 			period 179.009
 	object
-		sprite planet/dust0-b
+		sprite planet/dust_2
 		distance 2865
 		period 613.323
 	object
-		sprite planet/gas1
+		sprite planet/gas_2
 		distance 5003
 		period 1415.299
 		object
-			sprite planet/dust3-b
+			sprite planet/dust_8
 			distance 464
 			period 377.814
 		object
-			sprite planet/desert4-b
+			sprite planet/desert_10
 			distance 572
 			period 647.151
 
@@ -257,11 +257,11 @@ system "KW.01.v07.Untrusted Trust"
 		period 38.982
 		offset 180
 	object
-		sprite planet/desert7
+		sprite planet/desert_15
 		distance 306
 		period 28.6
 	object
-		sprite planet/gas15
+		sprite planet/gas_29
 		distance 748
 		period 109.304
 	object
@@ -269,7 +269,7 @@ system "KW.01.v07.Untrusted Trust"
 		distance 1564
 		period 330.475
 	object
-		sprite planet/gas11-b
+		sprite planet/gas_24
 		distance 2191
 		period 547.957
 
@@ -288,11 +288,11 @@ system KW.01.v08.Brainboot
 		distance 301
 		period 98.47
 	object
-		sprite planet/rock0
+		sprite planet/rock_1
 		distance 769
 		period 402.108
 	object
-		sprite planet/lava7
+		sprite planet/lava_15
 		distance 1501
 		period 1096.541
 
@@ -307,27 +307,27 @@ system KW.01.v09.Cascade
 		sprite star/k-dwarf
 		period 10
 	object
-		sprite planet/rock17-b
+		sprite planet/rock_36
 		distance 234
 		period 143.18
 	object
-		sprite planet/dust1
+		sprite planet/dust_2
 		distance 1403
 		period 2102.067
 	object
-		sprite planet/gas13
+		sprite planet/gas_27
 		distance 2327
 		period 4490.085
 		object
-			sprite planet/rock20
+			sprite planet/rock_39
 			distance 278
 			period 175.214
 	object
-		sprite planet/neptune
+		sprite planet/neptune_1
 		distance 6706
 		period 21966.219
 		object
-			sprite planet/dust4-b
+			sprite planet/dust_10
 			distance 229
 			period 107.778
 
@@ -342,19 +342,19 @@ system KW.01.v10.Ghostball
 		sprite star/g-giant
 		period 10
 	object
-		sprite planet/lava5
+		sprite planet/lava_11
 		distance 1237
 		period 273.456
 		object
-			sprite planet/luna
+			sprite planet/luna_1
 			distance 144
 			period 65.32
 	object
-		sprite planet/gas2
+		sprite planet/gas_5
 		distance 2614
 		period 840.022
 		object
-			sprite planet/ice0-b
+			sprite planet/ice_2
 			distance 288
 			period 184.752
 	object
@@ -362,7 +362,7 @@ system KW.01.v10.Ghostball
 		distance 8028
 		period 4521.094
 	object
-		sprite planet/gas8
+		sprite planet/gas_17
 		distance 11194
 		period 7444.07
 

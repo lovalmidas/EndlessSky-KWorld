@@ -37,7 +37,7 @@ system KW.MWC.001.Sgr-B2
 		sprite star/carbon-core
 		period 1000
 	object
-		sprite planet/lava0-b
+		sprite planet/lava_2
 			scale 0.5
 		distance 801.605
 		period 78.541
@@ -61,11 +61,11 @@ system KW.MWC.002.Sgr-C
 			distance 4625.856
 			period 761.994
 	object
-		sprite planet/debris1
+		sprite planet/debris_2
 		distance 4313
 		period 1218.207
 	object
-		sprite planet/luna
+		sprite planet/luna_1
 		distance 8251
 		period 3223.382
 
@@ -81,7 +81,7 @@ system KW.MWC.003.S0-6
 			scale 2
 		period 100
 	object KW.MWC.003.0.Solitude
-		sprite planet/lava0
+		sprite planet/lava_1
 		distance 4838.988
 		period 654.048
 	object
@@ -100,7 +100,7 @@ system "KW.MWC.004.The Snake"
 		sprite star/g0-old
 		period 10
 	object
-		sprite planet/gas9
+		sprite planet/gas_19
 		distance 2782
 		period 1262.9
 
@@ -120,7 +120,7 @@ system "KW.MWC.005.Thread of Life"
 		distance 16033
 		period 4440.012
 		object
-			sprite planet/dust4
+			sprite planet/dust_9
 			distance 443
 			period 289.991
 
@@ -171,11 +171,11 @@ system "KW.MWC.008.Burning Hearts"
 		distance 935.053
 		period 188.177
 	object
-		sprite planet/gas0-b
+		sprite planet/gas_2
 		distance 3569.17
 		period 397.27
 	object
-		sprite planet/gas7-hot
+		sprite planet/gas_16
 		distance 5379
 		period 1470.426
 
@@ -190,11 +190,11 @@ system KW.MWC.009.Return
 		sprite star/b-giant
 		period 100
 	object
-		sprite planet/desert7
+		sprite planet/desert_15
 		distance 1215.938
 		period 119.087
 	object
-		sprite planet/gas4
+		sprite planet/gas_9
 		distance 1814.937
 		period 264.564
 

@@ -10,29 +10,29 @@ system KW.nA.000.Debris
 		sprite star/nova
 		period 200
 	object
-		sprite planet/debris1
+		sprite planet/debris_2
 		distance 1762.207
 		period 213.854
 	object
-		sprite planet/debris1
+		sprite planet/debris_2
 		distance 1670.773
 		period 216
 		offset 120
 	object
-		sprite planet/debris1
+		sprite planet/debris_2
 		distance 1574.213
 		period 246
 		offset -120
 	object
-		sprite planet/redias
+		sprite planet/gas_16
 		distance 3508.795
 		period 7827.843
 	object
-		sprite planet/rock17
+		sprite planet/rock_33
 		distance 4282.183
 		period 9499.727
 	object
-		sprite planet/gas16-b
+		sprite planet/gas_34
 		distance 17123
 		period 73178.608
 
@@ -47,7 +47,7 @@ system KW.nA.001.Loss
 		sprite star/a-supergiant
 		period 100
 	object
-		sprite planet/debris1
+		sprite planet/debris_2
 		distance 547.869
 		period 156.197
 
@@ -61,35 +61,35 @@ system KW.nA.002.Erasure
 		sprite star/f5-old
 		period 10
 	object KW.nA.002.0.Whisper
-		sprite planet/dust9
+		sprite planet/dust_19
 		distance 425
 		period 59.841
 	object
-		sprite planet/gas11
+		sprite planet/gas_23
 		distance 1901.46
 		period 353.563
 		object
-			sprite planet/dust3-b
+			sprite planet/dust_8
 			distance 393.712
 			period 366.875
 		object
-			sprite planet/ice0
+			sprite planet/ice_1
 			distance 557.219
 			period 596.316
 	object
-		sprite planet/gas3
+		sprite planet/gas_7
 		distance 3594.449
 		period 941.221
 		object
-			sprite planet/callisto-b
+			sprite planet/callisto_2
 			distance 305
 			period 139.401
 	object
-		sprite planet/aera
+		sprite planet/gas_1
 		distance 4659
 		period 2171.961
 	object
-		sprite planet/gas0
+		sprite planet/gas_1
 		distance 6199.79
 		period 2704.946
 
@@ -109,23 +109,23 @@ system KW.nA.003.Twilight
 		period 404.508
 		offset 180
 	object
-		sprite planet/gas9
+		sprite planet/gas_19
 		distance 1372
 		period 221.795
 		object KW.nA.003.0.Solace
-			sprite planet/dust5
+			sprite planet/dust_11
 			distance 282
 			period 123.934
 		object
-			sprite planet/rhea
+			sprite planet/gas_11
 			distance 406
 			period 254.43
 	object
-		sprite planet/gas3-b
+		sprite planet/gas_8
 		distance 2234
 		period 460.835
 	object
-		sprite planet/gas7-b
+		sprite planet/gas_16
 		distance 2830
 		period 657.052
 

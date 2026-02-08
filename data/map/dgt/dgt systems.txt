@@ -13,23 +13,23 @@ system KW.01.000.Dgt
 		sprite star/f0
 		period 10
 	object
-		sprite planet/ice4-b
+		sprite planet/ice_10
 		distance 397
 		period 62.535
 	object
-		sprite planet/rock10
+		sprite planet/rock_21
 		distance 2672.989
 		period 260.953
 		object
-			sprite planet/rock20
+			sprite planet/rock_39
 			distance 219.217
 			period 76.254
 	object
-		sprite planet/desert6-b
+		sprite planet/desert_14
 		distance 4431.282
 		period 508.338
 	object
-		sprite planet/dust3
+		sprite planet/dust_7
 		distance 2069.295
 		period 945.246
 
@@ -49,7 +49,7 @@ system KW.01.001.*-0
 		distance 43.598
 		period 49.728
 	object
-		sprite planet/desert7
+		sprite planet/desert_15
 		distance 630.471
 		period 378.501
 	object
@@ -70,7 +70,7 @@ system KW.01.001.*-0
 		distance 4367
 		period 5749.386
 		object
-			sprite planet/dust4-b
+			sprite planet/dust_10
 			distance 234
 			period 111.327
 
@@ -124,7 +124,7 @@ system "KW.01.006.01-5 (Dgt II)"
 		sprite star/o-dwarf
 		period 100
 	object
-		sprite planet/desert0
+		sprite planet/desert_1
 		distance 1223.303
 		period 470.168
 	object
@@ -132,11 +132,11 @@ system "KW.01.006.01-5 (Dgt II)"
 		distance 690
 		period 199.171
 	object
-		sprite planet/gas3
+		sprite planet/gas_7
 		distance 2387.416
 		period 1281.871
 	object
-		sprite planet/gas16
+		sprite planet/gas_31
 		distance 3938
 		period 2715.599
 	object

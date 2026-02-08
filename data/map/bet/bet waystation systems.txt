@@ -19,7 +19,7 @@ system "KW.B.W1.Waypoint B-1"
 		sprite star/f5
 		period 100
 	object
-		sprite planet/desert10
+		sprite planet/desert_21
 		distance 1552
 		period 122
 		object "KW.B.W1.Waystation B-1"
@@ -28,19 +28,19 @@ system "KW.B.W1.Waypoint B-1"
 			distance 154.565
 			period 173.051
 	object
-		sprite planet/gas16
+		sprite planet/gas_31
 		distance 2359.836
 		period 535
 		object
-			sprite planet/luna-b
+			sprite planet/luna_2
 			distance 227
 			period 129.282
 		object
-			sprite planet/desert4-b
+			sprite planet/desert_10
 			distance 332
 			period 286.167
 	object
-		sprite planet/jupiter
+		sprite planet/jupiter_1
 		distance 5146
 		period 415
 		object
@@ -72,7 +72,7 @@ system "KW.B.W2.Waypoint B-2"
 		sprite star/g3
 		period 100
 	object
-		sprite planet/ocean7-b
+		sprite planet/ocean_16
 		distance 750.789
 		period 52
 	object
@@ -85,24 +85,24 @@ system "KW.B.W2.Waypoint B-2"
 			distance 213
 			period 191.454
 	object
-		sprite planet/gas0
+		sprite planet/gas_1
 		distance 2961.211
 		period 454
 	object
-		sprite planet/redias
+		sprite planet/gas_16
 		distance 5065.5
 		period 1250
 		object
-			sprite planet/rock12-b
+			sprite planet/rock_26
 				scale 0.5
 			distance 370.5
 			period 221.8
 		object
-			sprite planet/rock17-b
+			sprite planet/rock_36
 			distance 477.5
 			period 642.62
 		object
-			sprite planet/rock14
+			sprite planet/rock_29
 			distance 625.5
 			period 409.41
 
@@ -128,19 +128,19 @@ system "KW.B.W3.Waypoint B-3"
 	object
 		sprite star/b-giant
 	object
-		sprite planet/lava0-b
+		sprite planet/lava_2
 		distance 645.581
 		period 30.602
 	object
-		sprite planet/lava6
+		sprite planet/lava_13
 		distance 867.821
 		period 93.867
 	object
-		sprite planet/venus
+		sprite planet/venus_1
 		distance 1780
 		period 281.963
 		object
-			sprite planet/rock10-b
+			sprite planet/rock_22
 				scale 0.3
 			distance 198.854
 			period 50.658
@@ -149,7 +149,7 @@ system "KW.B.W3.Waypoint B-3"
 		distance 3772
 		period 869.8
 		object
-			sprite planet/ice7-b
+			sprite planet/ice_16
 			distance 327
 			period 154.753
 		object "KW.B.W3.Waystation B-3"
@@ -158,7 +158,7 @@ system "KW.B.W3.Waypoint B-3"
 			distance 475
 			period 270.931
 	object
-		sprite planet/gas2
+		sprite planet/gas_5
 		distance 6365
 		period 1906.6
 		object
@@ -193,7 +193,7 @@ system "KW.B.W4.Waypoint B-4"
 			scale 1.5
 		period 100
 	object
-		sprite planet/rock14
+		sprite planet/rock_29
 			scale 0.6
 		distance 305
 		period 103.351
@@ -211,7 +211,7 @@ system "KW.B.W4.Waypoint B-4"
 		distance 1553
 		period 787.47
 	object
-		sprite planet/gas8
+		sprite planet/gas_17
 		distance 5806.012
 		period 2074
 
@@ -239,17 +239,17 @@ system "KW.B.W5.Waypoint B-5"
 		sprite star/f8
 		period 100
 	object
-		sprite planet/desert7
+		sprite planet/desert_15
 			scale 0.6
 		distance 279.859
 		period 23
 	object
-		sprite planet/rock4
+		sprite planet/rock_9
 			scale 0.8
 		distance 445.829
 		period 120
 	object
-		sprite planet/rock3
+		sprite planet/rock_7
 		distance 1951.304
 		period 550
 	object "KW.B.W5.Waystation B-5"
@@ -286,37 +286,37 @@ system "KW.B.W6.Waypoint B-6"
 		distance 50.954
 		period 55.93
 	object
-		sprite planet/rock10
+		sprite planet/rock_21
 		distance 670.799
 		period 51.992
 		object
-			sprite planet/dust0
+			sprite planet/dust_1
 			distance 148.486
 			period 136.511
 	object
-		sprite planet/gas8-hot
+		sprite planet/gas_18
 		distance 1306
 		period 252.004
 		object
-			sprite planet/desert4
+			sprite planet/desert_9
 				scale 0.6
 			distance 162.137
 			period 232.412
 		object
-			sprite planet/rock19
+			sprite planet/rock_37
 				scale 0.2
 			distance 205.627
 			period 297.881
 	object
-		sprite planet/gas9-hot
+		sprite planet/gas_20
 		distance 2551
 		period 687.953
 		object
-			sprite planet/rock17
+			sprite planet/rock_33
 			distance 154.968
 			period 603.66
 	object
-		sprite planet/gas6-hot
+		sprite planet/gas_14
 		distance 4096
 		period 1399.694
 		object "KW.B.W6.Waystation B-6"

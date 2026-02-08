@@ -41,31 +41,31 @@ system KW.F.027.Wolf
 		sprite star/b-giant
 		period 100
 	object
-		sprite planet/ice2-b
+		sprite planet/ice_6
 		distance 1116
 		period 139.978
 		object
-			sprite planet/io
+			sprite planet/io_1
 			distance 145
 			period 66.001
 	object
-		sprite planet/gas15-b
+		sprite planet/gas_32
 		distance 1785
 		period 283.152
 	object
-		sprite planet/gas10-b
+		sprite planet/gas_22
 		distance 3642
 		period 825.224
 		object
-			sprite planet/rock17-b
+			sprite planet/rock_36
 			distance 201
 			period 175.505
 	object
-		sprite planet/gas1
+		sprite planet/gas_2
 		distance 4578
 		period 1162.989
 		object
-			sprite planet/luna-b
+			sprite planet/luna_2
 			distance 467
 			period 381.484
 	object

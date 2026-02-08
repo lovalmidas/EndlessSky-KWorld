@@ -132,7 +132,7 @@ planet KW.S.001.0.Advent
 planet KW.S.002.0.Tiptoe
 	"display name" Tiptoe
 	attributes research
-	landscape land/desert4
+	landscape land/desert_9
 	description "When human explorers first used Chronodrives, the brightest stars of the night sky were their first targets, not only because they could ride on the historical fame of the star, but also because navigation relied on the identifying stars relative to their immediate surroundings. It is bad for a captain to gun his ship towards a speck of light and miss by 100x his anticipated distance, and gravity wells can only be sensed at close-range. Therefore, most starlanes from Sol led to especially hot and luminous systems."
 	description "	Rigel was an early challenge due to occasional interference from Betelgeuse. The challenge was short-lived. When the first explorers arrived, they found no habitable systems. Nonetheless, this piece of rock was far enough from the glazing white heat to secure at least some form of foothold."
 	port "Outpost"
