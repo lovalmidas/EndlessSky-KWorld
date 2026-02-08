@@ -10,7 +10,7 @@ system "KW.S.008.Luyten's Star"
 	object
 		sprite star/m3
 	object
-		sprite star/rock_13
+		sprite planet/rock_13
 			scale 0.05
 		distance 540
 		period 234
