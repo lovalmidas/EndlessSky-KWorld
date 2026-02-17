@@ -1,6 +1,6 @@
 system "KW.S.006.Epsilon Indi"
 	"display name" "Epsilon Indi"
-	pos 10270.533 -8617.367
+	pos 10270.533 -8635.145
 	government Uninhabited
 	arrival 1200
 	habitable 890
@@ -11,7 +11,7 @@ system "KW.S.006.Epsilon Indi"
 		sprite star/k5
 	object
 		sprite planet/browndwarf-t
-		distance 450
+		distance 657.168
 		period 128
 	object
 		sprite planet/browndwarf-t
@@ -20,22 +20,22 @@ system "KW.S.006.Epsilon Indi"
 		object
 			sprite planet/rock_8
 				scale 0.1
-			distance 175
+			distance 304.954
 			period 21
 	object
 		sprite planet/dust_11
 			scale 0.48
-		distance 960
+		distance 1284.875
 		period 399
 	object
 		sprite planet/gas_9
 			scale 0.5
-		distance 3200
+		distance 4642.183
 		period 712
 	object
 		sprite planet/gas_6
 			scale 0.4
-		distance 7600
+		distance 7527.606
 		period 2427
 	object
 		sprite planet/neptune_2
@@ -47,3 +47,4 @@ system "KW.S.006.Epsilon Indi"
 		distance 9000
 		period 9960
 		object "KW.S.006.*.Epsilon Indi"
+

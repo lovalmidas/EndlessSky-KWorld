@@ -76,7 +76,7 @@ system KW.S.000.Sol
 	object
 		sprite planet/jupiter_1
 			scale 1.5
-		distance 3640
+		distance 4638.116
 		period 2348.4
 		object
 			sprite planet/io_1
@@ -90,7 +90,7 @@ system KW.S.000.Sol
 				offset 60
 	object
 		sprite planet/saturn_1
-		distance 6060
+		distance 7810.378
 		period 5048.87
 	object
 		sprite planet/uranus_1

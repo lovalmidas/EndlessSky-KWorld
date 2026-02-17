@@ -8,7 +8,7 @@
 
 system "KW.S.***.Sirius Cluster"
 	"display name" "Sirius Cluster"
-	pos 10275.894 -8591.367
+	pos 10277.375 -8590.182
 	government Uninhabited
 	haze _menu/haze-none
 	fleet "KW.Sol Merchants Small" 4000

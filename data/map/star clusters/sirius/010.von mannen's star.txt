@@ -1,6 +1,6 @@
 system "KW.S.010.van Maanen's Star"
 	"display name" "van Maanen's Star"
-	pos 10239.422 -8582.404
+	pos 10232.903 -8584.478
 	government KW.Sol
 	arrival 1200
 	habitable 300
@@ -27,7 +27,7 @@ system "KW.S.010.van Maanen's Star"
 		object
 			sprite planet/rock_5
 				scale 0.2
-			distance 1300
+			distance 1197.804
 			period 26
 			object
 				sprite mapicon/_poi_lab
@@ -36,7 +36,7 @@ system "KW.S.010.van Maanen's Star"
 				offset -75
 	object "KW.S.010.~.van Maanen's Star"
 		sprite mapicon/_exit
-		distance 9000
+		distance 9408.698
 		period 15428
 		object "KW.S.010.*.van Maanen's Star"
 

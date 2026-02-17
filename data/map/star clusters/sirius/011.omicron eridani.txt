@@ -1,6 +1,6 @@
 system "KW.S.011.Omicron Eridani"
 	"display name" "Omicron Eridani"
-	pos 10272.014 -8563.145
+	pos 10281.792 -8543.589
 	government KW.Sol
 	arrival 1200
 	habitable 2480
@@ -47,6 +47,6 @@ system "KW.S.011.Omicron Eridani"
 	object "KW.S.011.~.Omicron Eridani"
 		sprite mapicon/_exit
 		distance 12200
-		period 9777 
+		period 9777
 		object "KW.S.011.*.Omicron Eridani"
 

@@ -1,6 +1,6 @@
 system "KW.S.001.Alpha Centauri"
 	"display name" "Alpha Centauri"
-	pos 10272.384 -8604.848
+	pos 10274.162 -8611.367
 	government Uninhabited
 	arrival 1200
 	habitable 2380

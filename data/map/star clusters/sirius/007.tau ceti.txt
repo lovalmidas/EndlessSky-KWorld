@@ -1,6 +1,6 @@
 system "KW.S.007.Tau Ceti"
 	"display name" "Tau Ceti"
-	pos 10261.347 -8577.367
+	pos 10260.754 -8561.96
 	government KW.Sol
 	arrival 1200
 	habitable 1100
@@ -49,3 +49,4 @@ system "KW.S.007.Tau Ceti"
 		distance 6000
 		period 4522
 		object "KW.S.007.*.Tau Ceti"
+

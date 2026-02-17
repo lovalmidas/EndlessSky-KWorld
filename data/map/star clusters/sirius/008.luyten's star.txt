@@ -1,6 +1,6 @@
 system "KW.S.008.Luyten's Star"
 	"display name" "Luyten's Star"
-	pos 10300.459 -8550.404
+	pos 10327.126 -8533.811
 	government KW.Sol
 	arrival 1200
 	habitable 460
@@ -44,3 +44,4 @@ system "KW.S.008.Luyten's Star"
 		distance 12000
 		period 22105
 		object "KW.S.008.*.Luyten's Star"
+

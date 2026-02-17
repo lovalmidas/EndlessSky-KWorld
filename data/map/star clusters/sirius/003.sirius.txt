@@ -1,6 +1,6 @@
 system KW.S.003.Sirius
 	"display name" Sirius
-	pos 10265.496 -8586.552
+	pos 10273.2 -8577.367
 	government Uninhabited
 	arrival 1200
 	habitable 7300

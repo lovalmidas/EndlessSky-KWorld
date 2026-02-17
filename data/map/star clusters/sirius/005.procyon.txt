@@ -1,6 +1,6 @@
 system KW.S.005.Procyon
 	"display name" Procyon
-	pos 10290.681 -8556.626
+	pos 10312.311 -8558.7
 	government KW.Sol
 	arrival 1200
 	habitable 4930
@@ -53,6 +53,7 @@ system KW.S.005.Procyon
 		period 5027
 	object KW.S.005.~.Procyon
 		sprite mapicon/_exit
-		distance 10000
+		distance 10549.857
 		period 5027
 		object KW.S.005.*.Procyon
+

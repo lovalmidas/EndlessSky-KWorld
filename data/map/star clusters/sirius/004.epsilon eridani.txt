@@ -1,6 +1,6 @@
 system "KW.S.004.Epsilon Eridani"
 	"display name" "Epsilon Eridani"
-	pos 10268.459 -8568.478
+	pos 10271.126 -8552.774
 	government KW.Sol
 	arrival 1200
 	habitable 900
@@ -36,7 +36,7 @@ system "KW.S.004.Epsilon Eridani"
 		period 7336
 	object "KW.S.004.~.Epsilon Eridani"
 		sprite mapicon/_exit
-		distance 8000
+		distance 8061.561
 		period 7336
 		object "KW.S.004.*.Epsilon Eridani"
 

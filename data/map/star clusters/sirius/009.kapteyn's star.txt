@@ -1,6 +1,6 @@
 system "KW.S.009.Kapteyn's Star"
 	"display name" "Kapteyn's Star"
-	pos 10293.644 -8573.515
+	pos 10306.977 -8570.848
 	government Uninhabited
 	arrival 1200
 	habitable 270
@@ -26,6 +26,7 @@ system "KW.S.009.Kapteyn's Star"
 		period 15811
 	object "KW.S.009.~.Kapteyn's Star"
 		sprite mapicon/_exit
-		distance 8000
+		distance 8355.301
 		period 15811
 		object "KW.S.009.*.Kapteyn's Star"
+
