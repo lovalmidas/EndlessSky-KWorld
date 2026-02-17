@@ -13,7 +13,7 @@ color "KW.Color: Wormhole.Alph" .9 .1 .1
 
 
 
-color "KW.Color: Faction.Merchant" 1 1 1 #no supposed to own planets
+color "KW.Color: Faction.Merchant" 1 1 1 # not supposed to own planets
 color "KW.Color: Faction.Pirate" .78 0 0
 color "KW.Color: Faction.Machine" .554 .348 .348
 

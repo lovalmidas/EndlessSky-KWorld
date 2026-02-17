@@ -93,7 +93,7 @@ system KW.S.003.Arcturus
 			period 220.454
 
 system KW.S.004.Achernar
-	pos 10320.9 -8605.884
+	pos 10455.419 -8652.995
 	government Uninhabited
 	arrival 2500
 	habitable 9000
@@ -867,7 +867,7 @@ system KW.S.023.Shaula
 		period 153.614
 
 system "KW.S.024.Crab Nebula"
-	pos 10310.033 -8514.329
+	pos 10307.366 -8509.885
 	government Uninhabited
 	arrival 5000
 	habitable 25000

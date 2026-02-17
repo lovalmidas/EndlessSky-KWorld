@@ -534,8 +534,7 @@ outfit "KW.Mining Laser Turret"
 	weapon
 		sprite "projectile/mining laser"
 			"frame rate" 1
-		"hardpoint sprite" "hardpoint/mining laser turret"
-		"hardpoint offset" 0.7 8.
+		"hardpoint sprite" "hardpoint/kw.turret_1"
 		sound "mining laser"
 		"hit effect" "light laser impact"
 		"inaccuracy" .35
@@ -568,8 +567,7 @@ outfit "KW.Beam Laser Turret"
 	weapon
 		sprite "projectile/2x laser"
 			"frame rate" 1
-		"hardpoint sprite" "hardpoint/laser turret"
-		"hardpoint offset" -0.5 8.
+		"hardpoint sprite" "hardpoint/kw.turret_1"
 		sound "laser"
 		"hit effect" "light laser impact"
 		"inaccuracy" .5
@@ -740,6 +738,7 @@ outfit "KW.Vulcan Turret"
 			"random start frame"
 		sound "gatling"
 		ammo "KW.Vulcanite" 2
+		"hardpoint sprite" "hardpoint/kw.turret_0"
 		icon "icon/gat turret"
 		"inaccuracy" 2.5
 		"turret turn" 3.6
@@ -775,6 +774,7 @@ outfit "KW.Kinetic Rod Turret"
 	"kinetic rod capacity" 72
 	weapon
 		sprite "projectile/kw.kinrod"
+		"hardpoint sprite" "hardpoint/kw.turret_1"
 		sound "javelin"
 		ammo "KW.Kinetic Rod"
 		icon "icon/javelin turret"
@@ -812,8 +812,7 @@ outfit "KW.Point Defense Turret"
 	"turret mounts" -1
 	"vulcanite capacity" 2000
 	weapon
-		"hardpoint sprite" "hardpoint/anti-missile"
-		"hardpoint offset" 4.
+		"hardpoint sprite" "hardpoint/kw.turret_0"
 		"hit effect" "small anti-missile"
 		ammo "KW.Vulcanite"
 		"anti-missile" 3

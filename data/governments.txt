@@ -749,7 +749,7 @@ government KW.Machines
 		"KW.PirateScarred" -.5
 
 government KW.Pirates
-	"display name" Pirates
+	"display name" Pirate
 	swizzle 6
 	color "KW.Color: Faction.Pirate"
 	"player reputation" -5
@@ -760,7 +760,7 @@ government KW.Pirates
 		"Uninhabited" 0
 
 government KW.PirateSimulium
-	"display name" "Pirates (Simulium)"
+	"display name" Pirate
 	swizzle 6
 	color "KW.Color: Faction.Pirate"
 	"player reputation" -5
@@ -771,7 +771,7 @@ government KW.PirateSimulium
 		"Uninhabited" 0
 
 government KW.PirateScarred
-	"display name" "Pirates (Scarred Man)"
+	"display name" Pirate
 	swizzle 6
 	color "KW.Color: Faction.Pirate"
 	"player reputation" -5
