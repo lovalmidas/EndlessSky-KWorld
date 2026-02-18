@@ -14,8 +14,6 @@
 #
 #
 
-
-
 mission "KW.Generic.Workshop"
 	name "[Workshop] Visit the Workshop"
 	color selected "KW.Color: locale missions selected"

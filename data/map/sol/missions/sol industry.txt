@@ -1,0 +1,355 @@
+############### MISSION: INDUSTRY ###############
+#
+#	Intent: Crafting, but automatic
+#
+#
+
+#	'Trades'
+#		Iron 									-> Iron Bolts
+#		Copper + Lead 				-> Vulcanite
+#		Tungsten 							-> Kinetic Rod
+#		Uranium								-> DU Rod
+#
+
+# KW.industry.<loc>.enabled
+# KW.industry.<loc>.<resource>.inventory
+# KW.industry.<loc>.<resource>.input
+# KW.industry.<loc>.<resource>.output
+# KW.industry.<loc>.cycles
+# KW.industry.<loc>.days
+# KW.industry.<loc>.days.remain
+
+mission "KW.Industry.Advent.Enable"
+	invisible
+	repeat
+	non-blocking
+	entering
+	destination
+		system KW.S.000.Sol
+	to offer
+		"KW.industry.Advent.enabled" == 0
+	on offer
+		"KW.industry.Advent.enabled" = 1
+		"KW.industry.Advent.iron.inventory" = 25
+		"KW.industry.Advent.iron.input" = 1
+		"KW.industry.Advent.ironbolt.output" = 12
+		"KW.industry.Advent.cycles" = 25
+		"KW.industry.Advent.days" = 20
+		"KW.industry.Advent.days.remain" = 20
+
+mission "KW.Industry.Advent.Auto"
+	invisible
+	repeat
+	non-blocking
+	entering
+	destination
+		system KW.S.000.Sol
+	to offer
+		"KW.industry.Advent.enabled" > 0
+	on offer
+		"KW.industry.Advent.days.remain" --
+		#message
+		#	text "Next production at Advent: <KW.industry.Advent.days.remain> days"
+		decline
+
+mission "KW.Industry.Advent.Auto.2"
+	invisible
+	repeat
+	non-blocking
+	entering
+	destination
+		system KW.S.000.Sol
+	to offer
+		"KW.industry.Advent.days.remain" <= 0
+	on offer
+		"KW.industry.Advent.days.remain" = "KW.industry.Advent.days"
+		"temp.cycles" = "KW.industry.Advent.iron.inventory" / "KW.industry.Advent.iron.input"
+		"temp.cycles" <?= "KW.industry.Advent.cycles"
+		"KW.industry.Advent.iron.inventory" -= "KW.industry.Advent.iron.input" * "temp.cycles"
+		"KW.industry.Advent.ironbolt.inventory" += "KW.industry.Advent.ironbolt.output" * "temp.cycles"
+		"KW.industry.Advent.history.cycles.10" = "KW.industry.Advent.history.cycles.9"
+		"KW.industry.Advent.history.cycles.9" = "KW.industry.Advent.history.cycles.8"
+		"KW.industry.Advent.history.cycles.8" = "KW.industry.Advent.history.cycles.7"
+		"KW.industry.Advent.history.cycles.7" = "KW.industry.Advent.history.cycles.6"
+		"KW.industry.Advent.history.cycles.6" = "KW.industry.Advent.history.cycles.5"
+		"KW.industry.Advent.history.cycles.5" = "KW.industry.Advent.history.cycles.4"
+		"KW.industry.Advent.history.cycles.4" = "KW.industry.Advent.history.cycles.3"
+		"KW.industry.Advent.history.cycles.3" = "KW.industry.Advent.history.cycles.2"
+		"KW.industry.Advent.history.cycles.2" = "KW.industry.Advent.history.cycles.1"
+		"KW.industry.Advent.history.cycles.1" = "KW.industry.Advent.history.cycles.0"
+		"KW.industry.Advent.history.cycles.0" = "temp.cycles" * 100 / "KW.industry.Advent.cycles"
+		message
+			text "One round of production completed at Advent."
+		decline
+
+mission "KW.Industry.Advent"
+	name "[Industry] Visit your Factory"
+	color selected "KW.Color: locale missions selected"
+	color unselected "KW.Color: locale missions unselected"
+	job
+	repeat
+	description "Visit your factory."
+	"offer precedence" 997
+	source KW.S.001.0.Advent
+	destination KW.S.001.0.Advent
+	on accept
+		"temp.cycles" = "KW.industry.Advent.days" - "KW.industry.Advent.days.remain"
+		conversation
+			`You walk amongst the familiar sight of a processing plant. Being its owner you stride into the management office, the cockpit of your operation. A console greets you where you may view the factory's statistics`
+				goto factorychoices
+
+			label factory
+			`You return to the factory management office.`
+
+			label factorychoices
+			choice
+				`	(View stats.)`
+					goto stats
+				`	(Access inventory.)`
+					goto inventory
+				`	(Leave.)`
+					goto exit
+
+### RECIPE LIST ###
+
+			label stats
+			`Advent Factory`
+			`Production Parameters:`
+			`	Consumes:   &[KW.industry.Advent.iron.input] Iron (per cycle)`
+			`	Produces:   &[KW.industry.Advent.ironbolt.output] Iron Bolts (per cycle)`
+			`	Cycles:     &[KW.industry.Advent.cycles]`
+			`	Next Cycle: &[temp.cycles] / &[KW.industry.Advent.days] days`
+			``
+			`Inventory:`
+			`	&[KW.industry.Advent.iron.inventory] Iron`
+			`	&[KW.industry.Advent.ironbolt.inventory] Iron Bolts`
+
+			choice
+				`	(Return to the factory.)`
+					goto factory
+				`	(Access inventory.)`
+					goto inventory
+				`	(Leave.)`
+					goto exit
+
+### CRAFT ###
+
+			label inventory
+			`What would you like to do?`
+
+			choice
+				`	(Deposit.)`
+					goto inventory.deposit
+				`	(Withdraw.)`
+					goto inventory.withdraw
+				`	(Return to the factory.)`
+					goto factory
+				`	(View stats.)`
+					goto stats
+				`	(Leave.)`
+					goto exit
+
+			label inventory.deposit
+			`Inventory:`
+			`	&[KW.industry.Advent.iron.inventory] Iron`
+			`	&[KW.industry.Advent.ironbolt.inventory] Iron Bolts`
+
+			choice
+				`	(Deposit 1 Iron.)`
+					to display
+						"outfit: Iron" >= 1
+					goto inventory.deposit.iron.1
+
+				`	(Deposit 5 Iron.)`
+					to display
+						"outfit: Iron" >= 5
+					goto inventory.deposit.iron.5
+
+				`	(Deposit 20 Iron.)`
+					to display
+						"outfit: Iron" >= 20
+					goto inventory.deposit.iron.20
+
+				`	(Deposit 500 Iron.)`
+					to display
+						"outfit: Iron" >= 500
+					goto inventory.deposit.iron.500
+
+				`	(Deposit 1 Iron Bolt.)`
+					to display
+						"outfit: KW.Iron Bolt" >= 1
+					goto inventory.deposit.ironbolt.1
+
+				`	(Deposit 5 Iron Bolt.)`
+					to display
+						"outfit: KW.Iron Bolt" >= 5
+					goto inventory.deposit.ironbolt.5
+
+				`	(Deposit 20 Iron Bolt.)`
+					to display
+						"outfit: KW.Iron Bolt" >= 20
+					goto inventory.deposit.ironbolt.20
+
+				`	(Deposit 500 Iron Bolt.)`
+					to display
+						"outfit: KW.Iron Bolt" >= 500
+					goto inventory.deposit.ironbolt.500
+
+				`	(Return to the inventory.)`
+					goto inventory
+				`	(Leave.)`
+					goto exit
+
+			label inventory.deposit.iron.1
+			action
+				outfit "Iron" -1
+				"KW.industry.Advent.iron.inventory" += 1
+			branch inventory.deposit
+
+			label inventory.deposit.iron.5
+			action
+				outfit "Iron" -5
+				"KW.industry.Advent.iron.inventory" += 5
+			branch inventory.deposit
+
+			label inventory.deposit.iron.20
+			action
+				outfit "Iron" -20
+				"KW.industry.Advent.iron.inventory" += 20
+			branch inventory.deposit
+
+			label inventory.deposit.iron.500
+			action
+				outfit "Iron" -500
+				"KW.industry.Advent.iron.inventory" += 500
+			branch inventory.deposit
+
+			label inventory.deposit.ironbolt.1
+			action
+				outfit "KW.Iron Bolt" -1
+				"KW.industry.Advent.ironbolt.inventory" += 1
+			branch inventory.deposit
+
+			label inventory.deposit.ironbolt.5
+			action
+				outfit "KW.Iron Bolt" -5
+				"KW.industry.Advent.ironbolt.inventory" += 5
+			branch inventory.deposit
+
+			label inventory.deposit.ironbolt.20
+			action
+				outfit "KW.Iron Bolt" -20
+				"KW.industry.Advent.ironbolt.inventory" += 20
+			branch inventory.deposit
+
+			label inventory.deposit.ironbolt.500
+			action
+				outfit "KW.Iron Bolt" -500
+				"KW.industry.Advent.ironbolt.inventory" += 500
+			branch inventory.deposit
+
+			label inventory.withdraw
+			`Inventory:`
+			`	&[KW.industry.Advent.iron.inventory] Iron`
+			`	&[KW.industry.Advent.ironbolt.inventory] Iron Bolts`
+
+			choice
+				`	(Withdraw 1 Iron.)`
+					to display
+						"KW.industry.Advent.iron.inventory" >= 1
+					goto inventory.withdraw.iron.1
+
+				`	(Withdraw 5 Iron.)`
+					to display
+						"KW.industry.Advent.iron.inventory" >= 5
+					goto inventory.withdraw.iron.5
+
+				`	(Withdraw 20 Iron.)`
+					to display
+						"KW.industry.Advent.iron.inventory" >= 20
+					goto inventory.withdraw.iron.20
+
+				`	(Withdraw 500 Iron.)`
+					to display
+						"KW.industry.Advent.iron.inventory" >= 500
+					goto inventory.withdraw.iron.500
+
+				`	(Withdraw 1 Iron Bolt.)`
+					to display
+						"KW.industry.Advent.ironbolt.inventory" >= 1
+					goto inventory.withdraw.ironbolt.1
+
+				`	(Withdraw 5 Iron Bolt.)`
+					to display
+						"KW.industry.Advent.ironbolt.inventory" >= 5
+					goto inventory.withdraw.ironbolt.5
+
+				`	(Withdraw 20 Iron Bolt.)`
+					to display
+						"KW.industry.Advent.ironbolt.inventory" >= 20
+					goto inventory.withdraw.ironbolt.20
+
+				`	(Withdraw 500 Iron Bolt.)`
+					to display
+						"KW.industry.Advent.ironbolt.inventory" >= 500
+					goto inventory.withdraw.ironbolt.500
+
+				`	(Return to the inventory.)`
+					goto inventory
+				`	(Leave.)`
+					goto exit
+
+			label inventory.withdraw.iron.1
+			action
+				outfit "Iron" 1
+				"KW.industry.Advent.iron.inventory" -= 1
+			branch inventory.withdraw
+
+			label inventory.withdraw.iron.5
+			action
+				outfit "Iron" 5
+				"KW.industry.Advent.iron.inventory" -= 5
+			branch inventory.withdraw
+
+			label inventory.withdraw.iron.20
+			action
+				outfit "Iron" 20
+				"KW.industry.Advent.iron.inventory" -= 20
+			branch inventory.withdraw
+
+			label inventory.withdraw.iron.500
+			action
+				outfit "Iron" 500
+				"KW.industry.Advent.iron.inventory" -= 500
+			branch inventory.withdraw
+
+			label inventory.withdraw.ironbolt.1
+			action
+				outfit "KW.Iron Bolt" 1
+				"KW.industry.Advent.ironbolt.inventory" -= 1
+			branch inventory.withdraw
+
+			label inventory.withdraw.ironbolt.5
+			action
+				outfit "KW.Iron Bolt" 5
+				"KW.industry.Advent.ironbolt.inventory" -= 5
+			branch inventory.withdraw
+
+			label inventory.withdraw.ironbolt.20
+			action
+				outfit "KW.Iron Bolt" 20
+				"KW.industry.Advent.ironbolt.inventory" -= 20
+			branch inventory.withdraw
+
+			label inventory.withdraw.ironbolt.500
+			action
+				outfit "KW.Iron Bolt" 500
+				"KW.industry.Advent.ironbolt.inventory" -= 500
+			branch inventory.withdraw
+
+			label exit
+			`	You return to the spaceport.`
+		fail
+
+
+
