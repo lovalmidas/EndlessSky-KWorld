@@ -10,6 +10,8 @@ mission "KW.Generic.Passengers [0]"
 	repeat
 	description "${KW.Phrase.Job: passenger offer}"
 	passengers 1 10 .9
+	"distance calculation settings"
+		"all wormholes"
 	to offer
 		random < 80
 		has "job-board: enable generic passenger jobs"
@@ -60,6 +62,8 @@ mission "KW.Generic.Passengers [1]"
 	repeat
 	description "${KW.Phrase.Job: passenger offer}"
 	passengers 1 10 .9
+	"distance calculation settings"
+		"all wormholes"
 	to offer
 		random < 60
 		has "job-board: enable generic passenger jobs"
@@ -110,6 +114,8 @@ mission "KW.Generic.Passengers [2]"
 	repeat
 	description "${KW.Phrase.Job: passenger offer}"
 	passengers 1 10 .9
+	"distance calculation settings"
+		"all wormholes"
 	to offer
 		random < 50
 		has "job-board: enable generic passenger jobs"
@@ -160,6 +166,8 @@ mission "KW.Generic.Passengers [3]"
 	repeat
 	description "${KW.Phrase.Job: passenger offer}"
 	passengers 1 10 .9
+	"distance calculation settings"
+		"all wormholes"
 	to offer
 		random < 40
 		has "job-board: enable generic passenger jobs"
@@ -206,28 +214,30 @@ mission "KW.Generic.Passengers [3]"
 
 ### PASSENGER: WORKERS ###
 # Every factory needs workers to operate them
-# 	Generic workers: 	
+# 	Generic workers:
 #			urban
 #			factory mining synthetic hitech logistics shipworks
-#	Farmers:	
+#	Farmers:
 #			urban rural
 #			farming synthetic
-#	Researchers:		
+#	Researchers:
 #			urban education
 #			research hitech
-# 	Tourists: 	
+# 	Tourists:
 #			urban rural
 #			tourism
-# 	Students: 	
+# 	Students:
 #			urban rural
 #			education
-# 
+#
 mission "KW.Generic.Workers [0]"
 	name "Transport workers to <planet>"
 	job
 	repeat
 	description "${KW.Phrase.Job: workers offer}"
 	passengers 2 2 .6
+	"distance calculation settings"
+		"all wormholes"
 	to offer
 		random < 75
 		has "job-board: enable generic passenger jobs"
@@ -279,6 +289,8 @@ mission "KW.Generic.Workers [1]"
 	repeat
 	description "${KW.Phrase.Job: workers offer}"
 	passengers 2 2 .6
+	"distance calculation settings"
+		"all wormholes"
 	to offer
 		random < 60
 		has "job-board: enable generic passenger jobs"
@@ -330,6 +342,8 @@ mission "KW.Generic.Workers [2]"
 	repeat
 	description "${KW.Phrase.Job: workers offer}"
 	passengers 2 2 .6
+	"distance calculation settings"
+		"all wormholes"
 	to offer
 		random < 40
 		has "job-board: enable generic passenger jobs"
@@ -381,6 +395,8 @@ mission "KW.Generic.Farmers [0]"
 	repeat
 	description "${KW.Phrase.Job: farmers offer}"
 	passengers 2 2 .6
+	"distance calculation settings"
+		"all wormholes"
 	to offer
 		random < 75
 		has "job-board: enable generic passenger jobs"
@@ -432,6 +448,8 @@ mission "KW.Generic.Farmers [1]"
 	repeat
 	description "${KW.Phrase.Job: farmers offer}"
 	passengers 2 2 .6
+	"distance calculation settings"
+		"all wormholes"
 	to offer
 		random < 60
 		has "job-board: enable generic passenger jobs"
@@ -483,6 +501,8 @@ mission "KW.Generic.Researcher [0]"
 	repeat
 	description "${KW.Phrase.Job: timed researcher offer}"
 	passengers 1
+	"distance calculation settings"
+		"all wormholes"
 	deadline
 	to offer
 		random < 40
@@ -535,6 +555,8 @@ mission "KW.Generic.Researcher [1]"
 	repeat
 	description "${KW.Phrase.Job: timed researcher offer}"
 	passengers 1
+	"distance calculation settings"
+		"all wormholes"
 	deadline
 	to offer
 		random < 40
@@ -587,6 +609,8 @@ mission "KW.Generic.Researchers [0]"
 	name "Transport researchers to <planet>"
 	description "${KW.Phrase.Job: timed researchers offer}"
 	passengers 2 2 .2
+	"distance calculation settings"
+		"all wormholes"
 	deadline
 	to offer
 		random < 40
@@ -640,6 +664,8 @@ mission "KW.Generic.Tourists [0]"
 	repeat
 	description "${KW.Phrase.Job: tourists offer}"
 	passengers 2 2 .6
+	"distance calculation settings"
+		"all wormholes"
 	to offer
 		random < 75
 		has "job-board: enable generic passenger jobs"
@@ -691,6 +717,8 @@ mission "KW.Generic.Tourists [1]"
 	repeat
 	description "${KW.Phrase.Job: tourists offer}"
 	passengers 2 2 .6
+	"distance calculation settings"
+		"all wormholes"
 	to offer
 		random < 25
 		has "job-board: enable generic passenger jobs"
@@ -742,6 +770,8 @@ mission "KW.Generic.Tourists [2]"
 	repeat
 	description "${KW.Phrase.Job: tourists offer}"
 	passengers 2 2 .6
+	"distance calculation settings"
+		"all wormholes"
 	to offer
 		random < 25
 		has "job-board: enable generic passenger jobs"
@@ -793,6 +823,8 @@ mission "KW.Generic.Students [0]"
 	name "Transport students to <planet>"
 	description "${KW.Phrase.Job: timed students offer}"
 	passengers 3 1 .15
+	"distance calculation settings"
+		"all wormholes"
 	deadline 2
 	to offer
 		random < 60
@@ -845,6 +877,8 @@ mission "KW.Generic.Students [1]"
 	name "Transport students to <planet>"
 	description "${KW.Phrase.Job: timed students offer}"
 	passengers 3 1 .15
+	"distance calculation settings"
+		"all wormholes"
 	deadline 3
 	to offer
 		random < 50
@@ -897,6 +931,8 @@ mission "KW.Generic.Students [2]"
 	name "Transport students to <planet>"
 	description "${KW.Phrase.Job: timed students offer}"
 	passengers 3 1 .15
+	"distance calculation settings"
+		"all wormholes"
 	deadline 3
 	to offer
 		random < 40
@@ -951,6 +987,8 @@ mission "KW.Generic.Stranded [0]"
 	repeat
 	description "${KW.Phrase.Job: stranded offer}"
 	passengers 2 1 .95
+	"distance calculation settings"
+		"all wormholes"
 	to offer
 		random < 5
 		has "job-board: enable generic rescue jobs"
@@ -981,7 +1019,7 @@ mission "KW.Generic.Stranded [0]"
 				has "flagship planet attribute: urban"
 				has "flagship planet attribute: large"
 				"job-board: passenger jobs" < 8
-	source 
+	source
 		attributes beacon
 	stopover
 		distance 2 4
@@ -1002,6 +1040,8 @@ mission "KW.Generic.Stranded [1]"
 	repeat
 	description "${KW.Phrase.Job: stranded offer}"
 	passengers 2 1 .95
+	"distance calculation settings"
+		"all wormholes"
 	to offer
 		random < 5
 		has "job-board: enable generic rescue jobs"
@@ -1032,7 +1072,7 @@ mission "KW.Generic.Stranded [1]"
 				has "flagship planet attribute: urban"
 				has "flagship planet attribute: large"
 				"job-board: passenger jobs" < 8
-	source 
+	source
 		attributes beacon
 	stopover
 		distance 5 8

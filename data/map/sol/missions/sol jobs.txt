@@ -20,6 +20,8 @@ mission "KW.Sol.Cargo [Earth,0]"
 	destination
 		system KW.S.000.Sol
 		attributes earth
+	"distance calculation settings"
+		"all wormholes"
 	on visit
 		dialog phrase "generic cargo on visit"
 	on complete
@@ -45,6 +47,8 @@ mission "KW.Sol.Cargo [Earth,1]"
 	destination
 		system KW.S.000.Sol
 		attributes earth
+	"distance calculation settings"
+		"all wormholes"
 	on visit
 		dialog phrase "generic cargo on visit"
 	on complete
@@ -70,6 +74,8 @@ mission "KW.Sol.Cargo [Not Earth,0]"
 	destination
 		system KW.S.000.Sol
 		not attributes earth
+	"distance calculation settings"
+		"all wormholes"
 	on visit
 		dialog phrase "generic cargo on visit"
 	on complete
@@ -95,6 +101,8 @@ mission "KW.Sol.Cargo [Not Earth,1]"
 	destination
 		system KW.S.000.Sol
 		not attributes earth
+	"distance calculation settings"
+		"all wormholes"
 	on visit
 		dialog phrase "generic cargo on visit"
 	on complete
@@ -122,6 +130,8 @@ mission "KW.Sol.Passenger [Earth,0]"
 	destination
 		system KW.S.000.Sol
 		attributes earth
+	"distance calculation settings"
+		"all wormholes"
 	on visit
 		dialog phrase "generic passenger on visit"
 	on complete
@@ -147,6 +157,8 @@ mission "KW.Sol.Passenger [Earth,1]"
 	destination
 		system KW.S.000.Sol
 		attributes earth
+	"distance calculation settings"
+		"all wormholes"
 	on visit
 		dialog phrase "generic passenger on visit"
 	on complete
@@ -172,6 +184,8 @@ mission "KW.Sol.Passenger [Not Earth,0]"
 	destination
 		system KW.S.000.Sol
 		not attributes earth
+	"distance calculation settings"
+		"all wormholes"
 	on visit
 		dialog phrase "generic passenger on visit"
 	on complete
@@ -197,6 +211,8 @@ mission "KW.Sol.Passenger [Not Earth,1]"
 	destination
 		system KW.S.000.Sol
 		not attributes earth
+	"distance calculation settings"
+		"all wormholes"
 	on visit
 		dialog phrase "generic passenger on visit"
 	on complete
@@ -223,6 +239,8 @@ mission "KW.Sol.Research Samples [Lepo.A]"
 			random < 1
 	source KW.S.025.0.Lepo
 	destination KW.S.000.2.Io
+	"distance calculation settings"
+		"all wormholes"
 	on visit
 		dialog phrase "generic cargo on visit"
 	on complete
@@ -244,6 +262,8 @@ mission "KW.Sol.Research Samples [Lepo.B]"
 		government "KW.Sol"
 		attributes "analysis"
 		distance 1 12
+	"distance calculation settings"
+		"all wormholes"
 	on visit
 		dialog phrase "generic cargo on visit"
 	on complete
@@ -267,6 +287,8 @@ mission "KW.Sol.Inspector [0]"
 		government "KW.Sol"
 	on stopover
 		dialog phrase "KW.Phrase.Job: inspector stopover"
+	"distance calculation settings"
+		"all wormholes"
 	on visit
 		dialog phrase "generic passenger on visit"
 	on complete

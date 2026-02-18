@@ -13,7 +13,7 @@
 # Unfortunately, Endless Sky lack substitution logic for outfit and numeric amounts, so several copies may need to be hand-copied
 
 # SILICON: 400 #
-mission "KW.Generic.Mining [Silicon]" 
+mission "KW.Generic.Mining [Silicon]"
 	name "Harvest <mineral> to <planet>"
 	job
 	repeat
@@ -22,6 +22,8 @@ mission "KW.Generic.Mining [Silicon]"
 	substitutions
 		"<mineral>" "Silicon"
 		"<amount>" "75"
+	"distance calculation settings"
+		"all wormholes"
 	to offer
 		or
 			and
@@ -53,7 +55,7 @@ mission "KW.Generic.Mining [Silicon]"
 		dialog phrase "generic mineral delivery payment"
 
 
-mission "KW.Generic.Bulk Mining [Silicon]" 
+mission "KW.Generic.Bulk Mining [Silicon]"
 	name "Harvest <mineral> to <planet>"
 	job
 	repeat
@@ -62,6 +64,8 @@ mission "KW.Generic.Bulk Mining [Silicon]"
 	substitutions
 		"<mineral>" "Silicon"
 		"<amount>" "250"
+	"distance calculation settings"
+		"all wormholes"
 	to offer
 		random < 25
 		"cargo space" > 200
@@ -90,7 +94,7 @@ mission "KW.Generic.Bulk Mining [Silicon]"
 		dialog phrase "generic mineral delivery payment"
 
 # LEAD: 900 #
-mission "KW.Generic.Mining [Lead]" 
+mission "KW.Generic.Mining [Lead]"
 	name "Harvest <mineral> to <planet>"
 	job
 	repeat
@@ -99,6 +103,8 @@ mission "KW.Generic.Mining [Lead]"
 	substitutions
 		"<mineral>" "Lead"
 		"<amount>" "36"
+	"distance calculation settings"
+		"all wormholes"
 	to offer
 		or
 			and
@@ -129,7 +135,7 @@ mission "KW.Generic.Mining [Lead]"
 		outfit "Lead" -36
 		dialog phrase "generic mineral delivery payment"
 
-mission "KW.Generic.Bulk Mining [Lead]" 
+mission "KW.Generic.Bulk Mining [Lead]"
 	name "Harvest <mineral> to <planet>"
 	job
 	repeat
@@ -138,6 +144,8 @@ mission "KW.Generic.Bulk Mining [Lead]"
 	substitutions
 		"<mineral>" "Lead"
 		"<amount>" "125"
+	"distance calculation settings"
+		"all wormholes"
 	to offer
 		random < 25
 		"cargo space" > 100
@@ -166,7 +174,7 @@ mission "KW.Generic.Bulk Mining [Lead]"
 		dialog phrase "generic mineral delivery payment"
 
 # IRON: 1200 #
-mission "KW.Generic.Mining [Iron]" 
+mission "KW.Generic.Mining [Iron]"
 	name "Harvest <mineral> to <planet>"
 	job
 	repeat
@@ -175,6 +183,8 @@ mission "KW.Generic.Mining [Iron]"
 	substitutions
 		"<mineral>" "Iron"
 		"<amount>" "25"
+	"distance calculation settings"
+		"all wormholes"
 	to offer
 		or
 			and
@@ -205,7 +215,7 @@ mission "KW.Generic.Mining [Iron]"
 		outfit "Iron" -25
 		dialog phrase "generic mineral delivery payment"
 
-mission "KW.Generic.Bulk Mining [Iron]" 
+mission "KW.Generic.Bulk Mining [Iron]"
 	name "Harvest <mineral> to <planet>"
 	job
 	repeat
@@ -214,6 +224,8 @@ mission "KW.Generic.Bulk Mining [Iron]"
 	substitutions
 		"<mineral>" "Iron"
 		"<amount>" "100"
+	"distance calculation settings"
+		"all wormholes"
 	to offer
 		random < 25
 		"cargo space" > 80
@@ -242,7 +254,7 @@ mission "KW.Generic.Bulk Mining [Iron]"
 		dialog phrase "generic mineral delivery payment"
 
 # ALUMINUM: 1800 #
-mission "KW.Generic.Mining [Aluminum]" 
+mission "KW.Generic.Mining [Aluminum]"
 	name "Harvest <mineral> to <planet>"
 	job
 	repeat
@@ -251,6 +263,8 @@ mission "KW.Generic.Mining [Aluminum]"
 	substitutions
 		"<mineral>" "Aluminum"
 		"<amount>" "18"
+	"distance calculation settings"
+		"all wormholes"
 	to offer
 		or
 			and
@@ -281,7 +295,7 @@ mission "KW.Generic.Mining [Aluminum]"
 		outfit "Aluminum" -18
 		dialog phrase "generic mineral delivery payment"
 
-mission "KW.Generic.Bulk Mining [Aluminum]" 
+mission "KW.Generic.Bulk Mining [Aluminum]"
 	name "Harvest <mineral> to <planet>"
 	job
 	repeat
@@ -290,6 +304,8 @@ mission "KW.Generic.Bulk Mining [Aluminum]"
 	substitutions
 		"<mineral>" "Aluminum"
 		"<amount>" "80"
+	"distance calculation settings"
+		"all wormholes"
 	to offer
 		random < 25
 		"cargo space" > 70
@@ -318,7 +334,7 @@ mission "KW.Generic.Bulk Mining [Aluminum]"
 		dialog phrase "generic mineral delivery payment"
 
 # TITANIUM: 2500 #
-mission "KW.Generic.Mining [Titanium]" 
+mission "KW.Generic.Mining [Titanium]"
 	name "Harvest <mineral> to <planet>"
 	job
 	repeat
@@ -327,6 +343,8 @@ mission "KW.Generic.Mining [Titanium]"
 	substitutions
 		"<mineral>" "Titanium"
 		"<amount>" "16"
+	"distance calculation settings"
+		"all wormholes"
 	to offer
 		or
 			and
@@ -357,7 +375,7 @@ mission "KW.Generic.Mining [Titanium]"
 		outfit "Titanium" -16
 		dialog phrase "generic mineral delivery payment"
 
-mission "KW.Generic.Bulk Mining [Titanium]" 
+mission "KW.Generic.Bulk Mining [Titanium]"
 	name "Harvest <mineral> to <planet>"
 	job
 	repeat
@@ -366,6 +384,8 @@ mission "KW.Generic.Bulk Mining [Titanium]"
 	substitutions
 		"<mineral>" "Titanium"
 		"<amount>" "64"
+	"distance calculation settings"
+		"all wormholes"
 	to offer
 		random < 25
 		"cargo space" > 50
@@ -394,7 +414,7 @@ mission "KW.Generic.Bulk Mining [Titanium]"
 		dialog phrase "generic mineral delivery payment"
 
 # COPPER: 3000 #
-mission "KW.Generic.Mining [Copper]" 
+mission "KW.Generic.Mining [Copper]"
 	name "Harvest <mineral> to <planet>"
 	job
 	repeat
@@ -403,6 +423,8 @@ mission "KW.Generic.Mining [Copper]"
 	substitutions
 		"<mineral>" "Copper"
 		"<amount>" "12"
+	"distance calculation settings"
+		"all wormholes"
 	to offer
 		or
 			and
@@ -433,7 +455,7 @@ mission "KW.Generic.Mining [Copper]"
 		outfit "Copper" -12
 		dialog phrase "generic mineral delivery payment"
 
-mission "KW.Generic.Bulk Mining [Copper]" 
+mission "KW.Generic.Bulk Mining [Copper]"
 	name "Harvest <mineral> to <planet>"
 	job
 	repeat
@@ -442,6 +464,8 @@ mission "KW.Generic.Bulk Mining [Copper]"
 	substitutions
 		"<mineral>" "Copper"
 		"<amount>" "50"
+	"distance calculation settings"
+		"all wormholes"
 	to offer
 		random < 25
 		"cargo space" > 40
@@ -470,7 +494,7 @@ mission "KW.Generic.Bulk Mining [Copper]"
 		dialog phrase "generic mineral delivery payment"
 
 # NEODYMIUM: 3800 #
-mission "KW.Generic.Mining [Neodymium]" 
+mission "KW.Generic.Mining [Neodymium]"
 	name "Harvest <mineral> to <planet>"
 	job
 	repeat
@@ -479,6 +503,8 @@ mission "KW.Generic.Mining [Neodymium]"
 	substitutions
 		"<mineral>" "Neodymium"
 		"<amount>" "10"
+	"distance calculation settings"
+		"all wormholes"
 	to offer
 		or
 			and
@@ -509,7 +535,7 @@ mission "KW.Generic.Mining [Neodymium]"
 		outfit "Neodymium" -10
 		dialog phrase "generic mineral delivery payment"
 
-mission "KW.Generic.Bulk Mining [Neodymium]" 
+mission "KW.Generic.Bulk Mining [Neodymium]"
 	name "Harvest <mineral> to <planet>"
 	job
 	repeat
@@ -518,6 +544,8 @@ mission "KW.Generic.Bulk Mining [Neodymium]"
 	substitutions
 		"<mineral>" "Neodymium"
 		"<amount>" "45"
+	"distance calculation settings"
+		"all wormholes"
 	to offer
 		random < 25
 		"cargo space" > 35
@@ -546,7 +574,7 @@ mission "KW.Generic.Bulk Mining [Neodymium]"
 		dialog phrase "generic mineral delivery payment"
 
 # TUNGSTEN: 4500 #
-mission "KW.Generic.Mining [Tungsten]" 
+mission "KW.Generic.Mining [Tungsten]"
 	name "Harvest <mineral> to <planet>"
 	job
 	repeat
@@ -555,6 +583,8 @@ mission "KW.Generic.Mining [Tungsten]"
 	substitutions
 		"<mineral>" "Tungsten"
 		"<amount>" "9"
+	"distance calculation settings"
+		"all wormholes"
 	to offer
 		or
 			and
@@ -585,7 +615,7 @@ mission "KW.Generic.Mining [Tungsten]"
 		outfit "Tungsten" -9
 		dialog phrase "generic mineral delivery payment"
 
-mission "KW.Generic.Bulk Mining [Tungsten]" 
+mission "KW.Generic.Bulk Mining [Tungsten]"
 	name "Harvest <mineral> to <planet>"
 	job
 	repeat
@@ -594,6 +624,8 @@ mission "KW.Generic.Bulk Mining [Tungsten]"
 	substitutions
 		"<mineral>" "Tungsten"
 		"<amount>" "42"
+	"distance calculation settings"
+		"all wormholes"
 	to offer
 		random < 25
 		"cargo space" > 30
@@ -622,7 +654,7 @@ mission "KW.Generic.Bulk Mining [Tungsten]"
 		dialog phrase "generic mineral delivery payment"
 
 # URANIUM: 5000 #
-mission "KW.Generic.Mining [Uranium]" 
+mission "KW.Generic.Mining [Uranium]"
 	name "Harvest <mineral> to <planet>"
 	job
 	repeat
@@ -631,6 +663,8 @@ mission "KW.Generic.Mining [Uranium]"
 	substitutions
 		"<mineral>" "Uranium"
 		"<amount>" "8"
+	"distance calculation settings"
+		"all wormholes"
 	to offer
 		or
 			and
@@ -661,7 +695,7 @@ mission "KW.Generic.Mining [Uranium]"
 		outfit "Uranium" -8
 		dialog phrase "generic mineral delivery payment"
 
-mission "KW.Generic.Bulk Mining [Uranium]" 
+mission "KW.Generic.Bulk Mining [Uranium]"
 	name "Harvest <mineral> to <planet>"
 	job
 	repeat
@@ -670,6 +704,8 @@ mission "KW.Generic.Bulk Mining [Uranium]"
 	substitutions
 		"<mineral>" "Uranium"
 		"<amount>" "38"
+	"distance calculation settings"
+		"all wormholes"
 	to offer
 		random < 25
 		"cargo space" > 25
@@ -698,7 +734,7 @@ mission "KW.Generic.Bulk Mining [Uranium]"
 		dialog phrase "generic mineral delivery payment"
 
 # SILVER: 6000 #
-mission "KW.Generic.Mining [Silver]" 
+mission "KW.Generic.Mining [Silver]"
 	name "Harvest <mineral> to <planet>"
 	job
 	repeat
@@ -707,6 +743,8 @@ mission "KW.Generic.Mining [Silver]"
 	substitutions
 		"<mineral>" "Silver"
 		"<amount>" "21"
+	"distance calculation settings"
+		"all wormholes"
 	to offer
 		or
 			and
@@ -737,7 +775,7 @@ mission "KW.Generic.Mining [Silver]"
 		outfit "Silver" -21
 		dialog phrase "generic mineral delivery payment"
 
-mission "KW.Generic.Bulk Mining [Silver]" 
+mission "KW.Generic.Bulk Mining [Silver]"
 	name "Harvest <mineral> to <planet>"
 	job
 	repeat
@@ -746,6 +784,8 @@ mission "KW.Generic.Bulk Mining [Silver]"
 	substitutions
 		"<mineral>" "Silver"
 		"<amount>" "55"
+	"distance calculation settings"
+		"all wormholes"
 	to offer
 		random < 25
 		"cargo space" > 40
@@ -774,7 +814,7 @@ mission "KW.Generic.Bulk Mining [Silver]"
 		dialog phrase "generic mineral delivery payment"
 
 # GOLD: 8000 #
-mission "KW.Generic.Mining [Gold]" 
+mission "KW.Generic.Mining [Gold]"
 	name "Harvest <mineral> to <planet>"
 	job
 	repeat
@@ -783,6 +823,8 @@ mission "KW.Generic.Mining [Gold]"
 	substitutions
 		"<mineral>" "Gold"
 		"<amount>" "18"
+	"distance calculation settings"
+		"all wormholes"
 	to offer
 		or
 			and
@@ -813,7 +855,7 @@ mission "KW.Generic.Mining [Gold]"
 		outfit "Gold" -18
 		dialog phrase "generic mineral delivery payment"
 
-mission "KW.Generic.Bulk Mining [Gold]" 
+mission "KW.Generic.Bulk Mining [Gold]"
 	name "Harvest <mineral> to <planet>"
 	job
 	repeat
@@ -822,6 +864,8 @@ mission "KW.Generic.Bulk Mining [Gold]"
 	substitutions
 		"<mineral>" "Gold"
 		"<amount>" "42"
+	"distance calculation settings"
+		"all wormholes"
 	to offer
 		random < 25
 		"cargo space" > 30
@@ -850,7 +894,7 @@ mission "KW.Generic.Bulk Mining [Gold]"
 		dialog phrase "generic mineral delivery payment"
 
 # PLATINUM: 10000 #
-mission "KW.Generic.Mining [Platinum]" 
+mission "KW.Generic.Mining [Platinum]"
 	name "Harvest <mineral> to <planet>"
 	job
 	repeat
@@ -859,6 +903,8 @@ mission "KW.Generic.Mining [Platinum]"
 	substitutions
 		"<mineral>" "Platinum"
 		"<amount>" "15"
+	"distance calculation settings"
+		"all wormholes"
 	to offer
 		or
 			and
@@ -889,7 +935,7 @@ mission "KW.Generic.Mining [Platinum]"
 		outfit "Platinum" -15
 		dialog phrase "generic mineral delivery payment"
 
-mission "KW.Generic.Bulk Mining [Platinum]" 
+mission "KW.Generic.Bulk Mining [Platinum]"
 	name "Harvest <mineral> to <planet>"
 	job
 	repeat
@@ -898,6 +944,8 @@ mission "KW.Generic.Bulk Mining [Platinum]"
 	substitutions
 		"<mineral>" "Platinum"
 		"<amount>" "40"
+	"distance calculation settings"
+		"all wormholes"
 	to offer
 		random < 25
 		"cargo space" > 30
