@@ -1,5 +1,5 @@
 system "KW.S.004.Epsilon Eridani"
-	"display name" "Epsilon Eridani"
+	"display name" "Ran"
 	pos 10271.126 -8552.774
 	government KW.Sol
 	arrival 1200
@@ -7,6 +7,7 @@ system "KW.S.004.Epsilon Eridani"
 	haze _menu/haze-33
 	fleet "KW.Sol Patrol" 6000
 	fleet "KW.Sol Patrol Machine" 4000
+	"invisible fence" 10000
 	object
 		sprite star/k3
 	object
@@ -24,7 +25,7 @@ system "KW.S.004.Epsilon Eridani"
 			scale 0.2
 		distance 3022
 		period 2215
-		object
+		object KW.S.004.1.Hatzes
 			sprite mapicon/_poi_farm
 			distance 103.817
 			period 2215
@@ -34,6 +35,11 @@ system "KW.S.004.Epsilon Eridani"
 			scale 0.9
 		distance 6715
 		period 7336
+		object KW.S.004.0.AEgir
+			sprite mapicon/_poi_mine
+			distance 1000
+			period 7336
+			offset 50
 	object "KW.S.004.~.Epsilon Eridani"
 		sprite mapicon/_exit
 		distance 8061.561

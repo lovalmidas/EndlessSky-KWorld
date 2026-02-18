@@ -7,6 +7,7 @@ system KW.S.005.Procyon
 	haze _menu/haze-33
 	fleet "KW.Sol Patrol" 6000
 	fleet "KW.Sol Patrol Machine" 4000
+	"invisible fence" 12500
 	object
 		sprite star/f5
 		distance 12
@@ -41,7 +42,7 @@ system KW.S.005.Procyon
 				scale 0.15
 			distance 516
 			period 14.7
-			object
+			object "KW.S.005.0.Procyon I"
 				sprite mapicon/_poi_lab
 				distance 77
 				period 14.7

@@ -7,6 +7,7 @@ system "KW.S.008.Luyten's Star"
 	haze _menu/haze-33
 	fleet "KW.Sol Patrol" 6000
 	fleet "KW.Sol Patrol Machine" 4000
+	"invisible fence" 15000
 	object
 		sprite star/m3
 	object
@@ -24,7 +25,7 @@ system "KW.S.008.Luyten's Star"
 				scale 0.15
 			distance 288
 			period 21.8
-			object
+			object "KW.S.008.0.Luyten's Star I"
 				sprite mapicon/_poi_lab
 				distance 77
 				period 21.8

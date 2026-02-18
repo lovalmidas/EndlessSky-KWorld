@@ -7,6 +7,7 @@ system "KW.S.009.Kapteyn's Star"
 	haze _menu/haze-33
 	fleet "KW.Sol Patrol" 6000
 	fleet "KW.Sol Patrol Machine" 4000
+	"invisible fence" 12500
 	object
 		sprite star/m5
 	object

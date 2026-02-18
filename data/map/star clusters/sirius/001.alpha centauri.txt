@@ -1,7 +1,7 @@
 system "KW.S.001.Alpha Centauri"
 	"display name" "Alpha Centauri"
 	pos 10274.162 -8611.367
-	government Uninhabited
+	government KW.Sol
 	arrival 1200
 	habitable 2380
 	haze _menu/haze-33
@@ -9,6 +9,7 @@ system "KW.S.001.Alpha Centauri"
 	fleet "KW.Sol Patrol Machine" 2500
 	fleet "KW.Sol Merchants Small" 1300
 	fleet "KW.Sol Merchants Large" 1800
+	"invisible fence" 15000
 	object
 		sprite star/g3
 		distance 40.129
@@ -20,12 +21,12 @@ system "KW.S.001.Alpha Centauri"
 		offset 180
 	object
 		sprite planet/ocean_2
-			scale 0.15
+			scale 0.30
 		distance 2160.526
 		period 823
 		object KW.S.001.0.Advent
 			sprite mapicon/_poi_city_1
-			distance 77
+			distance 154
 			period 823
 			offset 40
 	object

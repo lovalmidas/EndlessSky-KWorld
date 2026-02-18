@@ -5,7 +5,6 @@ planet KW.S.000.0A.Yekaterinburg
 	description `Homeworld of humanity, bliss in ignorance.`
 	description `	The human species have recently entered an era of 'information technology' and is getting into grips with the notion of travelling within intra-space - a term representing the space within a star's influence up to its magnetosphere. Fortunately, this venture is not old, and visitors have came and shaped humanity to its current height with an invisible hand. Unfortunately, this hand wishes to remain invisible.`
 	description `	Yekaterinburg, also known at some point as the second capital of Russia, is home to an underground megacity extending from the rocks of the Ural to the surface of the mantle. It is relatively young, having started construction in 1942 leeching off the policies from the Soviet Union, and opened for service and residence in 1955. Its early years was formative with the introduction of the first AI supercomputer 'C-CUBE' as its President and city manager, which expanded the city to its present heights and depths today.`
-
 	port "Ural Port"
 		recharges all
 		services
@@ -123,12 +122,146 @@ planet KW.S.000.2.Io
 	#outfitter "KW.Sol.Io 2"
 	#outfitter "KW.Sol.Temp"
 
-planet KW.S.001.0.Advent
+planet KW.S.001.0.Advent # Proxima Centauri b?
 	"display name" Advent
 	landscape land/snow5
 	description "The humans expected at least one other habitable planet across the galaxy. They did not expect one right next door. The 'planet' is smaller than the moon, and much work remains before the planet is ready to sustain life, but those are easy steps compared to the galactic lottery. Melting the ice is but a matter of time."
+	port "Outpost"
+		recharges all
+		services
+			"job board"
+	government KW.Sol
+
+# + Proxima Centauri d?
+
+
+planet KW.S.004.0.AEgir #
+	"display name" "AEgir Station"
+	landscape land/canyon01
+	attributes research
+	description `A gas giant almost comparable to Jupiter. WIP`
+	port "Collector"
+		recharges
+			energy
+			fuel
+		services
+			"job board"
+	government KW.Sol
+
+planet KW.S.004.1.Hatzes
+	"display name" Hatzes
+	landscape land/canyon01
+	attributes research farming synthetic
+	description `A tiny moon rests just within its planet's shade enough to support a self-sustaining outpost. Amazingly, it shares a similar atmospheric composition as the gas giant AEgir, so humans name it after its discoverer.`
+	port "Outpost"
+		recharges
+			energy
+			fuel
+		services
+			trading
+			"job board"
+			"offers missions"
+		description `The outpost houses a small research base with rovers crawling across the moon surface. The largest architectual complex is its hydroponics farm that uses liquidified atmosphere to nourish its crops. It seems they had been successful enough to treat them as exports.`
+		description `	The local population is small and more interested in their own projects than joining you in space.`
+		description `	The following are traits inherent within this planet:`
+		description `	[Research]: A research facility on site regularly samples the moon surface. Hopefully in the future, the outpost expands its operation to its orbiting planet and the gas giant AEgir. The station is largely concerned with argiculture.`
+		description `	[Farming]: Some of the more successful crops are grown for export. It is one of the ways the station keeps itself afloat.`
+		description `	[Synthetic]: A minor workshop converts excess crops into fibers and resins for the fabrication of clothes and plastic.`
+	government KW.Sol
+
+planet "KW.S.005.0.Procyon I"
+	"display name" "Procyon I"
+	landscape land/canyon01
+	attributes research
+	description `WIP`
+	port "Collector"
+		recharges
+			energy
+			fuel
+		services
+			trading
+			"job board"
+			"offers missions"
+	government KW.Sol
+
+planet "KW.S.007.0.Tau Ceti I"
+	"display name" "Tau Ceti I"
+	landscape land/canyon01
+	attributes research
+	description `WIP`
+	port "Collector"
+		recharges
+			energy
+			fuel
+		services
+			trading
+			"job board"
+			"offers missions"
+	government KW.Sol
+
+planet "KW.S.008.0.Luyten's Star I"
+	"display name" "Luyten's Star I"
+	landscape land/canyon01
+	attributes research
+	description `WIP`
+	port "Collector"
+		recharges
+			energy
+			fuel
+		services
+			trading
+			"job board"
+			"offers missions"
+	government KW.Sol
+
+planet "KW.S.010.0.van Maanen's Star I"
+	"display name" "van Maanen's Star I"
+	landscape land/canyon01
+	attributes research
+	description `WIP`
+	port "Collector"
+		recharges
+			energy
+			fuel
+		services
+			trading
+			"job board"
+			"offers missions"
+	government KW.Sol
+
+planet "KW.S.011.0.Omicron Eridani I"
+	"display name" "Omicron Eridani I"
+	landscape land/canyon01
+	attributes farming
+	description `WIP`
+	port "Collector"
+		recharges
+			energy
+			fuel
+		services
+			trading
+			"job board"
+			"offers missions"
+	government KW.Sol
+
+planet "KW.S.011.1.Omicron Eridani II"
+	"display name" "Omicron Eridani II"
+	landscape land/canyon01
+	description `WIP`
 	government Uninhabited
 
+planet "KW.S.012.1.Altair I"
+	"display name" "Altair I"
+	landscape land/canyon01
+	description `WIP`
+	government Uninhabited
+
+
+
+
+
+
+# old planets
 planet KW.S.002.0.Tiptoe
 	"display name" Tiptoe
 	attributes research

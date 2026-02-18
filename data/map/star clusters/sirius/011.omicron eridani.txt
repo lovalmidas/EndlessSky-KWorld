@@ -7,6 +7,7 @@ system "KW.S.011.Omicron Eridani"
 	haze _menu/haze-33
 	fleet "KW.Sol Patrol" 6000
 	fleet "KW.Sol Patrol Machine" 4000
+	"invisible fence" 15000
 	object
 		sprite star/k0
 		distance 61
@@ -21,8 +22,8 @@ system "KW.S.011.Omicron Eridani"
 			scale 0.3
 		distance 2670
 		period 1108
-		object
-			sprite planet/_poi_farm
+		object "KW.S.011.0.Omicron Eridani I"
+			sprite mapicon/_poi_farm
 			distance 154
 			period 1108
 	object
@@ -30,8 +31,8 @@ system "KW.S.011.Omicron Eridani"
 			scale 0.34
 		distance 3365
 		period 1568
-		object
-			sprite planet/_poi_none
+		object "KW.S.011.1.Omicron Eridani II"
+			sprite mapicon/_poi_none
 			distance 175
 			period 1568
 	object

@@ -6,4 +6,5 @@ system "KW.S.015.Delta Pavonis"
 	haze _menu/haze-33
 	fleet "KW.Sol Patrol" 6000
 	fleet "KW.Sol Patrol Machine" 4000
+	"invisible fence" 20000
 

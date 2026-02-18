@@ -25,6 +25,7 @@ system KW.S.000.Sol
 	fleet "KW.Sol Miner" 1600
 	fleet "KW.Sol Miner Machine" 6000
 	fleet "KW.Sol Pirates" 10000
+	"invisible fence" 20000
 	object
 		sprite star/g3
 		period 10
@@ -63,11 +64,16 @@ system KW.S.000.Sol
 			distance 205
 			period 365.25
 			offset -145
-		object KW.S.000.1.Moon
+		object
 			sprite planet/luna_1
 				scale 0.05
 			distance 283.54
 			period 27.3
+			object KW.S.000.1.Moon
+				sprite mapicon/_poi_city_1
+				distance 53
+				period 27.3
+				offset 60
 	object
 		sprite planet/mars_1
 			scale 0.3
