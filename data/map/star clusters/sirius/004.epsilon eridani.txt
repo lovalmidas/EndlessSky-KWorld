@@ -27,7 +27,7 @@ system "KW.S.004.Epsilon Eridani"
 		period 2215
 		object KW.S.004.1.Hatzes
 			sprite mapicon/_poi_farm
-			distance 103.817
+			distance 101.5
 			period 2215
 			offset 120
 	object
@@ -37,7 +37,7 @@ system "KW.S.004.Epsilon Eridani"
 		period 7336
 		object KW.S.004.0.AEgir
 			sprite mapicon/_poi_mine
-			distance 1000
+			distance 882
 			period 7336
 			offset 50
 	object "KW.S.004.~.Epsilon Eridani"

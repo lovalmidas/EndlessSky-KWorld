@@ -12,17 +12,17 @@ system "KW.S.002.Bernard's Star"
 		sprite star/m5
 	object
 		sprite planet/rock_16 # Bernard's Star d
-			scale 0.06
+			scale 0.03
 		distance 70
 		period 14.3
 	object
 		sprite planet/dust_2 # Bernard's Star b
-			scale 0.1
+			scale 0.045
 		distance 120
 		period 32
 	object
 		sprite planet/io_2 # Bernard's Star c
-			scale 0.09
+			scale 0.03
 		distance 160
 		period 49
 	object

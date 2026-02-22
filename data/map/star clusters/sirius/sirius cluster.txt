@@ -21,21 +21,23 @@ system "KW.S.***.Sirius Cluster"
 		object KW.S.000.~.Sol
 		object
 			sprite mapicon/_cluster_g
-	object
-		sprite star/m5
-		distance 4218
-		offset -313.9
 	object "KW.S.001.*.Alpha Centauri"
 		sprite star/g3
 		distance 4285.406
 		offset -315.8
+		object
+			sprite star/m5
+			distance 156.939
+			period 100
+			offset 85
+		object
+			sprite star/k0
+			distance 105.752
+			period 100
+			offset 160
 		object "KW.S.001.~.Alpha Centauri"
 		object
 			sprite mapicon/_cluster_g
-	object
-		sprite star/k0
-		distance 4362.399
-		offset -314.9
 	object "KW.S.002.*.Bernard's Star"
 		sprite star/m5
 		distance 5761
@@ -57,23 +59,25 @@ system "KW.S.***.Sirius Cluster"
 		sprite star/a0
 		distance 8496
 		offset -227.2
+		object
+			sprite star/a-dwarf
+			distance 71
+			period 100
+			offset -105
 		object KW.S.003.~.Sirius
 		object
 			sprite mapicon/_cluster_a
-	object
-		sprite star/a-dwarf
-		distance 8460.301
-		offset -226.8
 	object
 		sprite star/m5
 			scale 0.25
 		distance 2156
 		offset -175.5
-	object
-		sprite star/m5
-			scale 0.25
-		distance 2177.505
-		offset -175.1
+		object
+			sprite star/m5
+				scale 0.25
+			distance 28
+			period 100
+			offset -140
 	object
 		sprite star/m4
 		distance 9534
@@ -105,16 +109,18 @@ system "KW.S.***.Sirius Cluster"
 			scale 0.54
 		distance 6035
 		offset -47.1
-	object
-		sprite star/m5
-			scale 0.35
-		distance 6018.834
-		offset -47.3
-	object
-		sprite star/m8
-			scale 0.5
-		distance 6010.531
-		offset -46.95
+		object
+			sprite star/m5
+				scale 0.35
+			distance 25
+			period 100
+			offset -175
+		object
+			sprite star/m8
+				scale 0.5
+			distance 30
+			period 100
+			offset 100
 	object KW.S.005.*.Procyon
 		sprite star/f5
 			scale 0.97
@@ -122,41 +128,45 @@ system "KW.S.***.Sirius Cluster"
 		offset -213.7
 		object KW.S.005.~.Procyon
 		object
+			sprite star/a-dwarf
+				scale 0.8
+			distance 44.5
+			period 100
+			offset 88
+		object
 			sprite mapicon/_cluster_f
-	object
-		sprite star/a-dwarf
-			scale 0.8
-		distance 11141.921
-		offset -213.9
 	object
 		sprite star/k5
 		distance 11352
 		offset -82.3
-	object
-		sprite star/k8
-			scale 0.75
-		distance 11415.04
-		offset -82.45
+		object
+			sprite star/k8
+				scale 0.75
+			distance 65
+			period 100
+			offset -110
 	object
 		sprite star/m4
 			scale 0.91
 		distance 10549.06
 		offset -89.3
-	object
-		sprite star/m5
-			scale 0.92
-		distance 10591.015
-		offset -89.15
+		object
+			sprite star/m5
+				scale 0.92
+			distance 49
+			period 100
+			offset -55
 	object
 		sprite star/m3
 			scale 0.95
 		distance 11011.321
 		offset -116.7
-	object
-		sprite star/m5
-			scale 0.8
-		distance 11045.977
-		offset -116.88
+		object
+			sprite star/m5
+				scale 0.8
+			distance 50
+			period 100
+			offset -160
 	object
 		sprite star/m5
 			scale 0.84
@@ -224,11 +234,12 @@ system "KW.S.***.Sirius Cluster"
 			scale 0.92
 		distance 11775
 		offset -331.5
-	object
-		sprite planet/browndwarf-t
-			scale 0.06
-		distance 11772
-		offset -331.2
+		object
+			sprite planet/browndwarf-t
+				scale 0.06
+			distance 40
+			period 100
+			offset 125
 	object
 		sprite star/m0
 			scale 0.72
@@ -238,10 +249,11 @@ system "KW.S.***.Sirius Cluster"
 		sprite star/m3
 		distance 13070
 		offset -104.7
-	object
-		sprite star/m5
-		distance 13104.46
-		offset -104.3
+		object
+			sprite star/m5
+			distance 98
+			period 100
+			offset -35
 	object
 		sprite star/m8
 			scale 0.96
@@ -252,11 +264,12 @@ system "KW.S.***.Sirius Cluster"
 			scale 0.99
 		distance 13370.573
 		offset -212.6
-	object
-		sprite star/m8
-			scale 0.99
-		distance 13351
-		offset -212.9
+		object
+			sprite star/m8
+				scale 0.99
+			distance 75
+			period 100
+			offset 40
 	object
 		sprite star/m3
 			scale 0.92
@@ -267,11 +280,12 @@ system "KW.S.***.Sirius Cluster"
 			scale 0.32
 		distance 4488.341
 		offset -288.8
-	object
-		sprite star/m8
-			scale 0.22
-		distance 4481
-		offset -288.6
+		object
+			sprite star/m8
+				scale 0.22
+			distance 17.753
+			period 100
+			offset -170
 	object
 		sprite star/m4
 			scale 0.24
@@ -328,16 +342,18 @@ system "KW.S.***.Sirius Cluster"
 			scale 0.99
 		distance 15221
 		offset -78.9
-	object
-		sprite star/m5
-			scale 0.52
-		distance 15215
-		offset -78.6
-	object
-		sprite star/m8
-			scale 0.26
-		distance 15227
-		offset -79.05
+		object
+			sprite star/m5
+				scale 0.52
+			distance 78
+			period 100
+			offset 15
+		object
+			sprite star/m8
+				scale 0.26
+			distance 45
+			period 100
+			offset -160
 	object
 		sprite star/m3
 			scale 0.45
@@ -383,19 +399,21 @@ system "KW.S.***.Sirius Cluster"
 			scale 0.79
 		distance 12964
 		offset -200.8
+		object
+			sprite star/a-dwarf
+				scale 0.79
+			distance 65
+			period 100
+			offset 64
+		object
+			sprite star/m5
+				scale 0.49
+			distance 40
+			period 100
+			offset -140
 		object "KW.S.011.~.Omicron Eridani"
 		object
 			sprite mapicon/_cluster_k
-	object
-		sprite star/a-dwarf
-			scale 0.79
-		distance 12957
-		offset -201.1
-	object
-		sprite star/m5
-			scale 0.49
-		distance 12985
-		offset -200.65
 	object
 		sprite star/m5
 			scale 0.97
@@ -406,11 +424,12 @@ system "KW.S.***.Sirius Cluster"
 			scale 0.98
 		distance 16268
 		offset -29.9
-	object
-		sprite star/k5
-			scale 0.78
-		distance 16288
-		offset -30
+		object
+			sprite star/k5
+				scale 0.78
+			distance 65
+			period 100
+			offset -75
 	object KW.S.012.*.Altair
 		sprite star/a8
 			scale 0.99
@@ -424,11 +443,12 @@ system "KW.S.***.Sirius Cluster"
 			scale 0.8
 		distance 13706
 		offset -207.5
-	object
-		sprite star/m5
-			scale 0.6
-		distance 13746
-		offset -207.6
+		object
+			sprite star/m5
+				scale 0.6
+			distance 48
+			period 100
+			offset 120
 	object
 		sprite star/m4
 			scale 0.24
@@ -444,4 +464,204 @@ system "KW.S.***.Sirius Cluster"
 			scale 0.98
 		distance 17239
 		offset -204.6
+	object
+		sprite star/m4
+			scale 0.79
+		distance 13861
+		offset -126.8
+	object
+		sprite star/m4
+			scale 0.30
+		distance 5355
+		offset -351.6
+	object
+		sprite star/m3
+			scale 0.89
+		distance 15833
+		offset -206.4
+	object
+		sprite star/m5
+			scale 0.83
+		distance 14795
+		offset -30.2
+	object
+		sprite star/m4
+			scale 0.99
+		distance 17834
+		offset -148.1
+		object
+			sprite star/o-dwarf
+				scale 0.6
+			distance 52
+			period 100
+			offset 75
+	object
+		sprite star/m4
+			scale 0.97
+		distance 17369
+		offset -182.9
+	object
+		sprite star/m8
+			scale 0.95
+		distance 17634
+		offset -61.7
+	object
+		sprite star/m0
+			scale 0.94
+		distance 17506
+		offset -207
+	object
+		sprite planet/browndwarf-t
+			scale 0.078
+		distance 14561
+		offset -202.9
+	object "KW.S.013.*.Sigma Draconis"
+		sprite star/k0
+			scale 0.93
+		distance 17453
+		offset -101.3
+		object "KW.S.013.~.Sigma Draconis"
+		object
+			sprite mapicon/_cluster_k
+	object
+		sprite star/m0
+			scale 0.95
+		distance 17867
+		offset -228.6
+		object
+			sprite planet/browndwarf-t
+				scale 0.095
+			distance 82
+			period 100
+			offset -15
+	object
+		sprite star/m4
+			scale 0.99
+		distance 18637
+		offset -193.7
+	object
+		sprite star/m4
+			scale 0.97
+		distance 18346
+		offset -335.3
+	object
+		sprite star/m4
+			scale 1.00
+		distance 19128
+		offset -40.4
+		object
+			sprite star/m8
+				scale 1
+			distance 115
+			period 100
+			offset 145
+	object
+		sprite star/m4
+			scale 0.99
+		distance 19061
+		offset -241.5
+	object
+		sprite star/k5
+			scale 0.84
+		distance 16207
+		offset -338.3
+		object
+			sprite star/m0
+				scale 0.78
+			distance 55
+			period 100
+			offset -10
+		object
+			sprite star/m3
+				scale 0.64
+			distance 82
+			period 100
+			offset 135
+		object
+			sprite planet/browndwarf-t
+				scale 0.04
+			distance 165
+			period 100
+			offset -175
+	object
+		sprite star/m4
+			scale 0.91
+		distance 17645
+		offset -352.4
+	object
+		sprite star/m4
+			scale 0.97
+		distance 18815
+		offset -215.9
+	object
+		sprite star/m3
+			scale 0.98
+		distance 18920
+		offset -332.7
+	object "KW.S.014.*.Eta Cassiopeiae"
+		sprite star/g0
+			scale 1
+		distance 19343
+		offset -122.6
+		object "KW.S.014.~.Eta Cassiopeiae"
+		object
+			sprite mapicon/_cluster_g
+		object
+			sprite star/k8
+				scale 0.85
+			distance 72
+			period 100
+			offset 180
+	object
+		sprite star/m3
+			scale 0.55
+		distance 10633
+		offset -93.6
+	object
+		sprite star/k0
+			scale 0.99
+		distance 19379
+		offset -358.3
+		object
+			sprite star/k0
+				scale 0.8
+			distance 60
+			period 100
+			offset -45
+		object
+			sprite star/k5
+				scale 0.4
+			distance 155
+			period 100
+			offset 60
+	object
+		sprite star/k3
+			scale 0.86
+		distance 16938
+		offset -5.2
+		object
+			sprite star/m4
+				scale 0.66
+			distance 42
+			period 100
+			offset -80
+	object
+		sprite star/g8
+			scale 0.56
+		distance 11027
+		offset -250.7
+	object "KW.S.015.*.Delta Pavonis"
+		sprite star/g8
+			scale 0.84
+		distance 16819
+		offset -329.8
+		object "KW.S.015.~.Delta Pavonis"
+		object
+			sprite mapicon/_cluster_g
+	object
+		sprite star/m3
+			scale 0.73
+		distance 14567
+		offset -2338.4
+
 

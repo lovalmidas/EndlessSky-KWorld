@@ -23,7 +23,7 @@ system KW.S.012.Altair
 		period 748.8
 		object "KW.S.012.1.Altair I"
 			sprite mapicon/_poi_none
-			distance 123
+			distance 119.5
 			period 748.8
 			offset -65
 	object

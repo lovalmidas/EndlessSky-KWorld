@@ -26,7 +26,7 @@ system "KW.S.001.Alpha Centauri"
 		period 823
 		object KW.S.001.0.Advent
 			sprite mapicon/_poi_city_1
-			distance 154
+			distance 147.6
 			period 823
 			offset 40
 	object

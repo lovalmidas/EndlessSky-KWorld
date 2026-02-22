@@ -12,8 +12,8 @@ system "KW.S.007.Tau Ceti"
 		sprite star/g8
 	object
 		sprite planet/ocean_3
-			scale 0.35
-		distance 1200
+			scale 0.12
+		distance 1030.53
 		period 501
 	object
 		sprite planet/cloud_2
@@ -23,7 +23,7 @@ system "KW.S.007.Tau Ceti"
 		object
 			sprite planet/rock_8
 				scale 0.1
-			distance 165.5
+			distance 216.372
 			period 64.5
 			object "KW.S.007.0.Tau Ceti I"
 				sprite mapicon/_poi_lab

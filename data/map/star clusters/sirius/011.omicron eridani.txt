@@ -24,7 +24,7 @@ system "KW.S.011.Omicron Eridani"
 		period 1108
 		object "KW.S.011.0.Omicron Eridani I"
 			sprite mapicon/_poi_farm
-			distance 154
+			distance 145
 			period 1108
 	object
 		sprite planet/rock_30
@@ -33,7 +33,7 @@ system "KW.S.011.Omicron Eridani"
 		period 1568
 		object "KW.S.011.1.Omicron Eridani II"
 			sprite mapicon/_poi_none
-			distance 175
+			distance 168
 			period 1568
 	object
 		sprite planet/gas_6

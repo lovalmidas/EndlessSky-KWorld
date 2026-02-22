@@ -12,6 +12,7 @@ system "KW.S.006.Epsilon Indi"
 		sprite star/k5
 	object
 		sprite planet/browndwarf-t
+			scale 0.65
 		distance 657.168
 		period 128
 	object

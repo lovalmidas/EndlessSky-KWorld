@@ -46,22 +46,22 @@ system KW.S.000.Sol
 		period 365.25
 		object KW.S.000.0A.Yekaterinburg
 			sprite mapicon/_poi_city_5
-			distance 205
+			distance 197
 			period 365.25
 			offset -10
 		object KW.S.000.0B.Alps
 			sprite mapicon/_poi_city_3
-			distance 205
+			distance 197
 			period 365.25
 			offset 60
 		object KW.S.000.0C.Kyoto
 			sprite mapicon/_poi_city_1
-			distance 205
+			distance 197
 			period 365.25
 			offset -80
 		object "KW.S.000.0D.Riau Island"
 			sprite mapicon/_poi_city_1
-			distance 205
+			distance 197
 			period 365.25
 			offset -145
 		object
@@ -71,7 +71,7 @@ system KW.S.000.Sol
 			period 27.3
 			object KW.S.000.1.Moon
 				sprite mapicon/_poi_city_1
-				distance 53
+				distance 25.5
 				period 27.3
 				offset 60
 	object
@@ -91,7 +91,7 @@ system KW.S.000.Sol
 			period 200
 			object KW.S.000.2.Io
 				sprite mapicon/_poi_mine
-				distance 80
+				distance 74.5
 				period 200
 				offset 60
 	object
