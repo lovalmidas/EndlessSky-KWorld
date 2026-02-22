@@ -1,12 +1,50 @@
 
+### MISSION COLORS ###
+# MAJOR STORY MISSIONS (bright green)
 color "KW.Color: main missions selected" 0 1. .7
 color "KW.Color: main missions unselected" .3 .8 .5
 
+# QUEST MISSIONS
 color "KW.Color: secondary missions selected" 0 .7 1.
 color "KW.Color: secondary missions unselected" .3 .5 .8
 
+# LOCAL POINTS OF INTEREST (yellow)
 color "KW.Color: locale missions selected" .9 1. 0
 color "KW.Color: locale missions unselected" .5 .6 .3
+
+### JOB COLORS ###
+# CARGO JOBS (green)
+color "KW.Color: job cargo selected" .27 .8 .36
+color "KW.Color: job cargo unselected" .15 .62 .23
+color "KW.Color: job cargo unavailable" .09 .32 .13
+
+# PASSENGER JOBS (blue)
+color "KW.Color: job passenger selected" .30 .65 .85
+color "KW.Color: job passenger unselected" .16 .5 .69
+color "KW.Color: job passenger unavailable" .11 .3 .4
+
+# MINING JOBS (brown)
+color "KW.Color: job mining selected" .75 .57 .33
+color "KW.Color: job mining unselected" .42 .32 .16
+color "KW.Color: job mining unavailable" .22 .16 .08
+
+# ESCORT JOBS (yellow)
+color "KW.Color: job escort selected" .95 .75 .30
+color "KW.Color: job escort unselected" .65 .5 .18
+color "KW.Color: job escort unavailable" .3 .23 .08
+
+# BOUNTY JOBS (orange)
+color "KW.Color: job bounty selected" .95 .45 .08
+color "KW.Color: job bounty unselected" .57 .28 .07
+color "KW.Color: job bounty unavailable" .28 .14 .04
+
+# IMMORAL JOBS (red)
+color "KW.Color: job pirate selected" .88 .2 .18
+color "KW.Color: job pirate unselected" .56 .12 .11
+color "KW.Color: job pirate unavailable" .25 .05 .05
+
+
+
 
 color "KW.Color: Wormhole.Alph" .9 .1 .1
 
