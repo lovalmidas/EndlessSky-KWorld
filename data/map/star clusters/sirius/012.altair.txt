@@ -1,10 +1,11 @@
 system KW.S.012.Altair
 	"display name" Altair
-	pos 10218.977 -8638.403
+	pos 10227.866 -8630.403
 	government Uninhabited
 	arrival 1200
 	habitable 6000
 	haze _menu/haze-33
+	link KW.S.003.Sirius
 	fleet "KW.Sol Patrol" 6000
 	fleet "KW.Sol Patrol Machine" 4000
 	"invisible fence" 17500

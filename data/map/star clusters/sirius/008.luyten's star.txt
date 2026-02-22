@@ -1,6 +1,6 @@
 system "KW.S.008.Luyten's Star"
 	"display name" "Luyten's Star"
-	pos 10327.126 -8533.811
+	pos 10314.089 -8546.848
 	government KW.Sol
 	arrival 1200
 	habitable 460

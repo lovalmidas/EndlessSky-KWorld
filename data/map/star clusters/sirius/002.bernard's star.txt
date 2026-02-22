@@ -1,6 +1,6 @@
 system "KW.S.002.Bernard's Star"
 	"display name" "Bernard's Star"
-	pos 10246.125 -8618.07
+	pos 10249.681 -8618.959
 	government Uninhabited
 	arrival 1200
 	habitable 270

@@ -1,10 +1,12 @@
 system KW.S.003.Sirius
 	"display name" Sirius
-	pos 10273.2 -8577.367
+	pos 10285.348 -8579.145
 	government Uninhabited
 	arrival 1200
 	habitable 7300
 	haze _menu/haze-33
+	link KW.S.005.Procyon
+	link KW.S.012.Altair
 	fleet "KW.Sol Patrol" 6000
 	fleet "KW.Sol Patrol Machine" 4000
 	"invisible fence" 22500

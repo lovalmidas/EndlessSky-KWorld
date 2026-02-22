@@ -1,6 +1,6 @@
 system "KW.S.006.Epsilon Indi"
 	"display name" "Epsilon Indi"
-	pos 10270.533 -8635.145
+	pos 10274.385 -8632.775
 	government Uninhabited
 	arrival 1200
 	habitable 890

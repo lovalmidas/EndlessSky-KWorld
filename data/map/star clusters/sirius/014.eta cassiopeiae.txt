@@ -1,5 +1,5 @@
 system "KW.S.014.Eta Cassiopeiae"
-	pos 10305.496 -8480.478
+	pos 10224.311 -8569.959
 	government Uninhabited
 	arrival 1200
 	habitable 2300

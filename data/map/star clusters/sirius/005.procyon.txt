@@ -1,10 +1,11 @@
 system KW.S.005.Procyon
 	"display name" Procyon
-	pos 10312.311 -8558.7
+	pos 10305.2 -8559.589
 	government KW.Sol
 	arrival 1200
 	habitable 4930
 	haze _menu/haze-33
+	link KW.S.003.Sirius
 	fleet "KW.Sol Patrol" 6000
 	fleet "KW.Sol Patrol Machine" 4000
 	"invisible fence" 12500

@@ -1,5 +1,5 @@
 system "KW.S.015.Delta Pavonis"
-	pos 10315.57 -8473.367
+	pos 10305.2 -8626.552
 	government Uninhabited
 	arrival 1200
 	habitable 2300

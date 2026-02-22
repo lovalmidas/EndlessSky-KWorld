@@ -1,6 +1,6 @@
 system "KW.S.011.Omicron Eridani"
 	"display name" "Omicron Eridani"
-	pos 10281.792 -8543.589
+	pos 10281.792 -8541.515
 	government KW.Sol
 	arrival 1200
 	habitable 2480
