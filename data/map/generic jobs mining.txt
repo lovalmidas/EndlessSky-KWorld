@@ -12,246 +12,7 @@
 #	200k-500k for large
 # Unfortunately, Endless Sky lack substitution logic for outfit and numeric amounts, so several copies may need to be hand-copied
 
-# SILICON: 400 #
-mission "KW.Generic.Mining [Silicon]"
-	name "Harvest <mineral> to <planet>"
-	job
-	repeat
-	deadline 7
-	description "${KW.Phrase.Job: mineral offer}"
-	substitutions
-		"<mineral>" "Silicon"
-		"<amount>" "75"
-	"distance calculation settings"
-		"all wormholes"
-	to offer
-		or
-			and
-				"cargo space" < 200
-				random < 40
-			random < 25
-		has "job-board: enable generic mining jobs"
-	source
-		attributes mining factory logistics
-		not attributes large
-		not attributes isolated
-		not # neighbor to a mineral source up to 3 jumps away, possibly in same system
-			not attributes silicon-source
-			not
-				neighbor attributes silicon-source
-			not
-				neighbor
-					neighbor attributes silicon-source
-			not
-				neighbor
-					neighbor
-						neighbor attributes silicon-source
 
-	on visit
-		dialog phrase "generic mineral on visit"
-	on complete
-		payment 61500 # [+105%] Silicon: 400 x 75 = 30000
-		outfit "Silicon" -75
-		dialog phrase "generic mineral delivery payment"
-
-
-mission "KW.Generic.Bulk Mining [Silicon]"
-	name "Harvest <mineral> to <planet>"
-	job
-	repeat
-	deadline 7
-	description "${KW.Phrase.Job: mineral offer}"
-	substitutions
-		"<mineral>" "Silicon"
-		"<amount>" "250"
-	"distance calculation settings"
-		"all wormholes"
-	to offer
-		random < 25
-		"cargo space" > 200
-		has "job-board: enable generic mining jobs"
-	source
-		attributes mining factory logistics
-		attributes large
-		not attributes isolated
-		not # neighbor to a mineral source up to 3 jumps away, possibly in same system
-			not attributes silicon-source
-			not
-				neighbor attributes silicon-source
-			not
-				neighbor
-					neighbor attributes silicon-source
-			not
-				neighbor
-					neighbor
-						neighbor attributes silicon-source
-
-	on visit
-		dialog phrase "generic mineral on visit"
-	on complete
-		payment 275000 # [+175%] Silicon: 400 x 250 = 100000
-		outfit "Silicon" -250
-		dialog phrase "generic mineral delivery payment"
-
-# LEAD: 900 #
-mission "KW.Generic.Mining [Lead]"
-	name "Harvest <mineral> to <planet>"
-	job
-	repeat
-	deadline 7
-	description "${KW.Phrase.Job: mineral offer}"
-	substitutions
-		"<mineral>" "Lead"
-		"<amount>" "36"
-	"distance calculation settings"
-		"all wormholes"
-	to offer
-		or
-			and
-				"cargo space" < 100
-				random < 40
-			random < 25
-		has "job-board: enable generic mining jobs"
-	source
-		attributes mining factory logistics
-		not attributes large
-		not attributes isolated
-		not # neighbor to a mineral source up to 3 jumps away, possibly in same system
-			not attributes lead-source
-			not
-				neighbor attributes lead-source
-			not
-				neighbor
-					neighbor attributes lead-source
-			not
-				neighbor
-					neighbor
-						neighbor attributes lead-source
-
-	on visit
-		dialog phrase "generic mineral on visit"
-	on complete
-		payment 57500 # [+77%] Lead: 900 x 36 = 32400
-		outfit "Lead" -36
-		dialog phrase "generic mineral delivery payment"
-
-mission "KW.Generic.Bulk Mining [Lead]"
-	name "Harvest <mineral> to <planet>"
-	job
-	repeat
-	deadline 7
-	description "${KW.Phrase.Job: mineral offer}"
-	substitutions
-		"<mineral>" "Lead"
-		"<amount>" "125"
-	"distance calculation settings"
-		"all wormholes"
-	to offer
-		random < 25
-		"cargo space" > 100
-		has "job-board: enable generic mining jobs"
-	source
-		attributes mining factory logistics
-		attributes large
-		not attributes isolated
-		not # neighbor to a mineral source up to 3 jumps away, possibly in same system
-			not attributes lead-source
-			not
-				neighbor attributes lead-source
-			not
-				neighbor
-					neighbor attributes lead-source
-			not
-				neighbor
-					neighbor
-						neighbor attributes lead-source
-
-	on visit
-		dialog phrase "generic mineral on visit"
-	on complete
-		payment 247500 # [+120%] Lead: 900 x 125 = 112500
-		outfit "Lead" -125
-		dialog phrase "generic mineral delivery payment"
-
-# IRON: 1200 #
-mission "KW.Generic.Mining [Iron]"
-	name "Harvest <mineral> to <planet>"
-	job
-	repeat
-	deadline 7
-	description "${KW.Phrase.Job: mineral offer}"
-	substitutions
-		"<mineral>" "Iron"
-		"<amount>" "25"
-	"distance calculation settings"
-		"all wormholes"
-	to offer
-		or
-			and
-				"cargo space" < 80
-				random < 40
-			random < 25
-		has "job-board: enable generic mining jobs"
-	source
-		attributes mining factory logistics
-		not attributes large
-		not attributes isolated
-		not # neighbor to a mineral source up to 3 jumps away, possibly in same system
-			not attributes iron-source
-			not
-				neighbor attributes iron-source
-			not
-				neighbor
-					neighbor attributes iron-source
-			not
-				neighbor
-					neighbor
-						neighbor attributes iron-source
-
-	on visit
-		dialog phrase "generic mineral on visit"
-	on complete
-		payment 55000 # [+83%] Iron: 1200 x 25 = 30000
-		outfit "Iron" -25
-		dialog phrase "generic mineral delivery payment"
-
-mission "KW.Generic.Bulk Mining [Iron]"
-	name "Harvest <mineral> to <planet>"
-	job
-	repeat
-	deadline 7
-	description "${KW.Phrase.Job: mineral offer}"
-	substitutions
-		"<mineral>" "Iron"
-		"<amount>" "100"
-	"distance calculation settings"
-		"all wormholes"
-	to offer
-		random < 25
-		"cargo space" > 80
-		has "job-board: enable generic mining jobs"
-	source
-		attributes mining factory logistics
-		attributes large
-		not attributes isolated
-		not # neighbor to a mineral source up to 3 jumps away, possibly in same system
-			not attributes iron-source
-			not
-				neighbor attributes iron-source
-			not
-				neighbor
-					neighbor attributes iron-source
-			not
-				neighbor
-					neighbor
-						neighbor attributes iron-source
-
-	on visit
-		dialog phrase "generic mineral on visit"
-	on complete
-		payment 240000 # [+100%] Iron: 1200 x 100 = 120000
-		outfit "Iron" -100
-		dialog phrase "generic mineral delivery payment"
 
 # ALUMINUM: 1800 #
 mission "KW.Generic.Mining [Aluminum]"
@@ -259,7 +20,11 @@ mission "KW.Generic.Mining [Aluminum]"
 	job
 	repeat
 	deadline 7
-	description "${KW.Phrase.Job: mineral offer}"
+	description "${KW.Phrase.Job: timed mineral offer}"
+	"offer precedence" 300
+	color selected "KW.Color: job mining selected"
+	color unselected "KW.Color: job mining unselected"
+	color unavailable "KW.Color: job mining unavailable"
 	substitutions
 		"<mineral>" "Aluminum"
 		"<amount>" "18"
@@ -300,7 +65,11 @@ mission "KW.Generic.Bulk Mining [Aluminum]"
 	job
 	repeat
 	deadline 7
-	description "${KW.Phrase.Job: mineral offer}"
+	description "${KW.Phrase.Job: timed mineral offer}"
+	"offer precedence" 300
+	color selected "KW.Color: job mining selected"
+	color unselected "KW.Color: job mining unselected"
+	color unavailable "KW.Color: job mining unavailable"
 	substitutions
 		"<mineral>" "Aluminum"
 		"<amount>" "80"
@@ -339,7 +108,11 @@ mission "KW.Generic.Mining [Titanium]"
 	job
 	repeat
 	deadline 7
-	description "${KW.Phrase.Job: mineral offer}"
+	description "${KW.Phrase.Job: timed mineral offer}"
+	"offer precedence" 300
+	color selected "KW.Color: job mining selected"
+	color unselected "KW.Color: job mining unselected"
+	color unavailable "KW.Color: job mining unavailable"
 	substitutions
 		"<mineral>" "Titanium"
 		"<amount>" "16"
@@ -380,7 +153,11 @@ mission "KW.Generic.Bulk Mining [Titanium]"
 	job
 	repeat
 	deadline 7
-	description "${KW.Phrase.Job: mineral offer}"
+	description "${KW.Phrase.Job: timed mineral offer}"
+	"offer precedence" 300
+	color selected "KW.Color: job mining selected"
+	color unselected "KW.Color: job mining unselected"
+	color unavailable "KW.Color: job mining unavailable"
 	substitutions
 		"<mineral>" "Titanium"
 		"<amount>" "64"
@@ -419,7 +196,11 @@ mission "KW.Generic.Mining [Copper]"
 	job
 	repeat
 	deadline 7
-	description "${KW.Phrase.Job: mineral offer}"
+	description "${KW.Phrase.Job: timed mineral offer}"
+	"offer precedence" 300
+	color selected "KW.Color: job mining selected"
+	color unselected "KW.Color: job mining unselected"
+	color unavailable "KW.Color: job mining unavailable"
 	substitutions
 		"<mineral>" "Copper"
 		"<amount>" "12"
@@ -460,7 +241,11 @@ mission "KW.Generic.Bulk Mining [Copper]"
 	job
 	repeat
 	deadline 7
-	description "${KW.Phrase.Job: mineral offer}"
+	description "${KW.Phrase.Job: timed mineral offer}"
+	"offer precedence" 300
+	color selected "KW.Color: job mining selected"
+	color unselected "KW.Color: job mining unselected"
+	color unavailable "KW.Color: job mining unavailable"
 	substitutions
 		"<mineral>" "Copper"
 		"<amount>" "50"
@@ -499,7 +284,11 @@ mission "KW.Generic.Mining [Neodymium]"
 	job
 	repeat
 	deadline 7
-	description "${KW.Phrase.Job: mineral offer}"
+	description "${KW.Phrase.Job: timed mineral offer}"
+	"offer precedence" 300
+	color selected "KW.Color: job mining selected"
+	color unselected "KW.Color: job mining unselected"
+	color unavailable "KW.Color: job mining unavailable"
 	substitutions
 		"<mineral>" "Neodymium"
 		"<amount>" "10"
@@ -540,7 +329,11 @@ mission "KW.Generic.Bulk Mining [Neodymium]"
 	job
 	repeat
 	deadline 7
-	description "${KW.Phrase.Job: mineral offer}"
+	description "${KW.Phrase.Job: timed mineral offer}"
+	"offer precedence" 300
+	color selected "KW.Color: job mining selected"
+	color unselected "KW.Color: job mining unselected"
+	color unavailable "KW.Color: job mining unavailable"
 	substitutions
 		"<mineral>" "Neodymium"
 		"<amount>" "45"
@@ -579,7 +372,11 @@ mission "KW.Generic.Mining [Tungsten]"
 	job
 	repeat
 	deadline 7
-	description "${KW.Phrase.Job: mineral offer}"
+	description "${KW.Phrase.Job: timed mineral offer}"
+	"offer precedence" 300
+	color selected "KW.Color: job mining selected"
+	color unselected "KW.Color: job mining unselected"
+	color unavailable "KW.Color: job mining unavailable"
 	substitutions
 		"<mineral>" "Tungsten"
 		"<amount>" "9"
@@ -620,7 +417,11 @@ mission "KW.Generic.Bulk Mining [Tungsten]"
 	job
 	repeat
 	deadline 7
-	description "${KW.Phrase.Job: mineral offer}"
+	description "${KW.Phrase.Job: timed mineral offer}"
+	"offer precedence" 300
+	color selected "KW.Color: job mining selected"
+	color unselected "KW.Color: job mining unselected"
+	color unavailable "KW.Color: job mining unavailable"
 	substitutions
 		"<mineral>" "Tungsten"
 		"<amount>" "42"
@@ -659,7 +460,11 @@ mission "KW.Generic.Mining [Uranium]"
 	job
 	repeat
 	deadline 7
-	description "${KW.Phrase.Job: mineral offer}"
+	description "${KW.Phrase.Job: timed mineral offer}"
+	"offer precedence" 300
+	color selected "KW.Color: job mining selected"
+	color unselected "KW.Color: job mining unselected"
+	color unavailable "KW.Color: job mining unavailable"
 	substitutions
 		"<mineral>" "Uranium"
 		"<amount>" "8"
@@ -700,7 +505,11 @@ mission "KW.Generic.Bulk Mining [Uranium]"
 	job
 	repeat
 	deadline 7
-	description "${KW.Phrase.Job: mineral offer}"
+	description "${KW.Phrase.Job: timed mineral offer}"
+	"offer precedence" 300
+	color selected "KW.Color: job mining selected"
+	color unselected "KW.Color: job mining unselected"
+	color unavailable "KW.Color: job mining unavailable"
 	substitutions
 		"<mineral>" "Uranium"
 		"<amount>" "38"
@@ -739,7 +548,11 @@ mission "KW.Generic.Mining [Silver]"
 	job
 	repeat
 	deadline 7
-	description "${KW.Phrase.Job: mineral offer}"
+	description "${KW.Phrase.Job: timed mineral offer}"
+	"offer precedence" 300
+	color selected "KW.Color: job mining selected"
+	color unselected "KW.Color: job mining unselected"
+	color unavailable "KW.Color: job mining unavailable"
 	substitutions
 		"<mineral>" "Silver"
 		"<amount>" "21"
@@ -780,7 +593,11 @@ mission "KW.Generic.Bulk Mining [Silver]"
 	job
 	repeat
 	deadline 7
-	description "${KW.Phrase.Job: mineral offer}"
+	description "${KW.Phrase.Job: timed mineral offer}"
+	"offer precedence" 300
+	color selected "KW.Color: job mining selected"
+	color unselected "KW.Color: job mining unselected"
+	color unavailable "KW.Color: job mining unavailable"
 	substitutions
 		"<mineral>" "Silver"
 		"<amount>" "55"
@@ -819,7 +636,11 @@ mission "KW.Generic.Mining [Gold]"
 	job
 	repeat
 	deadline 7
-	description "${KW.Phrase.Job: mineral offer}"
+	description "${KW.Phrase.Job: timed mineral offer}"
+	"offer precedence" 300
+	color selected "KW.Color: job mining selected"
+	color unselected "KW.Color: job mining unselected"
+	color unavailable "KW.Color: job mining unavailable"
 	substitutions
 		"<mineral>" "Gold"
 		"<amount>" "18"
@@ -860,7 +681,11 @@ mission "KW.Generic.Bulk Mining [Gold]"
 	job
 	repeat
 	deadline 7
-	description "${KW.Phrase.Job: mineral offer}"
+	description "${KW.Phrase.Job: timed mineral offer}"
+	"offer precedence" 300
+	color selected "KW.Color: job mining selected"
+	color unselected "KW.Color: job mining unselected"
+	color unavailable "KW.Color: job mining unavailable"
 	substitutions
 		"<mineral>" "Gold"
 		"<amount>" "42"
@@ -899,7 +724,11 @@ mission "KW.Generic.Mining [Platinum]"
 	job
 	repeat
 	deadline 7
-	description "${KW.Phrase.Job: mineral offer}"
+	description "${KW.Phrase.Job: timed mineral offer}"
+	"offer precedence" 300
+	color selected "KW.Color: job mining selected"
+	color unselected "KW.Color: job mining unselected"
+	color unavailable "KW.Color: job mining unavailable"
 	substitutions
 		"<mineral>" "Platinum"
 		"<amount>" "15"
@@ -940,7 +769,11 @@ mission "KW.Generic.Bulk Mining [Platinum]"
 	job
 	repeat
 	deadline 7
-	description "${KW.Phrase.Job: mineral offer}"
+	description "${KW.Phrase.Job: timed mineral offer}"
+	"offer precedence" 300
+	color selected "KW.Color: job mining selected"
+	color unselected "KW.Color: job mining unselected"
+	color unavailable "KW.Color: job mining unavailable"
 	substitutions
 		"<mineral>" "Platinum"
 		"<amount>" "40"

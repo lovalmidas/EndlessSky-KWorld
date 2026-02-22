@@ -1,0 +1,57 @@
+
+## Industry
+#	
+#	Industry is split into three categories
+#		Gathering		[gather resources from the environment]
+#		Fabrication		[use input to create products]
+#		Services		[use labor to provide services]
+#		
+#	
+#	Raw Resources (Mining)
+#		Silicon
+#		Lead
+#		Iron
+#		Aluminum
+#		Titanium
+#		Copper
+#		Neodymium
+#		Tungsten
+#		Uranium
+#		Silver
+#		Gold
+#		Platinum
+#		
+#	Raw Resources (Extraction)
+#		Carbon (Coal)		From planets
+#		Hydrocarbons		From planets
+#		Hydrogen			From gas giant orbitals
+#		Water				From planets
+#		
+#		
+#		
+#	Recipes
+#
+#
+#	
+#	
+#	
+#	
+#	
+#	
+#	
+#	
+#	
+#	
+#	
+#	
+#	
+#	
+#	
+#	
+#	
+
+
+
+
+
+

@@ -1,0 +1,359 @@
+### Naming ###
+#	ID: "KW.Generic.Jobs.<priority><index><cargo type>.<short name>"
+#	Example: "KW.Generic.Jobs.90p.Plastic Cargo [0]"
+#		Sizes:
+#			_ = special
+#			0 = special
+#			1 = 
+#			2 = mega, deadline
+#			3 = mega
+#			4 = 
+#			5 = bulk, deadline
+#			6 = bulk
+#			7 = 
+#			8 = normal, deadline
+#			9 = normal
+#		Cargo Types:
+#			f = food
+#			c = clothing
+#			m = metal
+#			p = plastic
+#			q = equipment
+#			i = industrial
+#			d = medical
+#			e = electronics
+#			h = heavy metal
+#			x = luxury goods
+#			n = construction
+#			y = military
+#			s = ship alloys
+#			r = research samples
+#
+# Game orders missions by internal name, so priority 0 is evaluated first
+# Spread priority and index so other cargoes have a (near-equal) chance to appear
+
+### COMMODITY: PLASTIC ###
+# Factories request preprocessed materials from synthetic/polymeric-producing outposts
+#
+#		[S] synthetic / logistics -> urban / rural
+#		[M] synthetic / logistics -> factory / large
+#		[L] synthetic / logistics -> factory + large
+#		exclude `isolated`; they take no generic jobs
+#		exclude `logistics` destinations; logistics-to-logistics have their own jobs
+#
+# Use these amounts
+#		Normal:	5 2 .1
+#		Bulk:	20 2 .075
+#		Mega:	30 3 .04
+#
+# Use these distances
+#		[S]	1-2, 3-4, 5-6, 1-4
+#		[M]	1-2, 3-5, 6-8
+#		[L]	1-7, 8-12
+#		
+# Payment
+#		[S]	0 + 140 * d
+#		[M]	0 + 145 * d
+#		[L]	0 + 150 * d
+#
+# 
+mission "KW.Generic.Jobs.90p.Plastic Cargo [0]"
+	name "📦Delivery of Plastics to <planet>"
+	job
+	repeat
+	description "${KW.Phrase.Job: cargo offer}"
+	"offer precedence" 100
+	color selected "KW.Color: job cargo selected"
+	color unselected "KW.Color: job cargo unselected"
+	color unavailable "KW.Color: job cargo unavailable"
+	cargo "Plastic" 5 2 .1
+	"distance calculation settings"
+		"all wormholes"
+	to offer
+		has "job-board: enable generic cargo jobs"
+		"job-board: cargo jobs [S]" < "job-board: limit: cargo jobs [S]"
+		random < "job-board: weight: cargo plastic jobs [S]"
+	source
+		attributes synthetic logistics
+		not attributes isolated
+	destination
+		distance 1 2
+			"all wormholes"
+		attributes factory rural urban
+		not attributes isolated
+		not attributes logistics
+	on offer
+		"job-board: cargo jobs [S]" ++
+	on visit
+		dialog phrase "generic cargo on visit"
+	on complete
+		payment 0 140
+		dialog phrase "generic cargo delivery payment"
+
+mission "KW.Generic.Jobs.91p.Plastic Cargo [1]"
+	name "📦Delivery of Plastics to <planet>"
+	job
+	repeat
+	description "${KW.Phrase.Job: cargo offer}"
+	"offer precedence" 100
+	color selected "KW.Color: job cargo selected"
+	color unselected "KW.Color: job cargo unselected"
+	color unavailable "KW.Color: job cargo unavailable"
+	cargo "Plastic" 5 2 .1
+	"distance calculation settings"
+		"all wormholes"
+	to offer
+		has "job-board: enable generic cargo jobs"
+		"job-board: cargo jobs [S]" < "job-board: limit: cargo jobs [S]"
+		random < "job-board: weight: cargo plastic jobs [S]"
+	source
+		attributes synthetic logistics
+		not attributes isolated
+	destination
+		distance 3 4
+			"all wormholes"
+		attributes factory rural urban
+		not attributes isolated
+		not attributes logistics
+	on offer
+		"job-board: cargo jobs [S]" ++
+	on visit
+		dialog phrase "generic cargo on visit"
+	on complete
+		payment 0 140
+		dialog phrase "generic cargo delivery payment"
+
+mission "KW.Generic.Jobs.92p.Plastic Cargo [2]"
+	name "📦Delivery of Plastics to <planet>"
+	job
+	repeat
+	description "${KW.Phrase.Job: cargo offer}"
+	"offer precedence" 100
+	color selected "KW.Color: job cargo selected"
+	color unselected "KW.Color: job cargo unselected"
+	color unavailable "KW.Color: job cargo unavailable"
+	cargo "Plastic" 5 2 .1
+	"distance calculation settings"
+		"all wormholes"
+	to offer
+		has "job-board: enable generic cargo jobs"
+		"job-board: cargo jobs [S]" < "job-board: limit: cargo jobs [S]"
+		random < "job-board: weight: cargo plastic jobs [S]"
+	source
+		attributes synthetic logistics
+		not attributes isolated
+	destination
+		distance 5 6
+			"all wormholes"
+		attributes factory rural urban
+		not attributes isolated
+		not attributes logistics
+	on offer
+		"job-board: cargo jobs [S]" ++
+	on visit
+		dialog phrase "generic cargo on visit"
+	on complete
+		payment 0 140
+		dialog phrase "generic cargo delivery payment"
+
+mission "KW.Generic.Jobs.93p.Plastic Cargo [3]"
+	name "📦Delivery of Plastics to <planet>"
+	job
+	repeat
+	description "${KW.Phrase.Job: cargo offer}"
+	"offer precedence" 100
+	color selected "KW.Color: job cargo selected"
+	color unselected "KW.Color: job cargo unselected"
+	color unavailable "KW.Color: job cargo unavailable"
+	cargo "Plastic" 5 2 .1
+	"distance calculation settings"
+		"all wormholes"
+	to offer
+		has "job-board: enable generic cargo jobs"
+		"job-board: cargo jobs [S]" < "job-board: limit: cargo jobs [S]"
+		random < "job-board: weight: cargo plastic jobs [S]"
+	source
+		attributes synthetic logistics
+		not attributes isolated
+	destination
+		distance 1 4
+			"all wormholes"
+		attributes factory rural urban
+		not attributes isolated
+		not attributes logistics
+	on offer
+		"job-board: cargo jobs [S]" ++
+	on visit
+		dialog phrase "generic cargo on visit"
+	on complete
+		payment 0 140
+		dialog phrase "generic cargo delivery payment"
+
+mission "KW.Generic.Jobs.60p.Plastic Bulk Cargo [0]"
+	name "📦Bulk Delivery of Plastics to <planet>"
+	job
+	repeat
+	description "${KW.Phrase.Job: cargo offer}"
+	"offer precedence" 100
+	color selected "KW.Color: job cargo selected"
+	color unselected "KW.Color: job cargo unselected"
+	color unavailable "KW.Color: job cargo unavailable"
+	cargo "Plastic" 20 2 .075
+	"distance calculation settings"
+		"all wormholes"
+	to offer
+		has "job-board: enable generic cargo jobs"
+		"job-board: cargo jobs [M]" < "job-board: limit: cargo jobs [M]"
+		random < "job-board: weight: cargo plastic jobs [M]"
+	source
+		attributes synthetic logistics
+		not attributes isolated
+	destination
+		distance 1 2
+			"all wormholes"
+		attributes urban large
+		not attributes isolated
+		not attributes logistics
+	on offer
+		"job-board: cargo jobs [M]" ++
+	on visit
+		dialog phrase "generic cargo on visit"
+	on complete
+		payment 0 145
+		dialog phrase "generic cargo delivery payment"
+
+mission "KW.Generic.Jobs.61p.Plastic Bulk Cargo [1]"
+	name "📦Bulk Delivery of Plastics to <planet>"
+	job
+	repeat
+	description "${KW.Phrase.Job: cargo offer}"
+	"offer precedence" 100
+	color selected "KW.Color: job cargo selected"
+	color unselected "KW.Color: job cargo unselected"
+	color unavailable "KW.Color: job cargo unavailable"
+	cargo "Plastic" 20 2 .075
+	"distance calculation settings"
+		"all wormholes"
+	to offer
+		has "job-board: enable generic cargo jobs"
+		"job-board: cargo jobs [M]" < "job-board: limit: cargo jobs [M]"
+		random < "job-board: weight: cargo plastic jobs [M]"
+	source
+		attributes synthetic logistics
+		not attributes isolated
+	destination
+		distance 3 5
+			"all wormholes"
+		attributes urban large
+		not attributes isolated
+		not attributes logistics
+	on offer
+		"job-board: cargo jobs [M]" ++
+	on visit
+		dialog phrase "generic cargo on visit"
+	on complete
+		payment 0 145
+		dialog phrase "generic cargo delivery payment"
+
+mission "KW.Generic.Jobs.62p.Plastic Bulk Cargo [2]"
+	name "📦Bulk Delivery of Plastics to <planet>"
+	job
+	repeat
+	description "${KW.Phrase.Job: cargo offer}"
+	"offer precedence" 100
+	color selected "KW.Color: job cargo selected"
+	color unselected "KW.Color: job cargo unselected"
+	color unavailable "KW.Color: job cargo unavailable"
+	cargo "Plastic" 20 2 .075
+	"distance calculation settings"
+		"all wormholes"
+	to offer
+		has "job-board: enable generic cargo jobs"
+		"job-board: cargo jobs [M]" < "job-board: limit: cargo jobs [M]"
+		random < "job-board: weight: cargo plastic jobs [M]"
+	source
+		attributes synthetic logistics
+		not attributes isolated
+	destination
+		distance 6 8
+			"all wormholes"
+		attributes urban large
+		not attributes isolated
+		not attributes logistics
+	on offer
+		"job-board: cargo jobs [M]" ++
+	on visit
+		dialog phrase "generic cargo on visit"
+	on complete
+		payment 0 145
+		dialog phrase "generic cargo delivery payment"
+
+mission "KW.Generic.Jobs.30p.Plastic Mega Cargo [0]"
+	name "📦Large Bulk Delivery of Plastics to <planet>"
+	job
+	repeat
+	description "${KW.Phrase.Job: cargo offer}"
+	"offer precedence" 100
+	color selected "KW.Color: job cargo selected"
+	color unselected "KW.Color: job cargo unselected"
+	color unavailable "KW.Color: job cargo unavailable"
+	cargo "Plastic" 30 3 .04
+	"distance calculation settings"
+		"all wormholes"
+	to offer
+		has "job-board: enable generic cargo jobs"
+		"job-board: cargo jobs [L]" < "job-board: limit: cargo jobs [L]"
+		"cargo space" > 100
+		random < "job-board: weight: cargo plastic jobs [L]"
+	source
+		attributes synthetic logistics
+		not attributes isolated
+	destination
+		distance 1 7
+			"all wormholes"
+		attributes urban
+		attributes large
+		not attributes isolated
+		not attributes logistics
+	on offer
+		"job-board: cargo jobs [L]" ++
+	on visit
+		dialog phrase "generic cargo on visit"
+	on complete
+		payment 0 150
+		dialog phrase "generic cargo delivery payment"
+
+mission "KW.Generic.Jobs.31p.Plastic Mega Cargo [1]"
+	name "📦Large Bulk Delivery of Plastics to <planet>"
+	job
+	repeat
+	description "${KW.Phrase.Job: cargo offer}"
+	"offer precedence" 100
+	color selected "KW.Color: job cargo selected"
+	color unselected "KW.Color: job cargo unselected"
+	color unavailable "KW.Color: job cargo unavailable"
+	cargo "Plastic" 30 3 .04
+	"distance calculation settings"
+		"all wormholes"
+	to offer
+		has "job-board: enable generic cargo jobs"
+		"job-board: cargo jobs [L]" < "job-board: limit: cargo jobs [L]"
+		"cargo space" > 100
+		random < "job-board: weight: cargo plastic jobs [L]"
+	source
+		attributes synthetic logistics
+		not attributes isolated
+	destination
+		distance 8 12
+			"all wormholes"
+		attributes urban
+		attributes large
+		not attributes isolated
+		not attributes logistics
+	on offer
+		"job-board: cargo jobs [L]" ++
+	on visit
+		dialog phrase "generic cargo on visit"
+	on complete
+		payment 0 150
+		dialog phrase "generic cargo delivery payment"

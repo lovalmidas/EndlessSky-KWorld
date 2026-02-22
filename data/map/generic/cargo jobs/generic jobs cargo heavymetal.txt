@@ -1,0 +1,494 @@
+### Naming ###
+#	ID: "KW.Generic.Jobs.<priority><index><cargo type>.<short name>"
+#	Example: "KW.Generic.Jobs.90f.Food Cargo [0]"
+#		Sizes:
+#			_ = special
+#			0 = special
+#			1 = 
+#			2 = mega, deadline
+#			3 = mega
+#			4 = 
+#			5 = bulk, deadline
+#			6 = bulk
+#			7 = 
+#			8 = normal, deadline
+#			9 = normal
+#		Cargo Types:
+#			f = food
+#			c = clothing
+#			m = metal
+#			p = plastic
+#			q = equipment
+#			i = industrial
+#			d = medical
+#			e = electronics
+#			h = heavy metal
+#			x = luxury goods
+#			n = construction
+#			y = military
+#			s = ship alloys
+#			r = research samples
+#
+# Game orders missions by internal name, so priority 0 is evaluated first
+# Spread priority and index so other cargoes have a (near-equal) chance to appear
+
+### COMMODITY: HEAVY METALS ###
+# Both factories and high-tech factories demand heavy metals
+# Exotic metals are only present if a suitable source is nearby
+# Exotic metals include:
+#	Neodymium
+#	Tungsten
+#	Uranium
+#	Silver
+#	Gold
+#	Platinum
+#
+#		[S] mining + suitable-metal-source / logistics -> urban / rural / factory / hitech
+#		[M] mining + suitable-metal-source / logistics -> factory / hitech / large
+#		[L] mining + suitable-metal-source / logistics -> factory / hitech + large
+#		exclude `isolated`; they take no generic jobs
+#		exclude `logistics` destinations; logistics-to-logistics have their own jobs
+#
+# Use these amounts
+#		Normal:	5 2 .1
+#		Bulk:	20 2 .075
+#		Mega:	30 3 .04
+#
+# Use these distances
+#		[S]	1-2, 3-4, 5-6, 1-4
+#		[M]	1-2, 3-5, 6-8
+#		[L]	1-7, 8-12
+#		
+# Payment
+#		[S]	0 + 180 * d
+#		[M]	0 + 190 * d
+#		[L]	0 + 200 * d
+#
+# 
+mission "KW.Generic.Jobs.90h.Heavy Metals Cargo [0]"
+	name "📦Delivery of Exotic Metals to <planet>"
+	job
+	repeat
+	description "${KW.Phrase.Job: cargo offer}"
+	"offer precedence" 100
+	color selected "KW.Color: job cargo selected"
+	color unselected "KW.Color: job cargo unselected"
+	color unavailable "KW.Color: job cargo unavailable"
+	cargo "Heavy Metals" 5 2 .1
+	"distance calculation settings"
+		"all wormholes"
+	to offer
+		has "job-board: enable generic cargo jobs"
+		"job-board: cargo jobs [S]" < "job-board: limit: cargo jobs [S]"
+		random < "job-board: weight: cargo heavy metal jobs [S]"
+	source
+		not attributes isolated
+		not
+			not attributes logistics
+			not
+				attributes mining
+				not # neighbor to a mineral source up to 3 jumps away, possibly in same system
+					not attributes neodymium-source tungsten-source uranium-source silver-source gold-source platinum-source
+					not
+						neighbor attributes neodymium-source tungsten-source uranium-source silver-source gold-source platinum-source
+					not
+						neighbor
+							neighbor attributes neodymium-source tungsten-source uranium-source silver-source gold-source platinum-source
+					not
+						neighbor
+							neighbor
+								neighbor attributes neodymium-source tungsten-source uranium-source silver-source gold-source platinum-source
+
+	destination
+		distance 1 2
+			"all wormholes"
+		attributes factory hitech rural urban
+		not attributes isolated
+		not attributes logistics
+	on offer
+		"job-board: cargo jobs [S]" ++
+	on visit
+		dialog phrase "generic cargo on visit"
+	on complete
+		payment 0 180
+		dialog phrase "generic cargo delivery payment"
+
+mission "KW.Generic.Jobs.91h.Heavy Metals Cargo [1]"
+	name "📦Delivery of Exotic Metals to <planet>"
+	job
+	repeat
+	description "${KW.Phrase.Job: cargo offer}"
+	"offer precedence" 100
+	color selected "KW.Color: job cargo selected"
+	color unselected "KW.Color: job cargo unselected"
+	color unavailable "KW.Color: job cargo unavailable"
+	cargo "Heavy Metals" 5 2 .1
+	"distance calculation settings"
+		"all wormholes"
+	to offer
+		has "job-board: enable generic cargo jobs"
+		"job-board: cargo jobs [S]" < "job-board: limit: cargo jobs [S]"
+		random < "job-board: weight: cargo heavy metal jobs [S]"
+	source
+		not attributes isolated
+		not
+			not attributes logistics
+			not
+				attributes mining
+				not # neighbor to a mineral source up to 3 jumps away, possibly in same system
+					not attributes neodymium-source tungsten-source uranium-source silver-source gold-source platinum-source
+					not
+						neighbor attributes neodymium-source tungsten-source uranium-source silver-source gold-source platinum-source
+					not
+						neighbor
+							neighbor attributes neodymium-source tungsten-source uranium-source silver-source gold-source platinum-source
+					not
+						neighbor
+							neighbor
+							neighbor attributes neodymium-source tungsten-source uranium-source silver-source gold-source platinum-source
+	destination
+		distance 3 4
+			"all wormholes"
+		attributes factory hitech rural urban
+		not attributes isolated
+		not attributes logistics
+	on offer
+		"job-board: cargo jobs [S]" ++
+	on visit
+		dialog phrase "generic cargo on visit"
+	on complete
+		payment 0 180
+		dialog phrase "generic cargo delivery payment"
+
+mission "KW.Generic.Jobs.92h.Heavy Metals Cargo [2]"
+	name "📦Delivery of Exotic Metals to <planet>"
+	job
+	repeat
+	description "${KW.Phrase.Job: cargo offer}"
+	"offer precedence" 100
+	color selected "KW.Color: job cargo selected"
+	color unselected "KW.Color: job cargo unselected"
+	color unavailable "KW.Color: job cargo unavailable"
+	cargo "Heavy Metals" 5 2 .1
+	"distance calculation settings"
+		"all wormholes"
+	to offer
+		has "job-board: enable generic cargo jobs"
+		"job-board: cargo jobs [S]" < "job-board: limit: cargo jobs [S]"
+		random < "job-board: weight: cargo heavy metal jobs [S]"
+	source
+		not attributes isolated
+		not
+			not attributes logistics
+			not
+				attributes mining
+				not # neighbor to a mineral source up to 3 jumps away, possibly in same system
+					not attributes neodymium-source tungsten-source uranium-source silver-source gold-source platinum-source
+					not
+						neighbor attributes neodymium-source tungsten-source uranium-source silver-source gold-source platinum-source
+					not
+						neighbor
+							neighbor attributes neodymium-source tungsten-source uranium-source silver-source gold-source platinum-source
+					not
+						neighbor
+							neighbor
+							neighbor attributes neodymium-source tungsten-source uranium-source silver-source gold-source platinum-source
+	destination
+		distance 5 6
+			"all wormholes"
+		attributes factory hitech rural urban
+		not attributes isolated
+		not attributes logistics
+	on offer
+		"job-board: cargo jobs [S]" ++
+	on visit
+		dialog phrase "generic cargo on visit"
+	on complete
+		payment 0 180
+		dialog phrase "generic cargo delivery payment"
+
+mission "KW.Generic.Jobs.93h.Heavy Metals Cargo [3]"
+	name "📦Delivery of Exotic Metals to <planet>"
+	job
+	repeat
+	description "${KW.Phrase.Job: cargo offer}"
+	"offer precedence" 100
+	color selected "KW.Color: job cargo selected"
+	color unselected "KW.Color: job cargo unselected"
+	color unavailable "KW.Color: job cargo unavailable"
+	cargo "Heavy Metals" 5 2 .1
+	"distance calculation settings"
+		"all wormholes"
+	to offer
+		has "job-board: enable generic cargo jobs"
+		"job-board: cargo jobs [S]" < "job-board: limit: cargo jobs [S]"
+		random < "job-board: weight: cargo heavy metal jobs [S]"
+	source
+		not attributes isolated
+		not
+			not attributes logistics
+			not
+				attributes mining
+				not # neighbor to a mineral source up to 3 jumps away, possibly in same system
+					not attributes neodymium-source tungsten-source uranium-source silver-source gold-source platinum-source
+					not
+						neighbor attributes neodymium-source tungsten-source uranium-source silver-source gold-source platinum-source
+					not
+						neighbor
+							neighbor attributes neodymium-source tungsten-source uranium-source silver-source gold-source platinum-source
+					not
+						neighbor
+							neighbor
+							neighbor attributes neodymium-source tungsten-source uranium-source silver-source gold-source platinum-source
+	destination
+		distance 1 4
+			"all wormholes"
+		attributes factory hitech rural urban
+		not attributes isolated
+		not attributes logistics
+	on offer
+		"job-board: cargo jobs [S]" ++
+	on visit
+		dialog phrase "generic cargo on visit"
+	on complete
+		payment 0 180
+		dialog phrase "generic cargo delivery payment"
+
+mission "KW.Generic.Jobs.60h.Heavy Metals Bulk Cargo [0]"
+	name "📦Bulk Delivery of Exotic Metals to <planet>"
+	job
+	repeat
+	description "${KW.Phrase.Job: cargo offer}"
+	"offer precedence" 100
+	color selected "KW.Color: job cargo selected"
+	color unselected "KW.Color: job cargo unselected"
+	color unavailable "KW.Color: job cargo unavailable"
+	cargo "Heavy Metals" 20 2 .075
+	"distance calculation settings"
+		"all wormholes"
+	to offer
+		has "job-board: enable generic cargo jobs"
+		"job-board: cargo jobs [M]" < "job-board: limit: cargo jobs [M]"
+		random < "job-board: weight: cargo heavy metal jobs [M]"
+	source
+		not attributes isolated
+		not
+			not attributes logistics
+			not
+				attributes mining
+				not # neighbor to a mineral source up to 3 jumps away, possibly in same system
+					not attributes neodymium-source tungsten-source uranium-source silver-source gold-source platinum-source
+					not
+						neighbor attributes neodymium-source tungsten-source uranium-source silver-source gold-source platinum-source
+					not
+						neighbor
+							neighbor attributes neodymium-source tungsten-source uranium-source silver-source gold-source platinum-source
+					not
+						neighbor
+							neighbor
+							neighbor attributes neodymium-source tungsten-source uranium-source silver-source gold-source platinum-source
+	destination
+		distance 1 2
+			"all wormholes"
+		attributes factory hitech large
+		not attributes isolated
+		not attributes logistics
+	on offer
+		"job-board: cargo jobs [M]" ++
+	on visit
+		dialog phrase "generic cargo on visit"
+	on complete
+		payment 0 190
+		dialog phrase "generic cargo delivery payment"
+
+mission "KW.Generic.Jobs.61h.Heavy Metals Bulk Cargo [1]"
+	name "📦Bulk Delivery of Exotic Metals to <planet>"
+	job
+	repeat
+	description "${KW.Phrase.Job: cargo offer}"
+	"offer precedence" 100
+	color selected "KW.Color: job cargo selected"
+	color unselected "KW.Color: job cargo unselected"
+	color unavailable "KW.Color: job cargo unavailable"
+	cargo "Heavy Metals" 20 2 .075
+	"distance calculation settings"
+		"all wormholes"
+	to offer
+		has "job-board: enable generic cargo jobs"
+		"job-board: cargo jobs [M]" < "job-board: limit: cargo jobs [M]"
+		random < "job-board: weight: cargo heavy metal jobs [M]"
+	source
+		not attributes isolated
+		not
+			not attributes logistics
+			not
+				attributes mining
+				not # neighbor to a mineral source up to 3 jumps away, possibly in same system
+					not attributes neodymium-source tungsten-source uranium-source silver-source gold-source platinum-source
+					not
+						neighbor attributes neodymium-source tungsten-source uranium-source silver-source gold-source platinum-source
+					not
+						neighbor
+							neighbor attributes neodymium-source tungsten-source uranium-source silver-source gold-source platinum-source
+					not
+						neighbor
+							neighbor
+							neighbor attributes neodymium-source tungsten-source uranium-source silver-source gold-source platinum-source
+	destination
+		distance 3 5
+			"all wormholes"
+		attributes factory hitech large
+		not attributes isolated
+		not attributes logistics
+	on offer
+		"job-board: cargo jobs [M]" ++
+	on visit
+		dialog phrase "generic cargo on visit"
+	on complete
+		payment 0 190
+		dialog phrase "generic cargo delivery payment"
+
+mission "KW.Generic.Jobs.62h.Heavy Metals Bulk Cargo [2]"
+	name "📦Bulk Delivery of Exotic Metals to <planet>"
+	job
+	repeat
+	description "${KW.Phrase.Job: cargo offer}"
+	"offer precedence" 100
+	color selected "KW.Color: job cargo selected"
+	color unselected "KW.Color: job cargo unselected"
+	color unavailable "KW.Color: job cargo unavailable"
+	cargo "Heavy Metals" 20 2 .075
+	"distance calculation settings"
+		"all wormholes"
+	to offer
+		has "job-board: enable generic cargo jobs"
+		"job-board: cargo jobs [M]" < "job-board: limit: cargo jobs [M]"
+		random < "job-board: weight: cargo heavy metal jobs [M]"
+	source
+		not attributes isolated
+		not
+			not attributes logistics
+			not
+				attributes mining
+				not # neighbor to a mineral source up to 3 jumps away, possibly in same system
+					not attributes neodymium-source tungsten-source uranium-source silver-source gold-source platinum-source
+					not
+						neighbor attributes neodymium-source tungsten-source uranium-source silver-source gold-source platinum-source
+					not
+						neighbor
+							neighbor attributes neodymium-source tungsten-source uranium-source silver-source gold-source platinum-source
+					not
+						neighbor
+							neighbor
+							neighbor attributes neodymium-source tungsten-source uranium-source silver-source gold-source platinum-source
+	destination
+		distance 6 8
+			"all wormholes"
+		attributes factory hitech large
+		not attributes isolated
+		not attributes logistics
+	on offer
+		"job-board: cargo jobs [M]" ++
+	on visit
+		dialog phrase "generic cargo on visit"
+	on complete
+		payment 0 190
+		dialog phrase "generic cargo delivery payment"
+
+mission "KW.Generic.Jobs.30h.Heavy Metals Mega Cargo [0]"
+	name "📦Large Bulk Delivery of Exotic Metals to <planet>"
+	job
+	repeat
+	description "${KW.Phrase.Job: cargo offer}"
+	"offer precedence" 100
+	color selected "KW.Color: job cargo selected"
+	color unselected "KW.Color: job cargo unselected"
+	color unavailable "KW.Color: job cargo unavailable"
+	cargo "Heavy Metals" 30 3 .04
+	"distance calculation settings"
+		"all wormholes"
+	to offer
+		has "job-board: enable generic cargo jobs"
+		"job-board: cargo jobs [L]" < "job-board: limit: cargo jobs [L]"
+		"cargo space" > 100
+		random < "job-board: weight: cargo heavy metal jobs [L]"
+	source
+		not attributes isolated
+		not
+			not attributes logistics
+			not
+				attributes mining
+				not # neighbor to a mineral source up to 3 jumps away, possibly in same system
+					not attributes neodymium-source tungsten-source uranium-source silver-source gold-source platinum-source
+					not
+						neighbor attributes neodymium-source tungsten-source uranium-source silver-source gold-source platinum-source
+					not
+						neighbor
+							neighbor attributes neodymium-source tungsten-source uranium-source silver-source gold-source platinum-source
+					not
+						neighbor
+							neighbor
+							neighbor attributes neodymium-source tungsten-source uranium-source silver-source gold-source platinum-source
+	destination
+		distance 1 7
+			"all wormholes"
+		attributes factory hitech 
+		attributes large
+		not attributes isolated
+		not attributes logistics
+	on offer
+		"job-board: cargo jobs [L]" ++
+	on visit
+		dialog phrase "generic cargo on visit"
+	on complete
+		payment 0 200
+		dialog phrase "generic cargo delivery payment"
+
+mission "KW.Generic.Jobs.31h.Heavy Metals Mega Cargo [1]"
+	name "📦Large Bulk Delivery of Exotic Metals to <planet>"
+	job
+	repeat
+	description "${KW.Phrase.Job: cargo offer}"
+	"offer precedence" 100
+	color selected "KW.Color: job cargo selected"
+	color unselected "KW.Color: job cargo unselected"
+	color unavailable "KW.Color: job cargo unavailable"
+	cargo "Heavy Metals" 30 3 .04
+	"distance calculation settings"
+		"all wormholes"
+	to offer
+		has "job-board: enable generic cargo jobs"
+		"job-board: cargo jobs [L]" < "job-board: limit: cargo jobs [L]"
+		"cargo space" > 100
+		random < "job-board: weight: cargo heavy metal jobs [L]"
+	source
+		not attributes isolated
+		not
+			not attributes logistics
+			not
+				attributes mining
+				not # neighbor to a mineral source up to 3 jumps away, possibly in same system
+					not attributes neodymium-source tungsten-source uranium-source silver-source gold-source platinum-source
+					not
+						neighbor attributes neodymium-source tungsten-source uranium-source silver-source gold-source platinum-source
+					not
+						neighbor
+							neighbor attributes neodymium-source tungsten-source uranium-source silver-source gold-source platinum-source
+					not
+						neighbor
+							neighbor
+							neighbor attributes neodymium-source tungsten-source uranium-source silver-source gold-source platinum-source
+	destination
+		distance 8 12
+			"all wormholes"
+		attributes factory hitech 
+		attributes large
+		not attributes isolated
+		not attributes logistics
+	on offer
+		"job-board: cargo jobs [L]" ++
+	on visit
+		dialog phrase "generic cargo on visit"
+	on complete
+		payment 0 200
+		dialog phrase "generic cargo delivery payment"

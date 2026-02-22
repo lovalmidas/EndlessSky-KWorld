@@ -1,0 +1,196 @@
+### Naming ###
+#	ID: "KW.Generic.Jobs.<priority><index><passenger type>.<short name>"
+#	Example: "KW.Generic.Jobs.90c.Clothing Cargo [0]"
+#		Sizes:
+#			_ = special
+#			0 = special
+#			1 = 
+#			2 = mega, deadline
+#			3 = mega
+#			4 = 
+#			5 = bulk, deadline
+#			6 = bulk
+#			7 = 
+#			8 = normal, deadline
+#			9 = normal
+#		Passenger Types:
+#			Z = generic passengers
+#			W = workers
+#			F = farmers
+#			T = tourists
+#			S = students
+#			R = researchers
+#			SOS = rescue
+#
+# Game orders missions by internal name, so priority 0 is evaluated first
+# Spread priority and index so other cargoes have a (near-equal) chance to appear
+
+### PASSENGER: RESEARCHERS ###
+# Research stations regularly transport researches between research stations, or get new ones from other planets
+#	Researchers:
+#			urban / rural + education
+#			research hitech
+# Resercher transport are timed. They have low throughput, but are high paying. Their destinations can have a large range.
+#
+#		[all] education / research / hitech > research / hitech
+#		exclude `isolated`; they take no generic jobs
+#		exclude `Uninhabited` governments;
+#
+# Use these amounts
+#		[S]	1
+#		[M]	2 2 .6
+#		[L]	3 2 .2
+#
+# Use these distances
+#		[S]	1-4, 5-12
+#		[M]	1-12
+#		[L]	1-12
+#		
+# Payment
+#		[S]	0 + 220 * d
+#		[M]	0 + 240 * d
+#		[L]	0 + 260 * d
+#
+# 
+
+mission "KW.Generic.Jobs.80R.Researcher Passengers [0]"
+	name "👤Transport Researcher to <planet>"
+	job
+	repeat
+	description "${KW.Phrase.Job: timed researcher offer}"
+	"offer precedence" 200
+	color selected "KW.Color: job passenger selected"
+	color unselected "KW.Color: job passenger unselected"
+	color unavailable "KW.Color: job passenger unavailable"
+	passengers 1
+	deadline
+	"distance calculation settings"
+		"all wormholes"
+	to offer
+		has "job-board: enable generic passenger jobs"
+		"job-board: passenger jobs [S]" < "job-board: limit: passenger jobs [S]"
+		random < "job-board: weight: passenger researcher jobs [S]"
+	source
+		attributes education research hitech
+		not government "Uninhabited"
+		not attributes isolated
+	destination
+		attributes research hitech
+		distance 1 4
+			"all wormholes"
+		not government "Uninhabited"
+		not attributes isolated
+	on offer
+		"job-board: passenger jobs [S]" ++
+	on visit
+		dialog phrase "generic passenger on visit"
+	on complete
+		payment 0 220
+		dialog phrase "generic passenger dropoff payment"
+
+mission "KW.Generic.Jobs.81R.Researcher Passengers [1]"
+	name "👤Transport Researcher to <planet>"
+	job
+	repeat
+	description "${KW.Phrase.Job: timed researcher offer}"
+	"offer precedence" 200
+	color selected "KW.Color: job passenger selected"
+	color unselected "KW.Color: job passenger unselected"
+	color unavailable "KW.Color: job passenger unavailable"
+	passengers 1
+	deadline
+	"distance calculation settings"
+		"all wormholes"
+	to offer
+		has "job-board: enable generic passenger jobs"
+		"job-board: passenger jobs [S]" < "job-board: limit: passenger jobs [S]"
+		random < "job-board: weight: passenger researcher jobs [S]"
+	source
+		attributes education research hitech
+		not government "Uninhabited"
+		not attributes isolated
+	destination
+		attributes research hitech
+		distance 5 12
+			"all wormholes"
+		not government "Uninhabited"
+		not attributes isolated
+	on offer
+		"job-board: passenger jobs [S]" ++
+	on visit
+		dialog phrase "generic passenger on visit"
+	on complete
+		payment 0 220
+		dialog phrase "generic passenger dropoff payment"
+
+mission "KW.Generic.Jobs.50F.Bus Researcher Passengers [0]"
+	name "👤Transport Researchers to <planet>"
+	job
+	repeat
+	description "${KW.Phrase.Job: timed researchers offer}"
+	"offer precedence" 200
+	color selected "KW.Color: job passenger selected"
+	color unselected "KW.Color: job passenger unselected"
+	color unavailable "KW.Color: job passenger unavailable"
+	passengers 2 2 .6
+	deadline
+	"distance calculation settings"
+		"all wormholes"
+	to offer
+		has "job-board: enable generic passenger jobs"
+		"job-board: passenger jobs [M]" < "job-board: limit: passenger jobs [M]"
+		random < "job-board: weight: passenger researcher jobs [M]"
+	source
+		attributes education research hitech
+		not government "Uninhabited"
+		not attributes isolated
+	destination
+		attributes research hitech
+		distance 1 12
+			"all wormholes"
+		not government "Uninhabited"
+		not attributes isolated
+	on offer
+		"job-board: passenger jobs [M]" ++
+	on visit
+		dialog phrase "generic passenger on visit"
+	on complete
+		payment 0 240
+		dialog phrase "generic passenger dropoff payment"
+
+mission "KW.Generic.Jobs.20F.Ferry Researcher Passengers [0]"
+	name "👤Transport Researchers to <planet>"
+	job
+	repeat
+	description "${KW.Phrase.Job: timed researchers offer}"
+	"offer precedence" 200
+	color selected "KW.Color: job passenger selected"
+	color unselected "KW.Color: job passenger unselected"
+	color unavailable "KW.Color: job passenger unavailable"
+	passengers 3 2 .2
+	deadline
+	"distance calculation settings"
+		"all wormholes"
+	to offer
+		has "job-board: enable generic passenger jobs"
+		"job-board: passenger jobs [L]" < "job-board: limit: passenger jobs [L]"
+		random < "job-board: weight: passenger researcher jobs [L]"
+	source
+		attributes education research hitech
+		not government "Uninhabited"
+		not attributes isolated
+	destination
+		attributes research hitech
+		distance 1 12
+			"all wormholes"
+		not government "Uninhabited"
+		not attributes isolated
+	on offer
+		"job-board: passenger jobs [L]" ++
+	on visit
+		dialog phrase "generic passenger on visit"
+	on complete
+		payment 0 260
+		dialog phrase "generic passenger dropoff payment"
+
+

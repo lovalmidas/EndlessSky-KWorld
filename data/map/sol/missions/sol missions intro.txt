@@ -9,7 +9,7 @@
 # 	MISSION 2: Mining Operations
 # 	MISSION 3: Intermediate Cargo Operations
 # 	MISSION 4: Basic Combat (can be taken after Mission 1, with any weapon)
-#		MISSION 5: Escort and Combat
+#	MISSION 5: Escort and Combat
 #
 #	Intent:
 #		The main tutorial. Completing the tutorial unlocks the full job offers and other questlines around Sol
@@ -1149,8 +1149,8 @@ mission "KW.Sol.Inbox [5C]"
 	source KW.S.000.2.Io
 	waypoint
 		system KW.S.004.Achernar
-	#to offer
-		#has "KW.Sol.Inbox [5B]: done"
+	to offer
+		has "KW.Sol.Inbox [5B]: done"
 
 	npc
 		government "KW.Sol"

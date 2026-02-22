@@ -1,0 +1,366 @@
+### Naming ###
+#	ID: "KW.Generic.Jobs.<priority><index><passenger type>.<short name>"
+#	Example: "KW.Generic.Jobs.90c.Clothing Cargo [0]"
+#		Sizes:
+#			_ = special
+#			0 = special
+#			1 = 
+#			2 = mega, deadline
+#			3 = mega
+#			4 = 
+#			5 = bulk, deadline
+#			6 = bulk
+#			7 = 
+#			8 = normal, deadline
+#			9 = normal
+#		Passenger Types:
+#			Z = generic passengers
+#			W = workers
+#			F = farmers
+#			T = tourists
+#			S = students
+#			R = researchers
+#			SOS = rescue
+#
+# Game orders missions by internal name, so priority 0 is evaluated first
+# Spread priority and index so other cargoes have a (near-equal) chance to appear
+
+### PASSENGER: WORKERS ###
+# Every factory needs workers to operate them
+# 	Generic workers:
+#			urban
+#			factory mining synthetic hitech logistics shipworks
+#
+#		[S] urban -> factory / mining / synthetic / hitech / logistics / shipworks
+#		[M] urban -> factory / mining / synthetic / hitech / logistics / shipworks
+#		[L] urban + large -> factory / mining / synthetic / hitech / logistics / shipworks
+#		exclude `isolated`; they take no generic jobs
+#		exclude `Uninhabited` governments;
+#
+# Use these amounts
+#		[S]	2 2 .6
+#		[M]	2 10 .5
+#		[L]	5 20 .25
+#
+# Use these distances
+#		[S]	1-2, 3-4, 5-6, 1-4
+#		[M]	1-2, 3-4, 5-6
+#		[L]	1-3, 4-6
+#		
+# Payment
+#		[S]	0 + 166 * d
+#		[M]	0 + 178 * d
+#		[L]	0 + 190 * d
+#
+# 
+
+mission "KW.Generic.Jobs.90W.Worker Passengers [0]"
+	name "👤Transport Workers to <planet>"
+	job
+	repeat
+	description "${KW.Phrase.Job: workers offer}"
+	"offer precedence" 200
+	color selected "KW.Color: job passenger selected"
+	color unselected "KW.Color: job passenger unselected"
+	color unavailable "KW.Color: job passenger unavailable"
+	passengers 2 2 .6
+	"distance calculation settings"
+		"all wormholes"
+	to offer
+		has "job-board: enable generic passenger jobs"
+		"job-board: passenger jobs [S]" < "job-board: limit: passenger jobs [S]"
+		random < "job-board: weight: passenger worker jobs [S]"
+	source
+		attributes urban
+		not government "Uninhabited"
+		not attributes isolated
+	destination
+		attributes factory mining synthetic hitech logistics shipworks
+		distance 1 2
+			"all wormholes"
+		not government "Uninhabited"
+		not attributes isolated
+	on offer
+		"job-board: passenger jobs [S]" ++
+	on visit
+		dialog phrase "generic passenger on visit"
+	on complete
+		payment 0 166
+		dialog phrase "generic passenger dropoff payment"
+
+mission "KW.Generic.Jobs.91W.Worker Passengers [1]"
+	name "👤Transport Workers to <planet>"
+	job
+	repeat
+	description "${KW.Phrase.Job: workers offer}"
+	"offer precedence" 200
+	color selected "KW.Color: job passenger selected"
+	color unselected "KW.Color: job passenger unselected"
+	color unavailable "KW.Color: job passenger unavailable"
+	passengers 2 2 .6
+	"distance calculation settings"
+		"all wormholes"
+	to offer
+		has "job-board: enable generic passenger jobs"
+		"job-board: passenger jobs [S]" < "job-board: limit: passenger jobs [S]"
+		random < "job-board: weight: passenger worker jobs [S]"
+	source
+		attributes urban
+		not government "Uninhabited"
+		not attributes isolated
+	destination
+		attributes factory mining synthetic hitech logistics shipworks
+		distance 3 4
+			"all wormholes"
+		not government "Uninhabited"
+		not attributes isolated
+	on offer
+		"job-board: passenger jobs [S]" ++
+	on visit
+		dialog phrase "generic passenger on visit"
+	on complete
+		payment 0 166
+		dialog phrase "generic passenger dropoff payment"
+
+mission "KW.Generic.Jobs.92W.Worker Passengers [2]"
+	name "👤Transport Workers to <planet>"
+	job
+	repeat
+	description "${KW.Phrase.Job: workers offer}"
+	"offer precedence" 200
+	color selected "KW.Color: job passenger selected"
+	color unselected "KW.Color: job passenger unselected"
+	color unavailable "KW.Color: job passenger unavailable"
+	passengers 2 2 .6
+	"distance calculation settings"
+		"all wormholes"
+	to offer
+		has "job-board: enable generic passenger jobs"
+		"job-board: passenger jobs [S]" < "job-board: limit: passenger jobs [S]"
+		random < "job-board: weight: passenger worker jobs [S]"
+	source
+		attributes urban
+		not government "Uninhabited"
+		not attributes isolated
+	destination
+		attributes factory mining synthetic hitech logistics shipworks
+		distance 5 6
+			"all wormholes"
+		not government "Uninhabited"
+		not attributes isolated
+	on offer
+		"job-board: passenger jobs [S]" ++
+	on visit
+		dialog phrase "generic passenger on visit"
+	on complete
+		payment 0 166
+		dialog phrase "generic passenger dropoff payment"
+
+mission "KW.Generic.Jobs.93W.Worker Passengers [3]"
+	name "👤Transport Workers to <planet>"
+	job
+	repeat
+	description "${KW.Phrase.Job: workers offer}"
+	"offer precedence" 200
+	color selected "KW.Color: job passenger selected"
+	color unselected "KW.Color: job passenger unselected"
+	color unavailable "KW.Color: job passenger unavailable"
+	passengers 2 2 .6
+	"distance calculation settings"
+		"all wormholes"
+	to offer
+		has "job-board: enable generic passenger jobs"
+		"job-board: passenger jobs [S]" < "job-board: limit: passenger jobs [S]"
+		random < "job-board: weight: passenger worker jobs [S]"
+	source
+		attributes urban
+		not government "Uninhabited"
+		not attributes isolated
+	destination
+		attributes factory mining synthetic hitech logistics shipworks
+		distance 1 4
+			"all wormholes"
+		not government "Uninhabited"
+		not attributes isolated
+	on offer
+		"job-board: passenger jobs [S]" ++
+	on visit
+		dialog phrase "generic passenger on visit"
+	on complete
+		payment 0 166
+		dialog phrase "generic passenger dropoff payment"
+
+mission "KW.Generic.Jobs.60W.Bus Worker Passengers [0]"
+	name "👤Transport Workers to <planet>"
+	job
+	repeat
+	description "${KW.Phrase.Job: workers offer}"
+	"offer precedence" 200
+	color selected "KW.Color: job passenger selected"
+	color unselected "KW.Color: job passenger unselected"
+	color unavailable "KW.Color: job passenger unavailable"
+	passengers 2 10 .5
+	"distance calculation settings"
+		"all wormholes"
+	to offer
+		has "job-board: enable generic passenger jobs"
+		"job-board: passenger jobs [M]" < "job-board: limit: passenger jobs [M]"
+		"passenger space" > 25
+		random < "job-board: weight: passenger worker jobs [M]"
+	source
+		attributes urban
+		not government "Uninhabited"
+		not attributes isolated
+	destination
+		attributes factory mining synthetic hitech logistics shipworks
+		distance 1 2
+			"all wormholes"
+		not government "Uninhabited"
+		not attributes isolated
+	on offer
+		"job-board: passenger jobs [M]" ++
+	on visit
+		dialog phrase "generic passenger on visit"
+	on complete
+		payment 0 178
+		dialog phrase "generic passenger dropoff payment"
+
+mission "KW.Generic.Jobs.61W.Bus Worker Passengers [1]"
+	name "👤Transport Workers to <planet>"
+	job
+	repeat
+	description "${KW.Phrase.Job: workers offer}"
+	"offer precedence" 200
+	color selected "KW.Color: job passenger selected"
+	color unselected "KW.Color: job passenger unselected"
+	color unavailable "KW.Color: job passenger unavailable"
+	passengers 2 10 .5
+	"distance calculation settings"
+		"all wormholes"
+	to offer
+		has "job-board: enable generic passenger jobs"
+		"job-board: passenger jobs [M]" < "job-board: limit: passenger jobs [M]"
+		"passenger space" > 25
+		random < "job-board: weight: passenger worker jobs [M]"
+	source
+		attributes urban
+		not government "Uninhabited"
+		not attributes isolated
+	destination
+		attributes factory mining synthetic hitech logistics shipworks
+		distance 3 4
+			"all wormholes"
+		not government "Uninhabited"
+		not attributes isolated
+	on offer
+		"job-board: passenger jobs [M]" ++
+	on visit
+		dialog phrase "generic passenger on visit"
+	on complete
+		payment 0 178
+		dialog phrase "generic passenger dropoff payment"
+
+mission "KW.Generic.Jobs.62W.Bus Worker Passengers [2]"
+	name "👤Transport Workers to <planet>"
+	job
+	repeat
+	description "${KW.Phrase.Job: workers offer}"
+	"offer precedence" 200
+	color selected "KW.Color: job passenger selected"
+	color unselected "KW.Color: job passenger unselected"
+	color unavailable "KW.Color: job passenger unavailable"
+	passengers 2 10 .5
+	"distance calculation settings"
+		"all wormholes"
+	to offer
+		has "job-board: enable generic passenger jobs"
+		"job-board: passenger jobs [M]" < "job-board: limit: passenger jobs [M]"
+		"passenger space" > 25
+		random < "job-board: weight: passenger worker jobs [M]"
+	source
+		attributes urban
+		not government "Uninhabited"
+		not attributes isolated
+	destination
+		attributes factory mining synthetic hitech logistics shipworks
+		distance 5 6
+			"all wormholes"
+		not government "Uninhabited"
+		not attributes isolated
+	on offer
+		"job-board: passenger jobs [M]" ++
+	on visit
+		dialog phrase "generic passenger on visit"
+	on complete
+		payment 0 178
+		dialog phrase "generic passenger dropoff payment"
+
+mission "KW.Generic.Jobs.30W.Ferry Worker Passengers [0]"
+	name "👤Transport Workforce to <planet>"
+	job
+	repeat
+	description "${KW.Phrase.Job: workers offer}"
+	"offer precedence" 200
+	color selected "KW.Color: job passenger selected"
+	color unselected "KW.Color: job passenger unselected"
+	color unavailable "KW.Color: job passenger unavailable"
+	passengers 5 20 .25
+	"distance calculation settings"
+		"all wormholes"
+	to offer
+		has "job-board: enable generic passenger jobs"
+		"job-board: passenger jobs [L]" < "job-board: limit: passenger jobs [L]"
+		"passenger space" > 50
+		random < "job-board: weight: passenger worker jobs [L]"
+	source
+		attributes urban large
+		not government "Uninhabited"
+		not attributes isolated
+	destination
+		attributes factory mining synthetic hitech logistics shipworks
+		distance 1 3
+			"all wormholes"
+		not government "Uninhabited"
+		not attributes isolated
+	on offer
+		"job-board: passenger jobs [L]" ++
+	on visit
+		dialog phrase "generic passenger on visit"
+	on complete
+		payment 0 190
+		dialog phrase "generic passenger dropoff payment"
+
+mission "KW.Generic.Jobs.31W.Ferry Worker Passengers [1]"
+	name "👤Transport Workforce to <planet>"
+	job
+	repeat
+	description "${KW.Phrase.Job: workers offer}"
+	"offer precedence" 200
+	color selected "KW.Color: job passenger selected"
+	color unselected "KW.Color: job passenger unselected"
+	color unavailable "KW.Color: job passenger unavailable"
+	passengers 5 20 .25
+	"distance calculation settings"
+		"all wormholes"
+	to offer
+		has "job-board: enable generic passenger jobs"
+		"job-board: passenger jobs [L]" < "job-board: limit: passenger jobs [L]"
+		"passenger space" > 50
+		random < "job-board: weight: passenger worker jobs [L]"
+	source
+		attributes urban large
+		not government "Uninhabited"
+		not attributes isolated
+	destination
+		attributes factory mining synthetic hitech logistics shipworks
+		distance 4 6
+			"all wormholes"
+		not government "Uninhabited"
+		not attributes isolated
+	on offer
+		"job-board: passenger jobs [L]" ++
+	on visit
+		dialog phrase "generic passenger on visit"
+	on complete
+		payment 0 190
+		dialog phrase "generic passenger dropoff payment"

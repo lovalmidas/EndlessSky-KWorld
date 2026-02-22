@@ -18,6 +18,10 @@ phrase "KW.Phrase.Job: passenger offer"
 	word
 		`Bring <fare> to <destination>. Payment is <payment>.`
 
+phrase "KW.Phrase.Job: timed passenger offer"
+	word
+		`Bring <fare> to <destination> by <date>. Payment is <payment>.`
+
 phrase "KW.Phrase.Job: stranded offer"
 	word
 		`A distress signal indicates a stranded group of <bunks> travellers on <stopovers>. Bring them back to <origin> for a reward of <payment>.`
@@ -61,7 +65,7 @@ phrase "KW.Phrase.Job: workers offer"
 
 phrase "KW.Phrase.Job: farmers offer"
 	word
-		`A group of <bunks> farmers needs transport to work at <destination>. They will pay you <payment>.`
+		`A group of <bunks> farmers with <cargo> needs transport to work at <destination>. They will pay you <payment>.`
 
 phrase "KW.Phrase.Job: tourists offer"
 	word
@@ -77,7 +81,15 @@ phrase "KW.Phrase.Job: tourists offer"
 
 phrase "KW.Phrase.Job: timed students offer"
 	word
-		`A group of <bunks> students are enrolling in a school at <destination>, which commences on <date>. They will pay you <payment>.`
+		`A group of <bunks> students is `
+	word
+		`returning from vacation to their school `
+		`enrolling in a school ` 3
+		`attending a seminar `
+		`visiting a library `
+	word
+		`at <destination>, which commences on <date>. They will pay you <payment>.`
+
 
 phrase "KW.Phrase.Job: timed researcher offer"
 	word
@@ -99,7 +111,23 @@ phrase "KW.Phrase.Job: timed research sample offer"
 	word
 		`A batch of <cargo> is requested by <destination> by <date> for cross-reference studies. Payment is <payment>.`
 
+phrase "KW.Phrase.Job: timed logistics cargo offer"
+	word
+		`The logistics center is looking for a courier to ferry a shipment of <cargo> to <destination> by <date>. Payment is <payment>.`
+
 phrase "KW.Phrase.Job: mineral offer"
 	word
+		`Harvest <amount> tons of <mineral> and return to <destination>. Payment is <payment>.`
+
+phrase "KW.Phrase.Job: timed mineral offer"
+	word
 		`Harvest <amount> tons of <mineral> and return to <destination> by <date>. Payment is <payment>.`
+
+phrase "KW.Phrase.Job: material extraction offer"
+	word
+		`Harvest <amount> tons of <material> and return to <destination>. Payment is <payment>.`
+
+phrase "KW.Phrase.Job: timed material extraction offer"
+	word
+		`Harvest <amount> tons of <material> and return to <destination> by <date>. Payment is <payment>.`
 

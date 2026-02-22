@@ -2,10 +2,13 @@
 ############### SOL INTRASYSTEM JOBS (CARGO) ###############
 
 mission "KW.Sol.Cargo [Earth,0]"
-	name "Delivery to <planet>"
+	name "📦Delivery to <planet>"
 	job
 	repeat
 	description "${KW.Phrase.Job: cargo offer}"
+	color selected "KW.Color: job cargo selected"
+	color unselected "KW.Color: job cargo unselected"
+	color unavailable "KW.Color: job cargo unavailable"
 	cargo random 3 2 .25
 	to offer
 		or
@@ -20,8 +23,6 @@ mission "KW.Sol.Cargo [Earth,0]"
 	destination
 		system KW.S.000.Sol
 		attributes earth
-	"distance calculation settings"
-		"all wormholes"
 	on visit
 		dialog phrase "generic cargo on visit"
 	on complete
@@ -29,10 +30,13 @@ mission "KW.Sol.Cargo [Earth,0]"
 		dialog phrase "generic cargo delivery payment"
 
 mission "KW.Sol.Cargo [Earth,1]"
-	name "Delivery to <planet>"
+	name "📦Delivery to <planet>"
 	job
 	repeat
 	description "${KW.Phrase.Job: cargo offer}"
+	color selected "KW.Color: job cargo selected"
+	color unselected "KW.Color: job cargo unselected"
+	color unavailable "KW.Color: job cargo unavailable"
 	cargo random 3 2 .25
 	to offer
 		or
@@ -47,8 +51,6 @@ mission "KW.Sol.Cargo [Earth,1]"
 	destination
 		system KW.S.000.Sol
 		attributes earth
-	"distance calculation settings"
-		"all wormholes"
 	on visit
 		dialog phrase "generic cargo on visit"
 	on complete
@@ -56,10 +58,13 @@ mission "KW.Sol.Cargo [Earth,1]"
 		dialog phrase "generic cargo delivery payment"
 
 mission "KW.Sol.Cargo [Not Earth,0]"
-	name "Delivery to <planet>"
+	name "📦Delivery to <planet>"
 	job
 	repeat
 	description "${KW.Phrase.Job: cargo offer}"
+	color selected "KW.Color: job cargo selected"
+	color unselected "KW.Color: job cargo unselected"
+	color unavailable "KW.Color: job cargo unavailable"
 	cargo random 3 2 .4
 	to offer
 		or
@@ -74,8 +79,6 @@ mission "KW.Sol.Cargo [Not Earth,0]"
 	destination
 		system KW.S.000.Sol
 		not attributes earth
-	"distance calculation settings"
-		"all wormholes"
 	on visit
 		dialog phrase "generic cargo on visit"
 	on complete
@@ -83,10 +86,13 @@ mission "KW.Sol.Cargo [Not Earth,0]"
 		dialog phrase "generic cargo delivery payment"
 
 mission "KW.Sol.Cargo [Not Earth,1]"
-	name "Delivery to <planet>"
+	name "📦Delivery to <planet>"
 	job
 	repeat
 	description "${KW.Phrase.Job: cargo offer}"
+	color selected "KW.Color: job cargo selected"
+	color unselected "KW.Color: job cargo unselected"
+	color unavailable "KW.Color: job cargo unavailable"
 	cargo random 3 2 .2
 	to offer
 		or
@@ -101,8 +107,6 @@ mission "KW.Sol.Cargo [Not Earth,1]"
 	destination
 		system KW.S.000.Sol
 		not attributes earth
-	"distance calculation settings"
-		"all wormholes"
 	on visit
 		dialog phrase "generic cargo on visit"
 	on complete
@@ -112,10 +116,13 @@ mission "KW.Sol.Cargo [Not Earth,1]"
 ############### SOL INTRASYSTEM JOBS (PASSENGER) ###############
 
 mission "KW.Sol.Passenger [Earth,0]"
-	name "Passenger transport to <planet>"
+	name "👤Taxi Service to <planet>"
 	job
 	repeat
 	description "${KW.Phrase.Job: passenger offer}"
+	color selected "KW.Color: job passenger selected"
+	color unselected "KW.Color: job passenger unselected"
+	color unavailable "KW.Color: job passenger unavailable"
 	passengers 1 10 .9
 	to offer
 		or
@@ -130,8 +137,6 @@ mission "KW.Sol.Passenger [Earth,0]"
 	destination
 		system KW.S.000.Sol
 		attributes earth
-	"distance calculation settings"
-		"all wormholes"
 	on visit
 		dialog phrase "generic passenger on visit"
 	on complete
@@ -139,10 +144,13 @@ mission "KW.Sol.Passenger [Earth,0]"
 		dialog phrase "generic passenger dropoff payment"
 
 mission "KW.Sol.Passenger [Earth,1]"
-	name "Passenger transport to <planet>"
+	name "👤Taxi Service to <planet>"
 	job
 	repeat
 	description "${KW.Phrase.Job: passenger offer}"
+	color selected "KW.Color: job passenger selected"
+	color unselected "KW.Color: job passenger unselected"
+	color unavailable "KW.Color: job passenger unavailable"
 	passengers 1 10 .9
 	to offer
 		or
@@ -157,8 +165,6 @@ mission "KW.Sol.Passenger [Earth,1]"
 	destination
 		system KW.S.000.Sol
 		attributes earth
-	"distance calculation settings"
-		"all wormholes"
 	on visit
 		dialog phrase "generic passenger on visit"
 	on complete
@@ -166,10 +172,13 @@ mission "KW.Sol.Passenger [Earth,1]"
 		dialog phrase "generic passenger dropoff payment"
 
 mission "KW.Sol.Passenger [Not Earth,0]"
-	name "Passenger transport to <planet>"
+	name "👤Taxi Service to <planet>"
 	job
 	repeat
 	description "${KW.Phrase.Job: passenger offer}"
+	color selected "KW.Color: job passenger selected"
+	color unselected "KW.Color: job passenger unselected"
+	color unavailable "KW.Color: job passenger unavailable"
 	passengers 1 10 .9
 	to offer
 		or
@@ -184,8 +193,6 @@ mission "KW.Sol.Passenger [Not Earth,0]"
 	destination
 		system KW.S.000.Sol
 		not attributes earth
-	"distance calculation settings"
-		"all wormholes"
 	on visit
 		dialog phrase "generic passenger on visit"
 	on complete
@@ -193,10 +200,13 @@ mission "KW.Sol.Passenger [Not Earth,0]"
 		dialog phrase "generic passenger dropoff payment"
 
 mission "KW.Sol.Passenger [Not Earth,1]"
-	name "Passenger transport to <planet>"
+	name "👤Taxi Service to <planet>"
 	job
 	repeat
 	description "${KW.Phrase.Job: passenger offer}"
+	color selected "KW.Color: job passenger selected"
+	color unselected "KW.Color: job passenger unselected"
+	color unavailable "KW.Color: job passenger unavailable"
 	passengers 1 10 .9
 	to offer
 		or
@@ -211,8 +221,6 @@ mission "KW.Sol.Passenger [Not Earth,1]"
 	destination
 		system KW.S.000.Sol
 		not attributes earth
-	"distance calculation settings"
-		"all wormholes"
 	on visit
 		dialog phrase "generic passenger on visit"
 	on complete
@@ -227,8 +235,11 @@ mission "KW.Sol.Passenger [Not Earth,1]"
 mission "KW.Sol.Research Samples [Lepo.A]"
 	job
 	repeat
-	name "Deliver research samples to <planet>"
+	name "📦Delivery of Research Samples tto <planet>"
 	description "${KW.Phrase.Job: timed cargo offer}"
+	color selected "KW.Color: job cargo selected"
+	color unselected "KW.Color: job cargo unselected"
+	color unavailable "KW.Color: job cargo unavailable"
 	cargo "research samples" 15 3 .1
 	deadline
 	to offer
@@ -239,8 +250,6 @@ mission "KW.Sol.Research Samples [Lepo.A]"
 			random < 1
 	source KW.S.025.0.Lepo
 	destination KW.S.000.2.Io
-	"distance calculation settings"
-		"all wormholes"
 	on visit
 		dialog phrase "generic cargo on visit"
 	on complete
@@ -250,8 +259,11 @@ mission "KW.Sol.Research Samples [Lepo.A]"
 mission "KW.Sol.Research Samples [Lepo.B]"
 	job
 	repeat
-	name "Deliver research samples to <planet>"
+	name "📦Delivery of Research Samples tto <planet>"
 	description "${KW.Phrase.Job: timed cargo offer}"
+	color selected "KW.Color: job cargo selected"
+	color unselected "KW.Color: job cargo unselected"
+	color unavailable "KW.Color: job cargo unavailable"
 	cargo "research samples" 15 3 .1
 	deadline
 	to offer
@@ -262,8 +274,6 @@ mission "KW.Sol.Research Samples [Lepo.B]"
 		government "KW.Sol"
 		attributes "analysis"
 		distance 1 12
-	"distance calculation settings"
-		"all wormholes"
 	on visit
 		dialog phrase "generic cargo on visit"
 	on complete
@@ -273,10 +283,13 @@ mission "KW.Sol.Research Samples [Lepo.B]"
 ############### SOL INTERSYSTEM JOBS (INSPECTOR) ###############
 # After Lepo, the machines on Io allows you to assist in ferrying inspectors on remote stations.
 mission "KW.Sol.Inspector [0]"
-	name "Bring inspector to <stopover>"
+	name "👤Transport Inspector to <stopover>"
 	job
 	repeat
 	description "${KW.Phrase.Job: inspector offer}"
+	color selected "KW.Color: job passenger selected"
+	color unselected "KW.Color: job passenger unselected"
+	color unavailable "KW.Color: job passenger unavailable"
 	passengers 1
 	to offer
 		random < 25
@@ -287,8 +300,6 @@ mission "KW.Sol.Inspector [0]"
 		government "KW.Sol"
 	on stopover
 		dialog phrase "KW.Phrase.Job: inspector stopover"
-	"distance calculation settings"
-		"all wormholes"
 	on visit
 		dialog phrase "generic passenger on visit"
 	on complete

@@ -1,0 +1,244 @@
+############### GENERIC INTERSYSTEM JOBS ###############
+# Note: Generic jobs should have a destination at least one jump away. For intrasystem jobs, define them individually
+# allow to show on non-visited, 'disclosing' undiscovered outposts
+
+mission "KW.Generic.Jobs.___.Job Count Reset"
+	invisible
+	repeat
+	landing
+	on enter
+		clear "job-board: cargo jobs [S]"
+		clear "job-board: cargo jobs [M]"
+		clear "job-board: cargo jobs [L]"
+		clear "job-board: passenger jobs [S]"
+		clear "job-board: passenger jobs [M]"
+		clear "job-board: passenger jobs [L]"
+		clear "job-board: mining silicon jobs"
+		clear "job-board: mining lead jobs"
+		clear "job-board: mining iron jobs"
+		clear "job-board: mining aluminum jobs"
+		clear "job-board: mining titanium jobs"
+		clear "job-board: mining copper jobs"
+		clear "job-board: mining neodymium jobs"
+		clear "job-board: mining tungsten jobs"
+		clear "job-board: mining uranium jobs"
+		clear "job-board: mining silver jobs"
+		clear "job-board: mining gold jobs"
+		clear "job-board: mining platinum jobs"
+
+mission "KW.Generic.Jobs.___.Job Weights"
+	invisible
+	landing
+	on accept
+		# Cargo
+		"job-board: weight: cargo food jobs [S]" 				= 30 # 125 - 135 [T]
+		"job-board: weight: cargo food jobs [M]"	 			= 20
+		"job-board: weight: cargo food jobs [L]" 				= 15
+		"job-board: weight: cargo clothing jobs [S]" 			= 30 # 125 - 135
+		"job-board: weight: cargo clothing jobs [M]"	 		= 20
+		"job-board: weight: cargo clothing jobs [L]" 			= 15
+		"job-board: weight: cargo metal jobs [S]" 				= 27 # 140 - 150
+		"job-board: weight: cargo metal jobs [M]" 				= 18
+		"job-board: weight: cargo metal jobs [L]" 				= 12
+		"job-board: weight: cargo heavy metal jobs [S]" 		= 20 # 180 - 200
+		"job-board: weight: cargo heavy metal jobs [M]" 		= 12
+		"job-board: weight: cargo heavy metal jobs [L]" 		= 8
+		"job-board: weight: cargo plastic jobs [S]" 			= 27 # 140 - 150
+		"job-board: weight: cargo plastic jobs [M]" 			= 18
+		"job-board: weight: cargo plastic jobs [L]" 			= 12
+
+		# Cargo, factory goods
+		"job-board: weight: cargo electronics jobs [S]" 		= 25 # 165 - 175
+		"job-board: weight: cargo electronics jobs [M]" 		= 15
+		"job-board: weight: cargo electronics jobs [L]" 		= 10
+		"job-board: weight: cargo equipment jobs [S]" 			= 30 # 140 - 150
+		"job-board: weight: cargo equipment jobs [M]" 			= 20
+		"job-board: weight: cargo equipment jobs [L]" 			= 15
+		"job-board: weight: cargo medical jobs [S]" 			= 25 # 165 - 175
+		"job-board: weight: cargo medical jobs [M]" 			= 15
+		"job-board: weight: cargo medical jobs [L]" 			= 10
+		"job-board: weight: cargo construction jobs [S]" 		= 30 # ---
+		"job-board: weight: cargo construction jobs [M]" 		= 20
+		"job-board: weight: cargo construction jobs [L]" 		= 15
+
+		# Cargo, high-tech factory goods
+		"job-board: weight: cargo industrial jobs [S]" 			= 25 # 165 - 175
+		"job-board: weight: cargo industrial jobs [M]" 			= 15
+		"job-board: weight: cargo industrial jobs [L]" 			= 10
+		"job-board: weight: cargo luxury goods jobs [S]" 		= 20 # 200 - 225
+		"job-board: weight: cargo luxury goods jobs [M]" 		= 12
+		"job-board: weight: cargo luxury goods jobs [L]" 		= 8
+		"job-board: weight: cargo military jobs [S]" 			= 22 # 180 - 200
+		"job-board: weight: cargo military jobs [M]" 			= 13
+		"job-board: weight: cargo military jobs [L]" 			= 9
+		"job-board: weight: cargo ship alloy jobs [S]" 			= 20 # 225 - 250
+		"job-board: weight: cargo ship alloy jobs [M]" 			= 12
+		"job-board: weight: cargo ship alloy jobs [L]" 			= 8
+
+		# Cargo, research output
+		"job-board: weight: cargo research sample jobs [S]" 	= 25 # 160 [T]
+
+		# Cargo, logistics
+		"job-board: weight: cargo logistics jobs [S]" 			= 30 # 175 - 225 [T]
+		"job-board: weight: cargo logistics jobs [M]" 			= 15
+		"job-board: weight: cargo logistics jobs [L]" 			= 10
+
+		# Passengers
+		"job-board: weight: passenger generic jobs [S]" 		= 30 # 150 - ?
+		"job-board: weight: passenger generic jobs [M]" 		= 20
+		"job-board: weight: passenger generic jobs [L]" 		= 15
+
+		# Passengers, vocational
+		"job-board: weight: passenger worker jobs [S]" 			= 30
+		"job-board: weight: passenger worker jobs [M]" 			= 20
+		"job-board: weight: passenger worker jobs [L]" 			= 15
+		"job-board: weight: passenger farmer jobs [S]" 			= 30
+		"job-board: weight: passenger farmer jobs [M]" 			= 20
+		"job-board: weight: passenger farmer jobs [L]"		 	= 15
+		"job-board: weight: passenger tourist jobs [S]" 		= 30
+		"job-board: weight: passenger tourist jobs [M]" 		= 20
+		"job-board: weight: passenger tourist jobs [L]" 		= 15
+		"job-board: weight: passenger student jobs [S]" 		= 30
+		"job-board: weight: passenger student jobs [M]" 		= 20
+		"job-board: weight: passenger student jobs [L]" 		= 15
+		"job-board: weight: passenger researcher jobs [S]" 		= 25
+		"job-board: weight: passenger researcher jobs [M]" 		= 13
+		"job-board: weight: passenger researcher jobs [L]" 		= 10
+
+		# Passengers, high-end
+
+		# Mining
+		"job-board: weight: mining generic jobs [S]" 			= 30
+		"job-board: weight: mining generic jobs [S] B" 			= 50
+		"job-board: weight: mining generic jobs [M]" 			= 30
+
+
+		fail
+
+# job limits
+#								Rural	Normal 	Urban 	Logi	Large
+#	cargo jobs	 			[S]	3 		4 		5 		9		+3
+#	bulk cargo jobs 		[M]	1 		2 		3 		6		+2
+#	mega cargo jobs 		[L]	0 		1 		2 		4		+1
+#	passenger jobs 			[S]	6 		2 		9 		-		+3
+#	passenger bus jobs		[M]	4 		0 		6 		-		+2
+#	passenger ferry jobs 	[L]	0 		0 		4 		-		+1
+#
+
+mission "KW.Generic.Jobs.__a.Job Limit Mining"
+	invisible
+	repeat
+	landing
+	on accept
+		# only one job for each metal is offered
+		"job-board: limit: mining silicon jobs" = 1
+		"job-board: limit: mining lead jobs" = 1
+		"job-board: limit: mining iron jobs" = 1
+		"job-board: limit: mining aluminum jobs" = 1
+		"job-board: limit: mining titanium jobs" = 1
+		"job-board: limit: mining copper jobs" = 1
+		"job-board: limit: mining neodymium jobs" = 1
+		"job-board: limit: mining tungsten jobs" = 1
+		"job-board: limit: mining uranium jobs" = 1
+		"job-board: limit: mining silver jobs" = 1
+		"job-board: limit: mining gold jobs" = 1
+		"job-board: limit: mining platinum jobs" = 1
+		fail
+
+mission "KW.Generic.Jobs.__a.Job Limit Rural"
+	invisible
+	repeat
+	landing
+	to accept
+		has "flagship planet attribute: rural"
+		not "flagship planet attribute: urban"
+	on accept
+		"job-board: limit: cargo jobs [S]" = 3
+		"job-board: limit: cargo jobs [M]" = 1
+		"job-board: limit: cargo jobs [L]" = 0
+		"job-board: limit: passenger jobs [S]" = 6
+		"job-board: limit: passenger jobs [M]" = 4
+		"job-board: limit: passenger jobs [L]" = 0
+		fail
+
+mission "KW.Generic.Jobs.__a.Job Limit Normal"
+	invisible
+	repeat
+	landing
+	to accept
+		not "flagship planet attribute: rural"
+		not "flagship planet attribute: urban"
+	on accept
+		"job-board: limit: cargo jobs [S]" = 4
+		"job-board: limit: cargo jobs [M]" = 2
+		"job-board: limit: cargo jobs [L]" = 1
+		# not rural / urban = probably not a population center
+		"job-board: limit: passenger jobs [S]" = 2
+		"job-board: limit: passenger jobs [M]" = 0
+		"job-board: limit: passenger jobs [L]" = 0
+		fail
+
+mission "KW.Generic.Jobs.__a.Job Limit Urban"
+	invisible
+	repeat
+	landing
+	to accept
+		has "flagship planet attribute: urban"
+	on accept
+		"job-board: limit: cargo jobs [S]" = 5
+		"job-board: limit: cargo jobs [M]" = 3
+		"job-board: limit: cargo jobs [L]" = 2
+		"job-board: limit: passenger jobs [S]" = 9
+		"job-board: limit: passenger jobs [M]" = 6
+		"job-board: limit: passenger jobs [L]" = 4
+		fail
+
+mission "KW.Generic.Jobs.__b.Job Limit Logistics"
+	invisible
+	repeat
+	landing
+	to accept
+		has "flagship planet attribute: logistics"
+	on accept
+		"job-board: limit: cargo jobs [S]" = 9
+		"job-board: limit: cargo jobs [M]" = 6
+		"job-board: limit: cargo jobs [L]" = 4
+		# passenger jobs by Rural / Normal / Urban
+		fail
+
+mission "KW.Generic.Jobs.__c.Job Limit Large"
+	invisible
+	repeat
+	landing
+	to accept
+		has "flagship planet attribute: large"
+	on accept
+		"job-board: limit: cargo jobs [S]" += 3
+		"job-board: limit: cargo jobs [M]" += 2
+		"job-board: limit: cargo jobs [L]" += 1
+		"job-board: limit: passenger jobs [S]" += 3
+		"job-board: limit: passenger jobs [M]" += 2
+		"job-board: limit: passenger jobs [L]" += 1
+		fail
+
+mission "KW.Generic.Jobs.zzz.Debug.Display Job Limit"
+	name "Debug: Display job limits"
+	job
+	repeat
+	description "Display job limits."
+	"offer precedence" 997
+	source
+		not attributes isolated
+	on accept
+		conversation
+			`Cargo Jobs [S] &[job-board: cargo jobs [S]] / &[job-board: limit: cargo jobs [S]]`
+			`Cargo Jobs [M] &[job-board: cargo jobs [M]] / &[job-board: limit: cargo jobs [M]]`
+			`Cargo Jobs [L] &[job-board: cargo jobs [L]] / &[job-board: limit: cargo jobs [L]]`
+			`Passenger Jobs [S] &[job-board: passenger jobs [S]] / &[job-board: limit: passenger jobs [S]]`
+			`Passenger Jobs [M] &[job-board: passenger jobs [M]] / &[job-board: limit: passenger jobs [M]]`
+			`Passenger Jobs [L] &[job-board: passenger jobs [L]] / &[job-board: limit: passenger jobs [L]]`
+		decline
+
+
+
+

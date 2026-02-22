@@ -17,7 +17,7 @@ mission "KW.Sol.Advent [0]"
 	name "[Sol] Bring geologists to <planet>"
 	color selected "KW.Color: secondary missions selected"
 	color unselected "KW.Color: secondary missions unselected"
-	description "Transport a team of <bunks> geologists and <cargo> to <destination>. Payment is <payment>."
+	description "👤Transport a team of <bunks> geologists and <cargo> to <destination>. Payment is <payment>."
 	landing
 	source KW.S.000.2.Io
 	destination KW.S.001.0.Advent
@@ -254,7 +254,7 @@ mission "KW.Sol.Advent [2A]"
 	name "[Sol] Transport Arthur's assistant to <planet>"
 	color selected "KW.Color: secondary missions selected"
 	color unselected "KW.Color: secondary missions unselected"
-	description "Transport Arthur's assistant to <destination>. Payment is <payment>."
+	description "👤Transport Arthur's assistant to <destination>. Payment is <payment>."
 	blocked `You notice Authur has left you a message. The next job involves 1 passenger, so it'll be a good idea to have that space before you next speak to him.`
 	landing
 	source KW.S.000.0A.Yekaterinburg
@@ -330,7 +330,7 @@ mission "KW.Sol.Advent [2B]"
 	name "[Sol] Transport an injured worker to <planet>"
 	color selected "KW.Color: secondary missions selected"
 	color unselected "KW.Color: secondary missions unselected"
-	description "Transport an injured worker to <destination> by <date>. Payment is <payment>."
+	description "👤Transport an injured worker to <destination> by <date>. Payment is <payment>."
 	landing
 	source KW.S.001.0.Advent
 	destination KW.S.000.0A.Yekaterinburg

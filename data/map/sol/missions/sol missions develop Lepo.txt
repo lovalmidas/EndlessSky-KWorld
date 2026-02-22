@@ -93,7 +93,7 @@ mission "KW.Sol.Lepo [2]"
 	name "[Sol] Bring inspector to <planet>"
 	color selected "KW.Color: secondary missions selected"
 	color unselected "KW.Color: secondary missions unselected"
-	description "Transport an inspector to <destination>. Payment is <payment>."
+	description "👤Transport an inspector to <destination>. Payment is <payment>."
 	landing
 	source KW.S.000.2.Io
 	destination KW.S.025.0.Lepo

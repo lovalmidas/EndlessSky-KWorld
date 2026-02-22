@@ -1,0 +1,41 @@
+### Naming ###
+#	ID: "KW.Generic.Jobs.<priority><index><cargo type>.<short name>"
+#	Example: "KW.Generic.Jobs.90f.Food Cargo [0]"
+#		Sizes:
+#			_ = special
+#			0 = special
+#			1 = 
+#			2 = mega, deadline
+#			3 = mega
+#			4 = 
+#			5 = bulk, deadline
+#			6 = bulk
+#			7 = 
+#			8 = normal, deadline
+#			9 = normal
+#		Cargo Types:
+#			f = food
+#			c = clothing
+#			m = metal
+#			p = plastic
+#			q = equipment
+#			i = industrial
+#			d = medical
+#			e = electronics
+#			h = heavy metal
+#			x = luxury goods
+#			n = construction
+#			y = military
+#			s = ship alloys
+#			r = research samples
+#
+# Game orders missions by internal name, so priority 0 is evaluated first
+# Spread priority and index so other cargoes have a (near-equal) chance to appear
+
+### COMMODITY: CONSTRUCTION ###
+# Construction materials is needed everywhere
+#
+#		Previous definitions identical to Equipment. Don't add these jobs yet
+#
+# 
+

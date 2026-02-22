@@ -1,6 +1,6 @@
 planet KW.S.000.0A.Yekaterinburg
 	"display name" Yekaterinburg
-	attributes earth urban factory logistics analysis military large gaia archive
+	attributes earth urban factory logistics analysis military gaia archive
 	landscape land/city20
 	description `Homeworld of humanity, bliss in ignorance.`
 	description `	The human species have recently entered an era of 'information technology' and is getting into grips with the notion of travelling within intra-space - a term representing the space within a star's influence up to its magnetosphere. Fortunately, this venture is not old, and visitors have came and shaped humanity to its current height with an invisible hand. Unfortunately, this hand wishes to remain invisible.`
@@ -15,7 +15,7 @@ planet KW.S.000.0A.Yekaterinburg
 			"hire crew"
 		description `There are four spaceports around this world - Rotterdam, Osaka, Riau Island and Yekaterinburg. They are operated by a group known as the 'Organization', a 5-million underground nation living to the whims of a selective upper-class known as the 'Establishment'. The elders used to be known as 'the Committees', but had taken this new name as if to spite a certain group of 'fickle populists'. Collectively, they are known as the 'Underworld', relative to the 'Surface World' of nations that remain naive to the infestation crawling under their feet.`
 		description `	The following are traits inherent within this city:`
-		description `	[Urban/Large]: The city under Yekaterinburg hosts an impressive 1.5 million people, of which 200,000 are Sentient Machines.`
+		description `	[Urban]: The city under Yekaterinburg hosts an impressive 1.5 million people, of which 200,000 are Sentient Machines.`
 		description `	[Factory]: The Organization's major enterprises, such as Codex Corporation, Traverseer Systems, and Pathogen Labs, are headquarted in this city, its factories in perpetual motion to meet the demands of the government and its people.`
 		description `	[Logistics]: The Organization's major House of Coreillius specializes in military and logistical solutions, managing the traffic of goods and people between clandestine underground bases. The city lies within the center of a Maglev network that connects it to Alps, Rotterdam, Caspian, Kyoto (via Yanbing-Yanbian) and Wuhan Bases.`
 		description `	[Analysis]: The Organization's Adminstration-aligned institutions such as WEAPL, Institute of Advanced Robotics and Cybernetics (InsARC), and ChronoLock Institute are also situated in this city. The Organization's major House of Cerebelliumus specialize in professional trades and sciences. Only with their combined efforts was the space age possible.`
@@ -96,7 +96,7 @@ planet KW.S.000.1.Moon
 
 planet KW.S.000.2.Io
 	"display name" Io
-	attributes mining factory military beacon
+	attributes mining factory military beacon iron-buyer silicon-buyer lead-buyer
 	landscape land/mars3
 	description `The existence of even the most basic of spacefaring technologies allowed this moon of Jupiter to be observed, and eventually explored. For most of humanity, this moon remains an object of intrigue and imagination of a possible outpost. To those burdened with knowledge, the imagination had been lost; a outpost already exists, under the ownership of the human 'Organization' in name, but almost entirely populated by mechanical beasts known as the 'Sentient Machines'.`
 	description `	As though mimicking the human Organization's division into its three Houses, the Sentient Machines on Io Base are governed by the 'House of Xanadu', and subgroups made up their own colors like 'Vermillion'. You are not sure if this is intended to be a homage or a mockery.`
@@ -140,7 +140,7 @@ planet KW.S.004.0.AEgir #
 	landscape land/canyon01
 	attributes research
 	description `A gas giant almost comparable to Jupiter. WIP`
-	port "Collector"
+	port "Gas Collector"
 		recharges
 			energy
 			fuel
@@ -152,7 +152,7 @@ planet KW.S.004.1.Hatzes
 	"display name" Hatzes
 	landscape land/canyon01
 	attributes research farming synthetic
-	description `A tiny moon rests just within its planet's shade enough to support a self-sustaining outpost. Amazingly, it shares a similar atmospheric composition as the gas giant AEgir, so humans name it after its discoverer.`
+	description `A tiny moon rests just within its planet's shade enough to support a self-sustaining outpost. Amazingly, it shares a similar atmospheric composition as the gas giant AEgir, so humans named it after its discoverer.`
 	port "Outpost"
 		recharges
 			energy

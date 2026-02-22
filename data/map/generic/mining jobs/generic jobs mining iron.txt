@@ -1,0 +1,111 @@
+### Naming ###
+#	ID: "KW.Generic.Jobs.<priority><index><extraction type>.<short name>"
+#	Example: "KW.Generic.Jobs.90c.Clothing Cargo [0]"
+#		Sizes:
+#			m = mining
+#			M = bulk mining
+#			h = harvesting
+#		Extraction Types:
+#			C  = Carbon (Coal)		[New]
+#			CH = Hydrocarbons		[New]
+#			H  = Hydrogen			[New]
+#			HO = Water				[New]
+#			Si = Silicon
+#			Pb = Lead
+#			Fe = Iron
+#			Al = Aluminum
+#			Ti = Titanium
+#			Cu = Copper
+#			Nd = Neodymium
+#			W  = Tungsten
+#			U  = Uranium
+#			Ag = Silver
+#			Au = Gold
+#			Pt = Platinum
+#
+# Game orders missions by internal name, so priority 0 is evaluated first
+# Spread priority and index so other cargoes have a (near-equal) chance to appear
+
+### RESOURCE HARVESTING ###
+# Planets with certain attributes can offer one-time missions (per landing) to extract a random quantity of resources
+# These resources can be sold, traded at premium at certain locations, or used in industry
+#	use `XXXX-source` to denote the planet may offer such jobs
+#	use `XXXX-buyer` to denote the planet may offer jobs to exchange such goods for cash
+
+### ASTEROID MINING ###
+# Because asteroid mining requires specialized tools and a conscious effort to harvest them, offer at least +50% margin.
+# The size of requested materials should be based on payout
+#	50k-100k
+#	100k-250k for large
+# For precious metals (silver, gold, platinum), increase scale to
+#	100k-200k
+#	200k-500k for large
+# Unfortunately, Endless Sky lack substitution logic for outfit and numeric amounts, so several copies may need to be hand-copied
+
+# IRON: 1200 #
+# [S] Iron: 1200 x 25 = 30000 		[+83%] -> 55000
+# [M] Iron: 1200 x 100 = 120000 	[+100%] -> 240000
+
+mission "KW.Generic.Jobs.m0Fe.Mining Iron [0]"
+	name "🚧Harvest <mineral> to <planet>"
+	job
+	repeat
+	deadline 7
+	description "${KW.Phrase.Job: timed material offer}"
+	"offer precedence" 300
+	color selected "KW.Color: job mining selected"
+	color unselected "KW.Color: job mining unselected"
+	color unavailable "KW.Color: job mining unavailable"
+	substitutions
+		"<mineral>" "Iron"
+		"<amount>" "25"
+	to offer
+		has "job-board: enable generic mining jobs"
+		"job-board: mining iron jobs" < "job-board: limit: mining iron jobs"
+		or
+			and
+				"cargo space" < 200
+				random < "job-board: weight: mining generic jobs [S] B"
+			random < "job-board: weight: mining generic jobs [S]"
+	source
+		attributes iron-buyer
+		not attributes isolated
+	on offer
+		"job-board: mining iron jobs" ++
+	on visit
+		dialog phrase "generic mineral on visit"
+	on complete
+		payment 55000
+		outfit "Iron" -25
+		dialog phrase "generic mineral delivery payment"
+
+mission "KW.Generic.Jobs.M0Fe.Bulk Mining Iron [0]"
+	name "🚧Harvest <mineral> to <planet>"
+	job
+	repeat
+	deadline 7
+	description "${KW.Phrase.Job: timed material offer}"
+	"offer precedence" 300
+	color selected "KW.Color: job mining selected"
+	color unselected "KW.Color: job mining unselected"
+	color unavailable "KW.Color: job mining unavailable"
+	substitutions
+		"<mineral>" "Iron"
+		"<amount>" "100"
+	to offer
+		has "job-board: enable generic mining jobs"
+		"job-board: mining iron jobs" < "job-board: limit: mining iron jobs"
+		"cargo space" > 200
+		random < "job-board: weight: mining generic jobs [M]"
+	source
+		attributes iron-buyer
+		not attributes isolated
+	on offer
+		"job-board: mining iron jobs" ++
+	on visit
+		dialog phrase "generic mineral on visit"
+	on complete
+		payment 240000
+		outfit "Iron" -100
+		dialog phrase "generic mineral delivery payment"
+
